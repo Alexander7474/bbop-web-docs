@@ -1,5 +1,0 @@
-<map id="Font" name="Font">
-<area shape="rect" id="node1" title="Stock une police de caractère." alt="" coords="23,199,73,225"/>
-<area shape="rect" id="node2" href="$structCharacter.html" title="Stock un caractère." alt="" coords="5,109,91,136"/>
-<area shape="rect" id="node3" href="$classVector2f.html" title=" " alt="" coords="10,5,86,32"/>
-</map>
