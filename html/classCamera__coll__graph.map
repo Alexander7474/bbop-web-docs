@@ -1,5 +1,0 @@
-<map id="Camera" name="Camera">
-<area shape="rect" id="node1" title="Permet de modifier les point de vue et la position de l&#39;affichage de la class Scene." alt="" coords="34,185,107,212"/>
-<area shape="rect" id="node2" href="$classVector2f.html" title=" " alt="" coords="33,81,109,108"/>
-<area shape="rect" id="node3" href="$classVector2.html" title=" " alt="" coords="5,5,136,32"/>
-</map>

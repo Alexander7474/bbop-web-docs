@@ -1,5 +1,0 @@
-<map id="RectangleShape" name="RectangleShape">
-<area shape="rect" id="node1" title="Gère un rectangle/carré" alt="" coords="5,155,132,181"/>
-<area shape="rect" id="node2" href="$classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="37,80,100,107"/>
-<area shape="rect" id="node3" href="$classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="10,5,127,32"/>
-</map>
