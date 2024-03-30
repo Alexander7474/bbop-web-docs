@@ -1,0 +1,63 @@
+\hypertarget{classBbopDrawable}{}\doxysection{Bbop\+Drawable Class Reference}
+\label{classBbopDrawable}\index{BbopDrawable@{BbopDrawable}}
+
+
+Class Parent de tous ce qui peut être dessiné par une \mbox{\hyperlink{classScene}{Scene}}.  
+
+
+
+
+{\ttfamily \#include $<$bbop\+Global.\+h$>$}
+
+
+
+Inheritance diagram for Bbop\+Drawable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBbopDrawable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}{Draw}} (GLint render\+Mode\+Loc) const =0
+\begin{DoxyCompactList}\small\item\em Déssine l\textquotesingle{}objet héritant de la class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Parent de tous ce qui peut être dessiné par une \mbox{\hyperlink{classScene}{Scene}}. 
+
+La class \mbox{\hyperlink{classScene}{Scene}} utilise cette comme paramètre dans Draw(\+Bbop\+Drawable).
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classScene}{Scene}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}\label{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}} 
+\index{BbopDrawable@{BbopDrawable}!Draw@{Draw}}
+\index{Draw@{Draw}!BbopDrawable@{BbopDrawable}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily virtual void Bbop\+Drawable\+::\+Draw (\begin{DoxyParamCaption}\item[{GLint}]{render\+Mode\+Loc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Déssine l\textquotesingle{}objet héritant de la class. 
+
+Cette méthode est utilisé dans Scene.\+Draw(\+Bbop\+Drawable) qui lui transmet le render\+Mode\+Loc.
+
+\begin{DoxySeeAlso}{See also}
+Scene.\+Draw(\+Bbop\+Drawable) 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}{No\+Texture\+Sprite}}, \mbox{\hyperlink{classSprite_af9be42bc2be161b8eec4bcc9d1141ba5}{Sprite}}, \mbox{\hyperlink{classConvexShape_a4963a13641d5e3284cba8f8ccaf8551e}{Convex\+Shape}}, \mbox{\hyperlink{classRectangleShape_a28e8a69884d7c609a377a09910a4b892}{Rectangle\+Shape}}, and \mbox{\hyperlink{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}{Texte\+Box}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+BBOP/\+Graphics/\mbox{\hyperlink{bbopGlobal_8h}{bbop\+Global.\+h}}\end{DoxyCompactItemize}

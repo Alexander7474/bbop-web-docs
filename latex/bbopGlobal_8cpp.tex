@@ -1,0 +1,102 @@
+\hypertarget{bbopGlobal_8cpp}{}\doxysection{src/\+BBOP/\+Graphics/bbop\+Global.cpp File Reference}
+\label{bbopGlobal_8cpp}\index{src/BBOP/Graphics/bbopGlobal.cpp@{src/BBOP/Graphics/bbopGlobal.cpp}}
+{\ttfamily \#include \char`\"{}../../../include/\+BBOP/\+Graphics/bbop\+Global.\+h\char`\"{}}\newline
+Include dependency graph for bbop\+Global.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bbopGlobal_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}{key\+Callback}} (GLFWwindow $\ast$window, int key, int scancode, int action, int mods)
+\item 
+string \mbox{\hyperlink{bbopGlobal_8cpp_abad8b4d4b0f318cf85947bef83f84526}{get\+File\+Data}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Récupère les données d\textquotesingle{}un fichier et les renvoie sous forme de string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{bbopGlobal_8cpp_a4f8b47e369d43c08482eb0b63655e98e}{BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+TEXTURE}} = 0
+\begin{DoxyCompactList}\small\item\em Render\+Mode avec uniquement les textures. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bbopGlobal_8cpp_aa11aa73a4cbfdcdedf4e7cfda7c4e714}{BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+COLOR}} = 1
+\begin{DoxyCompactList}\small\item\em Render\+Mode avec uniquement les couleurs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bbopGlobal_8cpp_ab1d5df0342c6b8efc705e0a54b09f5a5}{BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+MIX}} = 2
+\begin{DoxyCompactList}\small\item\em Render\+Mode en mixant les textures et les couleurs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}{BBOP\+\_\+\+WINDOW\+\_\+\+SIZE}} (1920, 1080)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bbopGlobal_8cpp_abad8b4d4b0f318cf85947bef83f84526}\label{bbopGlobal_8cpp_abad8b4d4b0f318cf85947bef83f84526}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!getFileData@{getFileData}}
+\index{getFileData@{getFileData}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{getFileData()}{getFileData()}}
+{\footnotesize\ttfamily string get\+File\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Récupère les données d\textquotesingle{}un fichier et les renvoie sous forme de string. 
+
+Cette fonction est seulement utilisé par la class \mbox{\hyperlink{classShader}{Shader}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filename} & Chemin d\textquotesingle{}accès vers le fichier à lire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string Contenu du fichier.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classShader}{Shader}} 
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Changer son nom en bbop\+Get\+File\+Data et la déplacer dans \mbox{\hyperlink{bbopFunc_8h}{bbop\+Func.\+h}} et \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}} \end{DoxyRefDesc}
+\mbox{\Hypertarget{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}\label{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!keyCallback@{keyCallback}}
+\index{keyCallback@{keyCallback}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{keyCallback()}{keyCallback()}}
+{\footnotesize\ttfamily void key\+Callback (\begin{DoxyParamCaption}\item[{GLFWwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{bbopGlobal_8cpp_aa11aa73a4cbfdcdedf4e7cfda7c4e714}\label{bbopGlobal_8cpp_aa11aa73a4cbfdcdedf4e7cfda7c4e714}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_SHADER\_MODE\_COLOR@{BBOP\_SHADER\_MODE\_COLOR}}
+\index{BBOP\_SHADER\_MODE\_COLOR@{BBOP\_SHADER\_MODE\_COLOR}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{BBOP\_SHADER\_MODE\_COLOR}{BBOP\_SHADER\_MODE\_COLOR}}
+{\footnotesize\ttfamily int BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+COLOR = 1}
+
+
+
+Render\+Mode avec uniquement les couleurs. 
+
+\mbox{\Hypertarget{bbopGlobal_8cpp_ab1d5df0342c6b8efc705e0a54b09f5a5}\label{bbopGlobal_8cpp_ab1d5df0342c6b8efc705e0a54b09f5a5}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_SHADER\_MODE\_MIX@{BBOP\_SHADER\_MODE\_MIX}}
+\index{BBOP\_SHADER\_MODE\_MIX@{BBOP\_SHADER\_MODE\_MIX}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{BBOP\_SHADER\_MODE\_MIX}{BBOP\_SHADER\_MODE\_MIX}}
+{\footnotesize\ttfamily int BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+MIX = 2}
+
+
+
+Render\+Mode en mixant les textures et les couleurs. 
+
+\mbox{\Hypertarget{bbopGlobal_8cpp_a4f8b47e369d43c08482eb0b63655e98e}\label{bbopGlobal_8cpp_a4f8b47e369d43c08482eb0b63655e98e}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_SHADER\_MODE\_TEXTURE@{BBOP\_SHADER\_MODE\_TEXTURE}}
+\index{BBOP\_SHADER\_MODE\_TEXTURE@{BBOP\_SHADER\_MODE\_TEXTURE}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{BBOP\_SHADER\_MODE\_TEXTURE}{BBOP\_SHADER\_MODE\_TEXTURE}}
+{\footnotesize\ttfamily int BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+TEXTURE = 0}
+
+
+
+Render\+Mode avec uniquement les textures. 
+
+Local headers External headers \mbox{\Hypertarget{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}\label{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}}
+\index{BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{BBOP\_WINDOW\_SIZE}{BBOP\_WINDOW\_SIZE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2i}{Vector2i}} BBOP\+\_\+\+WINDOW\+\_\+\+SIZE(1920, 1080) (\begin{DoxyParamCaption}\item[{1920}]{,  }\item[{1080}]{ }\end{DoxyParamCaption})}
+
