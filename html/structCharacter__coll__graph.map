@@ -1,0 +1,5 @@
+<map id="Character" name="Character">
+<area shape="rect" id="node1" title="Stock un caractère." alt="" coords="28,185,113,212"/>
+<area shape="rect" id="node2" href="$classVector2f.html" title=" " alt="" coords="33,81,109,108"/>
+<area shape="rect" id="node3" href="$classVector2.html" title=" " alt="" coords="5,5,136,32"/>
+</map>
