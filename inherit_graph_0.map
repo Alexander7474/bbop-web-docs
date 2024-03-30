@@ -4,7 +4,7 @@
 <area shape="rect" id="node8" href="$classTexteBox.html" title="Stock du texte pour le draw dans la fenêtre." alt="" coords="171,107,253,133"/>
 <area shape="rect" id="node3" href="$classConvexShape.html" title="Gère une convex." alt="" coords="309,5,420,32"/>
 <area shape="rect" id="node5" href="$classRectangleShape.html" title="Gère un rectangle/carré" alt="" coords="301,56,428,83"/>
-<area shape="rect" id="node6" href="$classSprite.html" title="gère un rectangle avec une texture" alt="" coords="335,107,395,133"/>
-<area shape="rect" id="node4" href="$classCircleShape.html" title=" " alt="" coords="490,5,589,32"/>
+<area shape="rect" id="node6" href="$classSprite.html" title="Gère un Sprite (Rectangle avec une Texture)" alt="" coords="335,107,395,133"/>
+<area shape="rect" id="node4" href="$classCircleShape.html" title="Gère un cercle." alt="" coords="490,5,589,32"/>
 <area shape="rect" id="node7" href="$classNoTextureSprite.html" title=" " alt="" coords="476,107,603,133"/>
 </map>

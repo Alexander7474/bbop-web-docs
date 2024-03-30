@@ -2,23 +2,41 @@
 \label{classTexture}\index{Texture@{Texture}}
 
 
+Contient une texture qui peut être utilisé dans un sprite.  
+
+
+
+
 {\ttfamily \#include $<$texture\+Class.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}} (const char $\ast$texture\+File\+Name)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de la class \mbox{\hyperlink{classTexture}{Texture}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTexture_a7adfdce717ffb4414cf7b842bdcb1112}{Bind}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Permet de bin la texture a opengl avant de Draw. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTexture_a0bff249ecfb46e9b08c6ba52d64a921e}{Unbind}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Détache la texture d\textquotesingle{}opengl. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTexture_a653216bcd1509432e28502d9fc7826ce}{Delete}} ()
-\item 
-int \mbox{\hyperlink{classTexture_a91a6fd3355bc870194851514194daaab}{get\+Width}} ()
-\item 
-int \mbox{\hyperlink{classTexture_a80e143905655b173df5994300088ce35}{get\+Height}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Supprime la texture d\textquotesingle{}opengl. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTexture_a2c2b502138a1a1786c4bf74016620885}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la larguer de la \mbox{\hyperlink{classTexture}{Texture}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTexture_a23c3c1315267a5521d824982bb8d208c}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la hauteur de la \mbox{\hyperlink{classTexture}{Texture}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contient une texture qui peut être utilisé dans un sprite. 
+
+\begin{DoxyAttention}{Attention}
+La class texture à été testé uniqument sur des images png 
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classSprite}{Sprite}}
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Ajouter la possibilité de gérer plusieur format d\textquotesingle{}image comme jpg, jpeg, ou gif ext... \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -30,6 +48,18 @@ int \mbox{\hyperlink{classTexture_a80e143905655b173df5994300088ce35}{get\+Height
 
 
 
+Constructeur par défault de la class \mbox{\hyperlink{classTexture}{Texture}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em texture\+File\+Name} & Chemin d\textquotesingle{}accès vers la texture\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Uniquement des fichier png 
+\end{DoxyAttention}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classTexture_a7adfdce717ffb4414cf7b842bdcb1112}\label{classTexture_a7adfdce717ffb4414cf7b842bdcb1112}} 
 \index{Texture@{Texture}!Bind@{Bind}}
@@ -37,29 +67,61 @@ int \mbox{\hyperlink{classTexture_a80e143905655b173df5994300088ce35}{get\+Height
 \doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
 {\footnotesize\ttfamily void Texture\+::\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Permet de bin la texture a opengl avant de Draw. 
+
+\begin{DoxyNote}{Note}
+A utiliser en général avec \mbox{\hyperlink{classNoTextureSprite}{No\+Texture\+Sprite}}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classNoTextureSprite}{No\+Texture\+Sprite}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classTexture_a653216bcd1509432e28502d9fc7826ce}\label{classTexture_a653216bcd1509432e28502d9fc7826ce}} 
 \index{Texture@{Texture}!Delete@{Delete}}
 \index{Delete@{Delete}!Texture@{Texture}}
 \doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
 {\footnotesize\ttfamily void Texture\+::\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexture_a80e143905655b173df5994300088ce35}\label{classTexture_a80e143905655b173df5994300088ce35}} 
+
+
+Supprime la texture d\textquotesingle{}opengl. 
+
+\mbox{\Hypertarget{classTexture_a23c3c1315267a5521d824982bb8d208c}\label{classTexture_a23c3c1315267a5521d824982bb8d208c}} 
 \index{Texture@{Texture}!getHeight@{getHeight}}
 \index{getHeight@{getHeight}!Texture@{Texture}}
 \doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
-{\footnotesize\ttfamily int Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classTexture_a91a6fd3355bc870194851514194daaab}\label{classTexture_a91a6fd3355bc870194851514194daaab}} 
+
+
+Renvoie la hauteur de la \mbox{\hyperlink{classTexture}{Texture}}. 
+
+\begin{DoxyReturn}{Returns}
+height hauteur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTexture_a2c2b502138a1a1786c4bf74016620885}\label{classTexture_a2c2b502138a1a1786c4bf74016620885}} 
 \index{Texture@{Texture}!getWidth@{getWidth}}
 \index{getWidth@{getWidth}!Texture@{Texture}}
 \doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
-{\footnotesize\ttfamily int Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Renvoie la larguer de la \mbox{\hyperlink{classTexture}{Texture}}. 
+
+\begin{DoxyReturn}{Returns}
+width largeur 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classTexture_a0bff249ecfb46e9b08c6ba52d64a921e}\label{classTexture_a0bff249ecfb46e9b08c6ba52d64a921e}} 
 \index{Texture@{Texture}!Unbind@{Unbind}}
 \index{Unbind@{Unbind}!Texture@{Texture}}
 \doxysubsubsection{\texorpdfstring{Unbind()}{Unbind()}}
 {\footnotesize\ttfamily void Texture\+::\+Unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Détache la texture d\textquotesingle{}opengl. 
 
 
 

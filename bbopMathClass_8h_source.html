@@ -74,95 +74,106 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classVector2i.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2i.html">Vector2i</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classVector2i.html#ad63e78f71457439cc910f38cfa019b4e">    9</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classVector2i.html#ad63e78f71457439cc910f38cfa019b4e">x</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classVector2i.html#a9a3ca58ba0f5d84bf305ddca107780d8">   10</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classVector2i.html#a9a3ca58ba0f5d84bf305ddca107780d8">y</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i</a>(<span class="keywordtype">int</span> nx, <span class="keywordtype">int</span> ny);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classVector2f.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2f.html">Vector2f</a></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classVector2f.html#add58d2378e3a3abdb76cf0ac51c9acfc">   19</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classVector2f.html#add58d2378e3a3abdb76cf0ac51c9acfc">x</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classVector2f.html#a14874a72597fd358b15f8ba34b999c4d">   20</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classVector2f.html#a14874a72597fd358b15f8ba34b999c4d">y</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classVector2.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2.html">Vector2</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classVector2.html#ae2f1223cb0d664aa73afb789086a4174">Vector2</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="classVector2.html#ae2f1223cb0d664aa73afb789086a4174">Vector2</a>(T x_, T y_);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classVector2.html#a78fa1f2ed5e261c7fbeb8f3536a1ee34">   18</a></span>&#160;  T <a class="code" href="classVector2.html#a78fa1f2ed5e261c7fbeb8f3536a1ee34">x</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classVector2.html#a6cfed8355591aa269f4dba43bd806ef9">   19</a></span>&#160;  T <a class="code" href="classVector2.html#a6cfed8355591aa269f4dba43bd806ef9">y</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f</a>(<span class="keywordtype">float</span> nx, <span class="keywordtype">float</span> ny);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classVector2d.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2d.html">Vector2d</a></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classVector2d.html#a151efa5a874304b46327130770327810">   29</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classVector2d.html#a151efa5a874304b46327130770327810">x</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classVector2d.html#aa61b1cb70cc682e1bbc29a7b2f72681e">   30</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classVector2d.html#aa61b1cb70cc682e1bbc29a7b2f72681e">y</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d</a>(<span class="keywordtype">double</span> nx, <span class="keywordtype">double</span> ny);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classVector3i.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3i.html">Vector3i</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classVector3i.html#ada0aeebd1dcfe811bfea8e1d85e32bba">   39</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classVector3i.html#ada0aeebd1dcfe811bfea8e1d85e32bba">x</a>,<a class="code" href="classVector3i.html#ac1328128871b8d1b27196315d9779730">y</a>,<a class="code" href="classVector3i.html#a3240ce93f7dba7791a96787bcecd22fb">z</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i</a>(<span class="keywordtype">int</span> nx, <span class="keywordtype">int</span> ny, <span class="keywordtype">int</span> nz);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classVector3f.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3f.html">Vector3f</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classVector3f.html#a4aca0751716b7099b397e8c63b16bfcf">   48</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classVector3f.html#a4aca0751716b7099b397e8c63b16bfcf">x</a>,<a class="code" href="classVector3f.html#a8a602e2ee75126feb520c2aa27e7eff5">y</a>,<a class="code" href="classVector3f.html#a470cff51eb6463672be518f5af4e26db">z</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f</a>(<span class="keywordtype">float</span> nx, <span class="keywordtype">float</span> ny, <span class="keywordtype">float</span> nz);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classVector3d.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3d.html">Vector3d</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classVector3d.html#afafd0a4e0eebb0baa1e35f9d8c98634a">   57</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classVector3d.html#afafd0a4e0eebb0baa1e35f9d8c98634a">x</a>,<a class="code" href="classVector3d.html#a53c889dcd72f16bc0f21c15bb4e8a7ef">y</a>,<a class="code" href="classVector3d.html#acda14a15e061a330d4ada509c9357c30">z</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>(<span class="keywordtype">double</span> nx, <span class="keywordtype">double</span> ny, <span class="keywordtype">double</span> nz);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classVector2i.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2i.html">Vector2i</a> : <span class="keyword">public</span> <a class="code" href="classVector2.html">Vector2</a>&lt;int&gt; {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i</a>(<span class="keywordtype">int</span> x_, <span class="keywordtype">int</span> y_);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classVector2f.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2f.html">Vector2f</a> : <span class="keyword">public</span> <a class="code" href="classVector2.html">Vector2</a>&lt;float&gt; {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f</a>(<span class="keywordtype">float</span> x_, <span class="keywordtype">float</span> y_);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classVector2d.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector2d.html">Vector2d</a> : <span class="keyword">public</span> <a class="code" href="classVector2.html">Vector2</a>&lt;double&gt; {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d</a>(<span class="keywordtype">double</span> x_, <span class="keywordtype">double</span> y_);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classVector3.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3.html">Vector3</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classVector3.html#a54f99f4211298d5245ea578bdd5143cc">Vector3</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classVector3.html#a54f99f4211298d5245ea578bdd5143cc">Vector3</a>(T x_, T y_, T z_);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classVector3.html#a1a0f7e168c71ca798099f0ba8a444244">   52</a></span>&#160;  T <a class="code" href="classVector3.html#a1a0f7e168c71ca798099f0ba8a444244">x</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classVector3.html#a561df88b28e106e337a25bb86554a569">   53</a></span>&#160;  T <a class="code" href="classVector3.html#a561df88b28e106e337a25bb86554a569">y</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classVector3.html#ab3e7f5401dd6e951978bfa746809f74f">   54</a></span>&#160;  T <a class="code" href="classVector3.html#ab3e7f5401dd6e951978bfa746809f74f">z</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classVector3i.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3i.html">Vector3i</a> : <span class="keyword">public</span> <a class="code" href="classVector3.html">Vector3</a>&lt;int&gt; {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i</a>(<span class="keywordtype">int</span> x_, <span class="keywordtype">int</span> y_, <span class="keywordtype">int</span> z_);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="classVector2f.html">Vector2f</a> <a class="code" href="bbopMathClass_8h.html#a70f52db5c449cc7a2523f75fba5b0d2b">rotatePoint</a>(<a class="code" href="classVector2f.html">Vector2f</a> point, <a class="code" href="classVector2f.html">Vector2f</a> origin, <span class="keywordtype">float</span> angle);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ! MATH_CLASS_H</span></div>
-<div class="ttc" id="abbopMathClass_8h_html_a70f52db5c449cc7a2523f75fba5b0d2b"><div class="ttname"><a href="bbopMathClass_8h.html#a70f52db5c449cc7a2523f75fba5b0d2b">rotatePoint</a></div><div class="ttdeci">Vector2f rotatePoint(Vector2f point, Vector2f origin, float angle)</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:19</div></div>
-<div class="ttc" id="aclassVector2d_html"><div class="ttname"><a href="classVector2d.html">Vector2d</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:27</div></div>
-<div class="ttc" id="aclassVector2d_html_a151efa5a874304b46327130770327810"><div class="ttname"><a href="classVector2d.html#a151efa5a874304b46327130770327810">Vector2d::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:29</div></div>
-<div class="ttc" id="aclassVector2d_html_aa61b1cb70cc682e1bbc29a7b2f72681e"><div class="ttname"><a href="classVector2d.html#aa61b1cb70cc682e1bbc29a7b2f72681e">Vector2d::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:30</div></div>
-<div class="ttc" id="aclassVector2d_html_aa83b58eab6958e63fb0b0084b37ef806"><div class="ttname"><a href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d::Vector2d</a></div><div class="ttdeci">Vector2d()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:6</div></div>
-<div class="ttc" id="aclassVector2f_html"><div class="ttname"><a href="classVector2f.html">Vector2f</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:17</div></div>
-<div class="ttc" id="aclassVector2f_html_a14874a72597fd358b15f8ba34b999c4d"><div class="ttname"><a href="classVector2f.html#a14874a72597fd358b15f8ba34b999c4d">Vector2f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:20</div></div>
-<div class="ttc" id="aclassVector2f_html_a3db9a868c58bc809e5e09a88d65a77ec"><div class="ttname"><a href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f::Vector2f</a></div><div class="ttdeci">Vector2f()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:4</div></div>
-<div class="ttc" id="aclassVector2f_html_add58d2378e3a3abdb76cf0ac51c9acfc"><div class="ttname"><a href="classVector2f.html#add58d2378e3a3abdb76cf0ac51c9acfc">Vector2f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:19</div></div>
-<div class="ttc" id="aclassVector2i_html"><div class="ttname"><a href="classVector2i.html">Vector2i</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:7</div></div>
-<div class="ttc" id="aclassVector2i_html_a9a3ca58ba0f5d84bf305ddca107780d8"><div class="ttname"><a href="classVector2i.html#a9a3ca58ba0f5d84bf305ddca107780d8">Vector2i::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:10</div></div>
-<div class="ttc" id="aclassVector2i_html_ad63e78f71457439cc910f38cfa019b4e"><div class="ttname"><a href="classVector2i.html#ad63e78f71457439cc910f38cfa019b4e">Vector2i::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:9</div></div>
-<div class="ttc" id="aclassVector2i_html_af7591e3b419896ac998a7ed71efc1905"><div class="ttname"><a href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i::Vector2i</a></div><div class="ttdeci">Vector2i()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:8</div></div>
-<div class="ttc" id="aclassVector3d_html"><div class="ttname"><a href="classVector3d.html">Vector3d</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:55</div></div>
-<div class="ttc" id="aclassVector3d_html_a53c889dcd72f16bc0f21c15bb4e8a7ef"><div class="ttname"><a href="classVector3d.html#a53c889dcd72f16bc0f21c15bb4e8a7ef">Vector3d::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:57</div></div>
-<div class="ttc" id="aclassVector3d_html_aac098d8695c4288e4844835e62945244"><div class="ttname"><a href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d::Vector3d</a></div><div class="ttdeci">Vector3d()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:14</div></div>
-<div class="ttc" id="aclassVector3d_html_acda14a15e061a330d4ada509c9357c30"><div class="ttname"><a href="classVector3d.html#acda14a15e061a330d4ada509c9357c30">Vector3d::z</a></div><div class="ttdeci">double z</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:57</div></div>
-<div class="ttc" id="aclassVector3d_html_afafd0a4e0eebb0baa1e35f9d8c98634a"><div class="ttname"><a href="classVector3d.html#afafd0a4e0eebb0baa1e35f9d8c98634a">Vector3d::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:57</div></div>
-<div class="ttc" id="aclassVector3f_html"><div class="ttname"><a href="classVector3f.html">Vector3f</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:46</div></div>
-<div class="ttc" id="aclassVector3f_html_a1b14b77d2503c1b1ca1363163ff55432"><div class="ttname"><a href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f::Vector3f</a></div><div class="ttdeci">Vector3f()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:12</div></div>
-<div class="ttc" id="aclassVector3f_html_a470cff51eb6463672be518f5af4e26db"><div class="ttname"><a href="classVector3f.html#a470cff51eb6463672be518f5af4e26db">Vector3f::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:48</div></div>
-<div class="ttc" id="aclassVector3f_html_a4aca0751716b7099b397e8c63b16bfcf"><div class="ttname"><a href="classVector3f.html#a4aca0751716b7099b397e8c63b16bfcf">Vector3f::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:48</div></div>
-<div class="ttc" id="aclassVector3f_html_a8a602e2ee75126feb520c2aa27e7eff5"><div class="ttname"><a href="classVector3f.html#a8a602e2ee75126feb520c2aa27e7eff5">Vector3f::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:48</div></div>
-<div class="ttc" id="aclassVector3i_html"><div class="ttname"><a href="classVector3i.html">Vector3i</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:37</div></div>
-<div class="ttc" id="aclassVector3i_html_a2c34a7c1fa8609357fdf18f0028593d3"><div class="ttname"><a href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i::Vector3i</a></div><div class="ttdeci">Vector3i()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:10</div></div>
-<div class="ttc" id="aclassVector3i_html_a3240ce93f7dba7791a96787bcecd22fb"><div class="ttname"><a href="classVector3i.html#a3240ce93f7dba7791a96787bcecd22fb">Vector3i::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:39</div></div>
-<div class="ttc" id="aclassVector3i_html_ac1328128871b8d1b27196315d9779730"><div class="ttname"><a href="classVector3i.html#ac1328128871b8d1b27196315d9779730">Vector3i::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:39</div></div>
-<div class="ttc" id="aclassVector3i_html_ada0aeebd1dcfe811bfea8e1d85e32bba"><div class="ttname"><a href="classVector3i.html#ada0aeebd1dcfe811bfea8e1d85e32bba">Vector3i::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:39</div></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classVector3f.html">   63</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3f.html">Vector3f</a> : <span class="keyword">public</span> <a class="code" href="classVector3.html">Vector3</a>&lt;float&gt; {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f</a>(<span class="keywordtype">float</span> x_, <span class="keywordtype">float</span> y_, <span class="keywordtype">float</span> z_);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classVector3d.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector3d.html">Vector3d</a> : <span class="keyword">public</span> <a class="code" href="classVector3.html">Vector3</a>&lt;double&gt; {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>(<span class="keywordtype">double</span> x_, <span class="keywordtype">double</span> y_, <span class="keywordtype">double</span> z_);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classVector4.html">   81</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVector4.html">Vector4</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classVector4.html#afdef97d94e5697622b5322637028accf">Vector4</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classVector4.html#afdef97d94e5697622b5322637028accf">Vector4</a>(T x_, T y_, T z_, T w_);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classVector4.html#a2cedf20d2f695a4f0254681b13311ac9">   87</a></span>&#160;  T <a class="code" href="classVector4.html#a2cedf20d2f695a4f0254681b13311ac9">x</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classVector4.html#aad001ba27515dc2dcb921e9c83596520">   88</a></span>&#160;  T <a class="code" href="classVector4.html#aad001ba27515dc2dcb921e9c83596520">y</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classVector4.html#a5a7a1452d661e0b24e4b04c4dbff8ae7">   89</a></span>&#160;  T <a class="code" href="classVector4.html#a5a7a1452d661e0b24e4b04c4dbff8ae7">z</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classVector4.html#a83daff43fa2b88b4e76474f4b9a45276">   90</a></span>&#160;  T <a class="code" href="classVector4.html#a83daff43fa2b88b4e76474f4b9a45276">w</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ! MATH_CLASS_H</span></div>
+<div class="ttc" id="aclassVector2_html"><div class="ttname"><a href="classVector2.html">Vector2</a></div><div class="ttdoc">Stock deux valeurs.</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:13</div></div>
+<div class="ttc" id="aclassVector2_html_a6cfed8355591aa269f4dba43bd806ef9"><div class="ttname"><a href="classVector2.html#a6cfed8355591aa269f4dba43bd806ef9">Vector2::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:19</div></div>
+<div class="ttc" id="aclassVector2_html_a78fa1f2ed5e261c7fbeb8f3536a1ee34"><div class="ttname"><a href="classVector2.html#a78fa1f2ed5e261c7fbeb8f3536a1ee34">Vector2::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:18</div></div>
+<div class="ttc" id="aclassVector2_html_ae2f1223cb0d664aa73afb789086a4174"><div class="ttname"><a href="classVector2.html#ae2f1223cb0d664aa73afb789086a4174">Vector2::Vector2</a></div><div class="ttdeci">Vector2()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:4</div></div>
+<div class="ttc" id="aclassVector2d_html"><div class="ttname"><a href="classVector2d.html">Vector2d</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:34</div></div>
+<div class="ttc" id="aclassVector2d_html_aa83b58eab6958e63fb0b0084b37ef806"><div class="ttname"><a href="classVector2d.html#aa83b58eab6958e63fb0b0084b37ef806">Vector2d::Vector2d</a></div><div class="ttdeci">Vector2d()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:20</div></div>
+<div class="ttc" id="aclassVector2f_html"><div class="ttname"><a href="classVector2f.html">Vector2f</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:28</div></div>
+<div class="ttc" id="aclassVector2f_html_a3db9a868c58bc809e5e09a88d65a77ec"><div class="ttname"><a href="classVector2f.html#a3db9a868c58bc809e5e09a88d65a77ec">Vector2f::Vector2f</a></div><div class="ttdeci">Vector2f()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:15</div></div>
+<div class="ttc" id="aclassVector2i_html"><div class="ttname"><a href="classVector2i.html">Vector2i</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:22</div></div>
+<div class="ttc" id="aclassVector2i_html_af7591e3b419896ac998a7ed71efc1905"><div class="ttname"><a href="classVector2i.html#af7591e3b419896ac998a7ed71efc1905">Vector2i::Vector2i</a></div><div class="ttdeci">Vector2i()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:10</div></div>
+<div class="ttc" id="aclassVector3_html"><div class="ttname"><a href="classVector3.html">Vector3</a></div><div class="ttdoc">Stock trois valeurs.</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:47</div></div>
+<div class="ttc" id="aclassVector3_html_a1a0f7e168c71ca798099f0ba8a444244"><div class="ttname"><a href="classVector3.html#a1a0f7e168c71ca798099f0ba8a444244">Vector3::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:52</div></div>
+<div class="ttc" id="aclassVector3_html_a54f99f4211298d5245ea578bdd5143cc"><div class="ttname"><a href="classVector3.html#a54f99f4211298d5245ea578bdd5143cc">Vector3::Vector3</a></div><div class="ttdeci">Vector3()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:25</div></div>
+<div class="ttc" id="aclassVector3_html_a561df88b28e106e337a25bb86554a569"><div class="ttname"><a href="classVector3.html#a561df88b28e106e337a25bb86554a569">Vector3::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:53</div></div>
+<div class="ttc" id="aclassVector3_html_ab3e7f5401dd6e951978bfa746809f74f"><div class="ttname"><a href="classVector3.html#ab3e7f5401dd6e951978bfa746809f74f">Vector3::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:54</div></div>
+<div class="ttc" id="aclassVector3d_html"><div class="ttname"><a href="classVector3d.html">Vector3d</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:69</div></div>
+<div class="ttc" id="aclassVector3d_html_aac098d8695c4288e4844835e62945244"><div class="ttname"><a href="classVector3d.html#aac098d8695c4288e4844835e62945244">Vector3d::Vector3d</a></div><div class="ttdeci">Vector3d()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:41</div></div>
+<div class="ttc" id="aclassVector3f_html"><div class="ttname"><a href="classVector3f.html">Vector3f</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:63</div></div>
+<div class="ttc" id="aclassVector3f_html_a1b14b77d2503c1b1ca1363163ff55432"><div class="ttname"><a href="classVector3f.html#a1b14b77d2503c1b1ca1363163ff55432">Vector3f::Vector3f</a></div><div class="ttdeci">Vector3f()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:36</div></div>
+<div class="ttc" id="aclassVector3i_html"><div class="ttname"><a href="classVector3i.html">Vector3i</a></div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:57</div></div>
+<div class="ttc" id="aclassVector3i_html_a2c34a7c1fa8609357fdf18f0028593d3"><div class="ttname"><a href="classVector3i.html#a2c34a7c1fa8609357fdf18f0028593d3">Vector3i::Vector3i</a></div><div class="ttdeci">Vector3i()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:31</div></div>
+<div class="ttc" id="aclassVector4_html"><div class="ttname"><a href="classVector4.html">Vector4</a></div><div class="ttdoc">Stock quatre valeurs.</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:82</div></div>
+<div class="ttc" id="aclassVector4_html_a2cedf20d2f695a4f0254681b13311ac9"><div class="ttname"><a href="classVector4.html#a2cedf20d2f695a4f0254681b13311ac9">Vector4::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:87</div></div>
+<div class="ttc" id="aclassVector4_html_a5a7a1452d661e0b24e4b04c4dbff8ae7"><div class="ttname"><a href="classVector4.html#a5a7a1452d661e0b24e4b04c4dbff8ae7">Vector4::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:89</div></div>
+<div class="ttc" id="aclassVector4_html_a83daff43fa2b88b4e76474f4b9a45276"><div class="ttname"><a href="classVector4.html#a83daff43fa2b88b4e76474f4b9a45276">Vector4::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:90</div></div>
+<div class="ttc" id="aclassVector4_html_aad001ba27515dc2dcb921e9c83596520"><div class="ttname"><a href="classVector4.html#aad001ba27515dc2dcb921e9c83596520">Vector4::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> bbopMathClass.h:88</div></div>
+<div class="ttc" id="aclassVector4_html_afdef97d94e5697622b5322637028accf"><div class="ttname"><a href="classVector4.html#afdef97d94e5697622b5322637028accf">Vector4::Vector4</a></div><div class="ttdeci">Vector4()</div><div class="ttdef"><b>Definition:</b> bbopMathClass.cpp:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

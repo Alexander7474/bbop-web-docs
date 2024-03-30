@@ -33,10 +33,51 @@ Collaboration diagram for Shape\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classShape_a4226dfc8b139b36d995b583b8e940681}{Shape}} (GLfloat $\ast$vertices, GLsizeiptr vertices\+Size, GLuint $\ast$indices, GLsizeiptr indices\+Size)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classShape_a5616a680b154c1460a7fc0fb0b2ab1d2}{init\+Shape}} (GLfloat $\ast$vertices, GLsizeiptr vertices\+Size, GLuint $\ast$indices, GLsizeiptr indices\+Size)
+\begin{DoxyCompactList}\small\item\em Initialise la \mbox{\hyperlink{classShape}{Shape}} comme sont constructeur. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classShape_a7198b7b0d7dedae7914e6af66ee59494}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la Taille du \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_aa3674a30abfb72cdaea47333a20a8e56}{set\+Size}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Size)
+\begin{DoxyCompactList}\small\item\em Change la taille du \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_af7999a07b0092bbfe670964c8b062c16}{set\+Size}} (float x\+\_\+, float y\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change la taille du \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classShape_a2b112d8efdfb9dc0ef3b648592eb7fc0}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la position du \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_ab99797be933539ee6f0c7d00ed84fe2f}{set\+Position}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Pos)
+\begin{DoxyCompactList}\small\item\em Change la position du \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a276dcbeadda78388307bd278cdcbfe55}{set\+Position}} (float x\+\_\+, float y\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change la position de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classShape_a73098aea0a59bb7afccddd5ad0a9e66d}{get\+Origin}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a87892a43869e05f2d41b1bcf31004650}{set\+Origin}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Origin)
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a80be491c6375feb48308a2eb9d2f478e}{set\+Origin}} (float x\+\_\+, float y\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classVector3i}{Vector3i}} \& \mbox{\hyperlink{classShape_a5f245f681b777a14d5e503830b9823c8}{get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la couleur de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_ab635f4e20db08b309744f97cdf34e8f4}{set\+Color}} (const \mbox{\hyperlink{classVector3i}{Vector3i}} \&n\+RGB)
+\begin{DoxyCompactList}\small\item\em Change la couleur de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_aff166125c810e91252697261abbb4c60}{set\+Color}} (int x\+\_\+, int y\+\_\+, int z\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change la couleur de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classShape_ae78719a18cecb5031d4b8cd82632946a}{get\+Alpha}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la transaprence du la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a5dd20df11726c23df7cafb068615a9d6}{set\+Alpha}} (float n\+Alpha)
+\begin{DoxyCompactList}\small\item\em Change la transaprence de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classShape_af42fdc23b15b0df16053b6df0c9125b1}{get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la rotation de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a54928fc5424c4d183dd3d65ee072d8a8}{set\+Rotation}} (float n\+Rotation)
+\begin{DoxyCompactList}\small\item\em Change la rotation de la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \& \mbox{\hyperlink{classShape_a97ebcc2fa4c33a910063cbb53e1b5892}{get\+Collision\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie la boîte de collision de \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}{set\+Auto\+Update\+Collision}} (bool etat)
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}état de l\textquotesingle{}automatisation de la mise a jour de la boîte de collision. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a6422e2d9f7dfc2002175d573e39a4533}{move}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&vecM)
+\begin{DoxyCompactList}\small\item\em Déplace la \mbox{\hyperlink{classShape}{Shape}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{classShape_a77e01d8e6b81372c74c27abb137edb97}{build\+VAO}} ()=0
 \item 
@@ -45,36 +86,6 @@ virtual void \mbox{\hyperlink{classShape_a0bd6fb14dd56a06c5e31660b9ad49089}{upda
 virtual void \mbox{\hyperlink{classShape_a70b8ee5551305947c1161e794a6d719a}{update\+VBORGB}} ()=0
 \item 
 virtual void \mbox{\hyperlink{classShape_a385d7399b1d55b51f2174fec54dd3d34}{update\+VBOAlpha}} ()=0
-\item 
-\mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classShape_abbf30e0103c812f050f6d74b09cbcaee}{get\+Size}} ()
-\item 
-void \mbox{\hyperlink{classShape_ae1f71c5919fbbdb98301d41eb64e7803}{set\+Size}} (\mbox{\hyperlink{classVector2f}{Vector2f}} n\+Size)
-\item 
-\mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classShape_a0425b03b0edf707e04a0a5824bbba8e3}{get\+Position}} ()
-\item 
-void \mbox{\hyperlink{classShape_aadfa3d41f2304b95852ad17d8b1a715e}{set\+Position}} (\mbox{\hyperlink{classVector2f}{Vector2f}} n\+Pos)
-\item 
-\mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classShape_a19723ec91011e2040811015497adb820}{get\+Origin}} ()
-\item 
-void \mbox{\hyperlink{classShape_acca2b760b74a9017b1bd3fb72c35eb46}{set\+Origin}} (\mbox{\hyperlink{classVector2f}{Vector2f}} n\+Origin)
-\item 
-\mbox{\hyperlink{classVector3i}{Vector3i}} \mbox{\hyperlink{classShape_a510f23a7e068425f9a58f6fa4c332698}{get\+Color}} ()
-\item 
-void \mbox{\hyperlink{classShape_a1d0ca11da5def2b96d5dd40ab6a7ba4a}{set\+Color}} (\mbox{\hyperlink{classVector3i}{Vector3i}} n\+RGB)
-\item 
-float \mbox{\hyperlink{classShape_a26023858e92299f689c92422a2b24418}{get\+Alpha}} ()
-\item 
-void \mbox{\hyperlink{classShape_a5dd20df11726c23df7cafb068615a9d6}{set\+Alpha}} (float n\+Alpha)
-\item 
-float \mbox{\hyperlink{classShape_a5209a1340f8c76bc5daf82e5c3e86467}{get\+Rotation}} ()
-\item 
-void \mbox{\hyperlink{classShape_a54928fc5424c4d183dd3d65ee072d8a8}{set\+Rotation}} (float n\+Rotation)
-\item 
-\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $\ast$ \mbox{\hyperlink{classShape_a5ec4eccdd82030950dee2aebc8e7673a}{get\+Collision\+Box}} ()
-\item 
-void \mbox{\hyperlink{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}{set\+Auto\+Update\+Collision}} (bool etat)
-\item 
-void \mbox{\hyperlink{classShape_a3a31ec7b9c424a9a882bbab5c2ee7f26}{move}} (\mbox{\hyperlink{classVector2f}{Vector2f}} vecM)
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -111,6 +122,12 @@ Elle stock et gère tous les attribut de base d\textquotesingle{}une forme géom
 \begin{DoxyAttention}{Attention}
 Certaine \mbox{\hyperlink{classShape}{Shape}} utilise des attributs de cette class parent de manière différente donc renseignez vous sur les shapes que vous utilisez 
 \end{DoxyAttention}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Créer une class pour représenter les objet avec une position, une scale et une rotation dont shape héritera 
+
+optimiser les constructeurs des \mbox{\hyperlink{classShape}{Shape}} 
+
+Ajouter les destructeur/delete des VAO/\+VBO/\+EBO/\+Texture \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -120,6 +137,10 @@ Certaine \mbox{\hyperlink{classShape}{Shape}} utilise des attributs de cette cla
 \doxysubsubsection{\texorpdfstring{Shape()}{Shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Shape\+::\+Shape (\begin{DoxyParamCaption}\item[{GLfloat $\ast$}]{vertices,  }\item[{GLsizeiptr}]{vertices\+Size,  }\item[{GLuint $\ast$}]{indices,  }\item[{GLsizeiptr}]{indices\+Size }\end{DoxyParamCaption})}
 
+
+
+Constructeur de \mbox{\hyperlink{classShape}{Shape}}. 
+
 \mbox{\Hypertarget{classShape_aaa8d87171e65e0d8ba3c5459978992a7}\label{classShape_aaa8d87171e65e0d8ba3c5459978992a7}} 
 \index{Shape@{Shape}!Shape@{Shape}}
 \index{Shape@{Shape}!Shape@{Shape}}
@@ -128,142 +149,341 @@ Certaine \mbox{\hyperlink{classShape}{Shape}} utilise des attributs de cette cla
 
 
 
+Constructeur par défault de \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classShape_a77e01d8e6b81372c74c27abb137edb97}\label{classShape_a77e01d8e6b81372c74c27abb137edb97}} 
 \index{Shape@{Shape}!buildVAO@{buildVAO}}
 \index{buildVAO@{buildVAO}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{buildVAO()}{buildVAO()}}
-{\footnotesize\ttfamily virtual void Shape\+::build\+VAO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Shape\+::build\+VAO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classSprite_a58ba7f507127d4e81ffe00be7d59c0bc}{Sprite}}, \mbox{\hyperlink{classConvexShape_a93443885dabe8612ccf4a9d40c13f0bf}{Convex\+Shape}}, and \mbox{\hyperlink{classRectangleShape_ae60e5869586f6df019f08919110b5666}{Rectangle\+Shape}}.
+Implemented in \mbox{\hyperlink{classSprite_a58ba7f507127d4e81ffe00be7d59c0bc}{Sprite}}.
 
-\mbox{\Hypertarget{classShape_a26023858e92299f689c92422a2b24418}\label{classShape_a26023858e92299f689c92422a2b24418}} 
+\mbox{\Hypertarget{classShape_ae78719a18cecb5031d4b8cd82632946a}\label{classShape_ae78719a18cecb5031d4b8cd82632946a}} 
 \index{Shape@{Shape}!getAlpha@{getAlpha}}
 \index{getAlpha@{getAlpha}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getAlpha()}{getAlpha()}}
-{\footnotesize\ttfamily float Shape\+::get\+Alpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Shape\+::get\+Alpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_a5ec4eccdd82030950dee2aebc8e7673a}\label{classShape_a5ec4eccdd82030950dee2aebc8e7673a}} 
+
+
+Renvoie la transaprence du la \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+alpha 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a97ebcc2fa4c33a910063cbb53e1b5892}\label{classShape_a97ebcc2fa4c33a910063cbb53e1b5892}} 
 \index{Shape@{Shape}!getCollisionBox@{getCollisionBox}}
 \index{getCollisionBox@{getCollisionBox}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getCollisionBox()}{getCollisionBox()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $\ast$ Shape\+::get\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \& Shape\+::get\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_a510f23a7e068425f9a58f6fa4c332698}\label{classShape_a510f23a7e068425f9a58f6fa4c332698}} 
+
+
+Renvoie la boîte de collision de \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+shape\+Collision\+Box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a5f245f681b777a14d5e503830b9823c8}\label{classShape_a5f245f681b777a14d5e503830b9823c8}} 
 \index{Shape@{Shape}!getColor@{getColor}}
 \index{getColor@{getColor}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector3i}{Vector3i}} Shape\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3i}{Vector3i}} \& Shape\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_a19723ec91011e2040811015497adb820}\label{classShape_a19723ec91011e2040811015497adb820}} 
+
+
+Renvoie la couleur de \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+RGB couleur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a73098aea0a59bb7afccddd5ad0a9e66d}\label{classShape_a73098aea0a59bb7afccddd5ad0a9e66d}} 
 \index{Shape@{Shape}!getOrigin@{getOrigin}}
 \index{getOrigin@{getOrigin}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Shape\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Shape\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_a0425b03b0edf707e04a0a5824bbba8e3}\label{classShape_a0425b03b0edf707e04a0a5824bbba8e3}} 
+
+
+Renvoie l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+origin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a2b112d8efdfb9dc0ef3b648592eb7fc0}\label{classShape_a2b112d8efdfb9dc0ef3b648592eb7fc0}} 
 \index{Shape@{Shape}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Shape\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Shape\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_a5209a1340f8c76bc5daf82e5c3e86467}\label{classShape_a5209a1340f8c76bc5daf82e5c3e86467}} 
+
+
+Renvoie la position du \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+pos position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_af42fdc23b15b0df16053b6df0c9125b1}\label{classShape_af42fdc23b15b0df16053b6df0c9125b1}} 
 \index{Shape@{Shape}!getRotation@{getRotation}}
 \index{getRotation@{getRotation}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
-{\footnotesize\ttfamily float Shape\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Shape\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classShape_abbf30e0103c812f050f6d74b09cbcaee}\label{classShape_abbf30e0103c812f050f6d74b09cbcaee}} 
+
+
+Renvoie la rotation de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+rotation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShape_a7198b7b0d7dedae7914e6af66ee59494}\label{classShape_a7198b7b0d7dedae7914e6af66ee59494}} 
 \index{Shape@{Shape}!getSize@{getSize}}
 \index{getSize@{getSize}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Shape\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Shape\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Renvoie la Taille du \mbox{\hyperlink{classShape}{Shape}}. 
+
+\begin{DoxyReturn}{Returns}
+size taille 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classShape_a5616a680b154c1460a7fc0fb0b2ab1d2}\label{classShape_a5616a680b154c1460a7fc0fb0b2ab1d2}} 
 \index{Shape@{Shape}!initShape@{initShape}}
 \index{initShape@{initShape}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{initShape()}{initShape()}}
 {\footnotesize\ttfamily void Shape\+::init\+Shape (\begin{DoxyParamCaption}\item[{GLfloat $\ast$}]{vertices,  }\item[{GLsizeiptr}]{vertices\+Size,  }\item[{GLuint $\ast$}]{indices,  }\item[{GLsizeiptr}]{indices\+Size }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classShape_a3a31ec7b9c424a9a882bbab5c2ee7f26}\label{classShape_a3a31ec7b9c424a9a882bbab5c2ee7f26}} 
+
+
+Initialise la \mbox{\hyperlink{classShape}{Shape}} comme sont constructeur. 
+
+\mbox{\Hypertarget{classShape_a6422e2d9f7dfc2002175d573e39a4533}\label{classShape_a6422e2d9f7dfc2002175d573e39a4533}} 
 \index{Shape@{Shape}!move@{move}}
 \index{move@{move}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void Shape\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{vecM }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Shape\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{vecM }\end{DoxyParamCaption})}
 
+
+
+Déplace la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vecM} & vecteur de mouvement \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classShape_a5dd20df11726c23df7cafb068615a9d6}\label{classShape_a5dd20df11726c23df7cafb068615a9d6}} 
 \index{Shape@{Shape}!setAlpha@{setAlpha}}
 \index{setAlpha@{setAlpha}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{setAlpha()}{setAlpha()}}
 {\footnotesize\ttfamily void Shape\+::set\+Alpha (\begin{DoxyParamCaption}\item[{float}]{n\+Alpha }\end{DoxyParamCaption})}
 
+
+
+Change la transaprence de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+Alpha} & transparence \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}\label{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}} 
 \index{Shape@{Shape}!setAutoUpdateCollision@{setAutoUpdateCollision}}
 \index{setAutoUpdateCollision@{setAutoUpdateCollision}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{setAutoUpdateCollision()}{setAutoUpdateCollision()}}
 {\footnotesize\ttfamily void Shape\+::set\+Auto\+Update\+Collision (\begin{DoxyParamCaption}\item[{bool}]{etat }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classShape_a1d0ca11da5def2b96d5dd40ab6a7ba4a}\label{classShape_a1d0ca11da5def2b96d5dd40ab6a7ba4a}} 
+
+
+Change l\textquotesingle{}état de l\textquotesingle{}automatisation de la mise a jour de la boîte de collision. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em etat} & activation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_ab635f4e20db08b309744f97cdf34e8f4}\label{classShape_ab635f4e20db08b309744f97cdf34e8f4}} 
 \index{Shape@{Shape}!setColor@{setColor}}
 \index{setColor@{setColor}!Shape@{Shape}}
-\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
-{\footnotesize\ttfamily void Shape\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3i}{Vector3i}} \&}]{n\+RGB }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classShape_acca2b760b74a9017b1bd3fb72c35eb46}\label{classShape_acca2b760b74a9017b1bd3fb72c35eb46}} 
+
+
+Change la couleur de \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+RGB} & couleur en rgb \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_aff166125c810e91252697261abbb4c60}\label{classShape_aff166125c810e91252697261abbb4c60}} 
+\index{Shape@{Shape}!setColor@{setColor}}
+\index{setColor@{setColor}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Color (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+,  }\item[{int}]{z\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change la couleur de \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & rouge \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & vert \\
+\hline
+\mbox{\texttt{ in}}  & {\em z\+\_\+} & bleu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_a87892a43869e05f2d41b1bcf31004650}\label{classShape_a87892a43869e05f2d41b1bcf31004650}} 
 \index{Shape@{Shape}!setOrigin@{setOrigin}}
 \index{setOrigin@{setOrigin}!Shape@{Shape}}
-\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
-{\footnotesize\ttfamily void Shape\+::set\+Origin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Origin }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classShape_aadfa3d41f2304b95852ad17d8b1a715e}\label{classShape_aadfa3d41f2304b95852ad17d8b1a715e}} 
+
+
+Change l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+Origin} & origin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_a80be491c6375feb48308a2eb9d2f478e}\label{classShape_a80be491c6375feb48308a2eb9d2f478e}} 
+\index{Shape@{Shape}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Origin (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+,  }\item[{float}]{y\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change l\textquotesingle{}origine de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & origine x \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & origine y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_ab99797be933539ee6f0c7d00ed84fe2f}\label{classShape_ab99797be933539ee6f0c7d00ed84fe2f}} 
 \index{Shape@{Shape}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Shape@{Shape}}
-\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Shape\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Pos }\end{DoxyParamCaption})}
 
+
+
+Change la position du \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+Pos} & position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_a276dcbeadda78388307bd278cdcbfe55}\label{classShape_a276dcbeadda78388307bd278cdcbfe55}} 
+\index{Shape@{Shape}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+,  }\item[{float}]{y\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change la position de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & position x \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & position y \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classShape_a54928fc5424c4d183dd3d65ee072d8a8}\label{classShape_a54928fc5424c4d183dd3d65ee072d8a8}} 
 \index{Shape@{Shape}!setRotation@{setRotation}}
 \index{setRotation@{setRotation}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
 {\footnotesize\ttfamily void Shape\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classShape_ae1f71c5919fbbdb98301d41eb64e7803}\label{classShape_ae1f71c5919fbbdb98301d41eb64e7803}} 
+
+
+Change la rotation de la \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+Rotation} & rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_aa3674a30abfb72cdaea47333a20a8e56}\label{classShape_aa3674a30abfb72cdaea47333a20a8e56}} 
 \index{Shape@{Shape}!setSize@{setSize}}
 \index{setSize@{setSize}!Shape@{Shape}}
-\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
-{\footnotesize\ttfamily void Shape\+::set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Size }\end{DoxyParamCaption})}
 
+
+
+Change la taille du \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n\+Size} & taille \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShape_af7999a07b0092bbfe670964c8b062c16}\label{classShape_af7999a07b0092bbfe670964c8b062c16}} 
+\index{Shape@{Shape}!setSize@{setSize}}
+\index{setSize@{setSize}!Shape@{Shape}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Shape\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+,  }\item[{float}]{y\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change la taille du \mbox{\hyperlink{classShape}{Shape}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & taille x \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & taille y \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classShape_a0bd6fb14dd56a06c5e31660b9ad49089}\label{classShape_a0bd6fb14dd56a06c5e31660b9ad49089}} 
 \index{Shape@{Shape}!updateVBO@{updateVBO}}
 \index{updateVBO@{updateVBO}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{updateVBO()}{updateVBO()}}
-{\footnotesize\ttfamily virtual void Shape\+::update\+VBO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Shape\+::update\+VBO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classSprite_ab8de3004c927130c36f888ec52712f0a}{Sprite}}, \mbox{\hyperlink{classConvexShape_af678588028c88a130a5d3103fca9d483}{Convex\+Shape}}, and \mbox{\hyperlink{classRectangleShape_aa602c956e57030e200fe6c21219d3b8e}{Rectangle\+Shape}}.
+Implemented in \mbox{\hyperlink{classSprite_ab8de3004c927130c36f888ec52712f0a}{Sprite}}.
 
 \mbox{\Hypertarget{classShape_a385d7399b1d55b51f2174fec54dd3d34}\label{classShape_a385d7399b1d55b51f2174fec54dd3d34}} 
 \index{Shape@{Shape}!updateVBOAlpha@{updateVBOAlpha}}
 \index{updateVBOAlpha@{updateVBOAlpha}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{updateVBOAlpha()}{updateVBOAlpha()}}
-{\footnotesize\ttfamily virtual void Shape\+::update\+VBOAlpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Shape\+::update\+VBOAlpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classSprite_a43628352a0e151acdb3b68c9be2c9109}{Sprite}}, \mbox{\hyperlink{classConvexShape_a9f4decb39b41fb1c7147a2c985b3da21}{Convex\+Shape}}, and \mbox{\hyperlink{classRectangleShape_a2c916c5b4f01b642d7d2cdde7182b758}{Rectangle\+Shape}}.
+Implemented in \mbox{\hyperlink{classSprite_a43628352a0e151acdb3b68c9be2c9109}{Sprite}}.
 
 \mbox{\Hypertarget{classShape_a70b8ee5551305947c1161e794a6d719a}\label{classShape_a70b8ee5551305947c1161e794a6d719a}} 
 \index{Shape@{Shape}!updateVBORGB@{updateVBORGB}}
 \index{updateVBORGB@{updateVBORGB}!Shape@{Shape}}
 \doxysubsubsection{\texorpdfstring{updateVBORGB()}{updateVBORGB()}}
-{\footnotesize\ttfamily virtual void Shape\+::update\+VBORGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Shape\+::update\+VBORGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classSprite_ab0926ec6fb759d24b1df3eab12f2a70e}{Sprite}}, \mbox{\hyperlink{classConvexShape_a3baf712c1793ebd9a35e0896c1beb349}{Convex\+Shape}}, and \mbox{\hyperlink{classRectangleShape_ad9c93fce07cec2da86355d787f33f739}{Rectangle\+Shape}}.
+Implemented in \mbox{\hyperlink{classSprite_ab0926ec6fb759d24b1df3eab12f2a70e}{Sprite}}.
 
 
 

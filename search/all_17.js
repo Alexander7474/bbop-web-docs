@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['_7econvexshape_189',['~ConvexShape',['../classConvexShape.html#acc0bda1a2bd265e50e3a64d6bf6ff6c7',1,'ConvexShape']]],
-  ['_7escene_190',['~Scene',['../classScene.html#a3b8cec2e32546713915f8c6303c951f1',1,'Scene']]],
-  ['_7esprite_191',['~Sprite',['../classSprite.html#a8accab430f9d90ae5117b57d67e32b84',1,'Sprite']]],
-  ['_7etextebox_192',['~TexteBox',['../classTexteBox.html#a2020c2579996cd680fa25ea0bc7da7f3',1,'TexteBox']]]
+  ['z_194',['z',['../classVector3.html#ab3e7f5401dd6e951978bfa746809f74f',1,'Vector3::z()'],['../classVector4.html#a5a7a1452d661e0b24e4b04c4dbff8ae7',1,'Vector4::z()']]]
 ];

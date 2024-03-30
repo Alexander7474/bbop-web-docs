@@ -33,9 +33,9 @@ Collaboration diagram for Convex\+Shape\+:
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classConvexShape_aff46a85c87a2bfab8ef3b313618b03ab}{Convex\+Shape}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de la convex. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classConvexShape_a7ba1b7e712dce4c3012198913153379a}{Convex\+Shape}} (int nn\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$nlist\+Point)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de la convex. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classConvexShape_accceffffb134ae8ac7f5e45c9862591d}{Convex\+Shape}} (int nn\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$nlist\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} n\+Size, \mbox{\hyperlink{classVector2f}{Vector2f}} n\+Pos)
 \item 
 \mbox{\hyperlink{classConvexShape_a0a874bb7fb13108b125ccb9619d05c92}{Convex\+Shape}} (int nn\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$nlist\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} n\+Size, \mbox{\hyperlink{classVector2f}{Vector2f}} n\+Pos, \mbox{\hyperlink{classVector3i}{Vector3i}} n\+RGB, \mbox{\hyperlink{classVector2f}{Vector2f}} n\+Origin)
@@ -49,15 +49,7 @@ Collaboration diagram for Convex\+Shape\+:
 \mbox{\hyperlink{classConvexShape}{Convex\+Shape}} \& \mbox{\hyperlink{classConvexShape_acb4e6c079deca6cb0b3fda2c44fa8f9e}{operator=}} (const \mbox{\hyperlink{classConvexShape}{Convex\+Shape}} \&other)
 \item 
 void \mbox{\hyperlink{classConvexShape_a453050d756ba196d902b48257364a7a4}{init\+Convex}} (int nn\+Point, \mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$nlist\+Point)
-\item 
-void \mbox{\hyperlink{classConvexShape_a93443885dabe8612ccf4a9d40c13f0bf}{build\+VAO}} () override
-\item 
-void \mbox{\hyperlink{classConvexShape_af678588028c88a130a5d3103fca9d483}{update\+VBO}} () override
-\item 
-void \mbox{\hyperlink{classConvexShape_a3baf712c1793ebd9a35e0896c1beb349}{update\+VBORGB}} () override
-\item 
-void \mbox{\hyperlink{classConvexShape_a9f4decb39b41fb1c7147a2c985b3da21}{update\+VBOAlpha}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initialise la convex comme le constructeur. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classConvexShape_a4963a13641d5e3284cba8f8ccaf8551e}{Draw}} (GLint render\+Mode\+Loc) const override
 \begin{DoxyCompactList}\small\item\em Déssine l\textquotesingle{}objet héritant de la class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
@@ -73,12 +65,30 @@ Gère une convex.
 \doxysubsubsection{\texorpdfstring{ConvexShape()}{ConvexShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
 {\footnotesize\ttfamily Convex\+Shape\+::\+Convex\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Constructeur par défault de la convex. 
+
+\begin{DoxyNote}{Note}
+Utiliser init\+Convex avant d\textquotesingle{}utiliser la convex 
+\end{DoxyNote}
 \mbox{\Hypertarget{classConvexShape_a7ba1b7e712dce4c3012198913153379a}\label{classConvexShape_a7ba1b7e712dce4c3012198913153379a}} 
 \index{ConvexShape@{ConvexShape}!ConvexShape@{ConvexShape}}
 \index{ConvexShape@{ConvexShape}!ConvexShape@{ConvexShape}}
 \doxysubsubsection{\texorpdfstring{ConvexShape()}{ConvexShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
 {\footnotesize\ttfamily Convex\+Shape\+::\+Convex\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$}]{nlist\+Point }\end{DoxyParamCaption})}
 
+
+
+Constructeur de la convex. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nn\+Point} & Lombre de point de la convex \\
+\hline
+\mbox{\texttt{ in}}  & {\em nlist\+Point} & Liste de poitn de la convex \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classConvexShape_accceffffb134ae8ac7f5e45c9862591d}\label{classConvexShape_accceffffb134ae8ac7f5e45c9862591d}} 
 \index{ConvexShape@{ConvexShape}!ConvexShape@{ConvexShape}}
 \index{ConvexShape@{ConvexShape}!ConvexShape@{ConvexShape}}
@@ -112,16 +122,6 @@ Gère une convex.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classConvexShape_a93443885dabe8612ccf4a9d40c13f0bf}\label{classConvexShape_a93443885dabe8612ccf4a9d40c13f0bf}} 
-\index{ConvexShape@{ConvexShape}!buildVAO@{buildVAO}}
-\index{buildVAO@{buildVAO}!ConvexShape@{ConvexShape}}
-\doxysubsubsection{\texorpdfstring{buildVAO()}{buildVAO()}}
-{\footnotesize\ttfamily void Convex\+Shape\+::build\+VAO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{classShape_a77e01d8e6b81372c74c27abb137edb97}{Shape}}.
-
 \mbox{\Hypertarget{classConvexShape_a4963a13641d5e3284cba8f8ccaf8551e}\label{classConvexShape_a4963a13641d5e3284cba8f8ccaf8551e}} 
 \index{ConvexShape@{ConvexShape}!Draw@{Draw}}
 \index{Draw@{Draw}!ConvexShape@{ConvexShape}}
@@ -147,41 +147,22 @@ Implements \mbox{\hyperlink{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}
 \doxysubsubsection{\texorpdfstring{initConvex()}{initConvex()}}
 {\footnotesize\ttfamily void Convex\+Shape\+::init\+Convex (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}} $\ast$}]{nlist\+Point }\end{DoxyParamCaption})}
 
+
+
+Initialise la convex comme le constructeur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nn\+Point} & nombre de points de la convex \\
+\hline
+\mbox{\texttt{ in}}  & {\em nlist\+Point} & list de point de la convex \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classConvexShape_acb4e6c079deca6cb0b3fda2c44fa8f9e}\label{classConvexShape_acb4e6c079deca6cb0b3fda2c44fa8f9e}} 
 \index{ConvexShape@{ConvexShape}!operator=@{operator=}}
 \index{operator=@{operator=}!ConvexShape@{ConvexShape}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classConvexShape}{Convex\+Shape}} \& Convex\+Shape\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classConvexShape}{Convex\+Shape}} \&}]{other }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{classConvexShape_af678588028c88a130a5d3103fca9d483}\label{classConvexShape_af678588028c88a130a5d3103fca9d483}} 
-\index{ConvexShape@{ConvexShape}!updateVBO@{updateVBO}}
-\index{updateVBO@{updateVBO}!ConvexShape@{ConvexShape}}
-\doxysubsubsection{\texorpdfstring{updateVBO()}{updateVBO()}}
-{\footnotesize\ttfamily void Convex\+Shape\+::update\+VBO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{classShape_a0bd6fb14dd56a06c5e31660b9ad49089}{Shape}}.
-
-\mbox{\Hypertarget{classConvexShape_a9f4decb39b41fb1c7147a2c985b3da21}\label{classConvexShape_a9f4decb39b41fb1c7147a2c985b3da21}} 
-\index{ConvexShape@{ConvexShape}!updateVBOAlpha@{updateVBOAlpha}}
-\index{updateVBOAlpha@{updateVBOAlpha}!ConvexShape@{ConvexShape}}
-\doxysubsubsection{\texorpdfstring{updateVBOAlpha()}{updateVBOAlpha()}}
-{\footnotesize\ttfamily void Convex\+Shape\+::update\+VBOAlpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{classShape_a385d7399b1d55b51f2174fec54dd3d34}{Shape}}.
-
-\mbox{\Hypertarget{classConvexShape_a3baf712c1793ebd9a35e0896c1beb349}\label{classConvexShape_a3baf712c1793ebd9a35e0896c1beb349}} 
-\index{ConvexShape@{ConvexShape}!updateVBORGB@{updateVBORGB}}
-\index{updateVBORGB@{updateVBORGB}!ConvexShape@{ConvexShape}}
-\doxysubsubsection{\texorpdfstring{updateVBORGB()}{updateVBORGB()}}
-{\footnotesize\ttfamily void Convex\+Shape\+::update\+VBORGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{classShape_a70b8ee5551305947c1161e794a6d719a}{Shape}}.
 
 
 
