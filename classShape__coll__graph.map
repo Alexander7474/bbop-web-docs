@@ -1,5 +1,5 @@
 <map id="Shape" name="Shape">
-<area shape="rect" id="node1" title="Class parente de tous les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="395,200,458,227"/>
+<area shape="rect" id="node1" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="395,200,458,227"/>
 <area shape="rect" id="node2" href="$classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="5,81,123,108"/>
 <area shape="rect" id="node3" href="$classCollisionBox.html" title="gère une boîte de collision" alt="" coords="147,81,250,108"/>
 <area shape="rect" id="node4" href="$classVector2f.html" title=" " alt="" coords="281,81,357,108"/>
