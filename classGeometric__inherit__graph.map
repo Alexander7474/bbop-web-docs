@@ -1,0 +1,4 @@
+<map id="Geometric" name="Geometric">
+<area shape="rect" id="node1" title="gère un objet avec de propriété géométrique" alt="" coords="11,5,102,32"/>
+<area shape="rect" id="node2" href="$classCollisionBox.html" title="gère une boîte de collision" alt="" coords="5,80,108,107"/>
+</map>

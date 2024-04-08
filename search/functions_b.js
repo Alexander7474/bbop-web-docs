@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3d_329',['operator=',['../classTexteBox.html#aa6686aa79c2060c208b97184ce6b2e03',1,'TexteBox::operator=()'],['../classConvexShape.html#acb4e6c079deca6cb0b3fda2c44fa8f9e',1,'ConvexShape::operator=()'],['../classSprite.html#abb3f0673884d42b6b116f0c4d1a47b77',1,'Sprite::operator=()']]]
+  ['rectangleshape_346',['RectangleShape',['../classRectangleShape.html#a5b5c1d644f21071bb14c77bc986ecae7',1,'RectangleShape::RectangleShape()'],['../classRectangleShape.html#a43dd96f2d29c2583edd20d2b3effc7c8',1,'RectangleShape::RectangleShape(Vector2f nSize, Vector2f nPos)'],['../classRectangleShape.html#a3b8068272a111ae153ffe8d7bd1f7686',1,'RectangleShape::RectangleShape(Vector2f nSize, Vector2f nPos, Vector3i nRGB, Vector2f nOrigin)'],['../classRectangleShape.html#ab433178500de4f595f0cce295af08a7f',1,'RectangleShape::RectangleShape(Vector2f nSize, Vector2f nPos, Vector3i nRGB, Vector2f nOrigin, float nRotation, float nAlpha)']]]
 ];

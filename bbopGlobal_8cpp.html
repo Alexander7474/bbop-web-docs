@@ -92,8 +92,6 @@ Include dependency graph for bbopGlobal.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0b9e239c8889734711f29fe45551605b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#a0b9e239c8889734711f29fe45551605b">keyCallback</a> (GLFWwindow *window, int key, int scancode, int action, int mods)</td></tr>
-<tr class="separator:a0b9e239c8889734711f29fe45551605b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abad8b4d4b0f318cf85947bef83f84526"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#abad8b4d4b0f318cf85947bef83f84526">getFileData</a> (const char *filename)</td></tr>
 <tr class="memdesc:abad8b4d4b0f318cf85947bef83f84526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère les données d'un fichier et les renvoie sous forme de string.  <a href="bbopGlobal_8cpp.html#abad8b4d4b0f318cf85947bef83f84526">More...</a><br /></td></tr>
 <tr class="separator:abad8b4d4b0f318cf85947bef83f84526"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,8 +107,10 @@ Variables</h2></td></tr>
 <tr class="memitem:ab1d5df0342c6b8efc705e0a54b09f5a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#ab1d5df0342c6b8efc705e0a54b09f5a5">BBOP_SHADER_MODE_MIX</a> = 2</td></tr>
 <tr class="memdesc:ab1d5df0342c6b8efc705e0a54b09f5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">RenderMode en mixant les textures et les couleurs.  <a href="bbopGlobal_8cpp.html#ab1d5df0342c6b8efc705e0a54b09f5a5">More...</a><br /></td></tr>
 <tr class="separator:ab1d5df0342c6b8efc705e0a54b09f5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb26424375c4e42083abeb31baa24c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2i.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#affb26424375c4e42083abeb31baa24c0">BBOP_WINDOW_SIZE</a> (1920, 1080)</td></tr>
-<tr class="separator:affb26424375c4e42083abeb31baa24c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ec0cece9cd8dc6ac3ec89f411a0e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2i.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#a72ec0cece9cd8dc6ac3ec89f411a0e6c">BBOP_WINDOW_SIZE</a> (0, 0)</td></tr>
+<tr class="separator:a72ec0cece9cd8dc6ac3ec89f411a0e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4488113ba5f94eeaab76fb934da5e6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2i.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bbopGlobal_8cpp.html#a4488113ba5f94eeaab76fb934da5e6ca">BBOP_WINDOW_RESOLUTION</a> (0, 0)</td></tr>
+<tr class="separator:a4488113ba5f94eeaab76fb934da5e6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abad8b4d4b0f318cf85947bef83f84526"></a>
@@ -140,52 +140,6 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>std::string Contenu du fichier.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classShader.html">Shader</a> </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Changer son nom en bbopGetFileData et la déplacer dans <a class="el" href="bbopFunc_8h.html">bbopFunc.h</a> et <a class="el" href="bbopFunc_8cpp.html">bbopFunc.cpp</a> </dd></dl>
-
-</div>
-</div>
-<a id="a0b9e239c8889734711f29fe45551605b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b9e239c8889734711f29fe45551605b">&#9670;&nbsp;</a></span>keyCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void keyCallback </td>
-          <td>(</td>
-          <td class="paramtype">GLFWwindow *&#160;</td>
-          <td class="paramname"><em>window</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>scancode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mods</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -239,22 +193,50 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="affb26424375c4e42083abeb31baa24c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb26424375c4e42083abeb31baa24c0">&#9670;&nbsp;</a></span>BBOP_WINDOW_SIZE</h2>
+<a id="a4488113ba5f94eeaab76fb934da5e6ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4488113ba5f94eeaab76fb934da5e6ca">&#9670;&nbsp;</a></span>BBOP_WINDOW_RESOLUTION</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVector2i.html">Vector2i</a> BBOP_WINDOW_SIZE(1920, 1080) </td>
+          <td class="memname"><a class="el" href="classVector2i.html">Vector2i</a> BBOP_WINDOW_RESOLUTION(0, 0) </td>
           <td>(</td>
-          <td class="paramtype">1920&#160;</td>
+          <td class="paramtype">0&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">1080&#160;</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72ec0cece9cd8dc6ac3ec89f411a0e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ec0cece9cd8dc6ac3ec89f411a0e6c">&#9670;&nbsp;</a></span>BBOP_WINDOW_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2i.html">Vector2i</a> BBOP_WINDOW_SIZE(0, 0) </td>
+          <td>(</td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

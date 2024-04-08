@@ -12,8 +12,6 @@ Include dependency graph for bbop\+Global.\+cpp\+:
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}{key\+Callback}} (GLFWwindow $\ast$window, int key, int scancode, int action, int mods)
-\item 
 string \mbox{\hyperlink{bbopGlobal_8cpp_abad8b4d4b0f318cf85947bef83f84526}{get\+File\+Data}} (const char $\ast$filename)
 \begin{DoxyCompactList}\small\item\em Récupère les données d\textquotesingle{}un fichier et les renvoie sous forme de string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
@@ -25,7 +23,9 @@ int \mbox{\hyperlink{bbopGlobal_8cpp_aa11aa73a4cbfdcdedf4e7cfda7c4e714}{BBOP\+\_
 \begin{DoxyCompactList}\small\item\em Render\+Mode avec uniquement les couleurs. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{bbopGlobal_8cpp_ab1d5df0342c6b8efc705e0a54b09f5a5}{BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+MIX}} = 2
 \begin{DoxyCompactList}\small\item\em Render\+Mode en mixant les textures et les couleurs. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}{BBOP\+\_\+\+WINDOW\+\_\+\+SIZE}} (1920, 1080)
+\mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8cpp_a72ec0cece9cd8dc6ac3ec89f411a0e6c}{BBOP\+\_\+\+WINDOW\+\_\+\+SIZE}} (0, 0)
+\item 
+\mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8cpp_a4488113ba5f94eeaab76fb934da5e6ca}{BBOP\+\_\+\+WINDOW\+\_\+\+RESOLUTION}} (0, 0)
 \end{DoxyCompactItemize}
 
 
@@ -55,12 +55,6 @@ std\+::string Contenu du fichier.
 \end{DoxySeeAlso}
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Changer son nom en bbop\+Get\+File\+Data et la déplacer dans \mbox{\hyperlink{bbopFunc_8h}{bbop\+Func.\+h}} et \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}} \end{DoxyRefDesc}
-\mbox{\Hypertarget{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}\label{bbopGlobal_8cpp_a0b9e239c8889734711f29fe45551605b}} 
-\index{bbopGlobal.cpp@{bbopGlobal.cpp}!keyCallback@{keyCallback}}
-\index{keyCallback@{keyCallback}!bbopGlobal.cpp@{bbopGlobal.cpp}}
-\doxysubsubsection{\texorpdfstring{keyCallback()}{keyCallback()}}
-{\footnotesize\ttfamily void key\+Callback (\begin{DoxyParamCaption}\item[{GLFWwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Variable Documentation}
@@ -94,9 +88,15 @@ Render\+Mode en mixant les textures et les couleurs.
 
 Render\+Mode avec uniquement les textures. 
 
-Local headers External headers \mbox{\Hypertarget{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}\label{bbopGlobal_8cpp_affb26424375c4e42083abeb31baa24c0}} 
+Local headers External headers \mbox{\Hypertarget{bbopGlobal_8cpp_a4488113ba5f94eeaab76fb934da5e6ca}\label{bbopGlobal_8cpp_a4488113ba5f94eeaab76fb934da5e6ca}} 
+\index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_WINDOW\_RESOLUTION@{BBOP\_WINDOW\_RESOLUTION}}
+\index{BBOP\_WINDOW\_RESOLUTION@{BBOP\_WINDOW\_RESOLUTION}!bbopGlobal.cpp@{bbopGlobal.cpp}}
+\doxysubsubsection{\texorpdfstring{BBOP\_WINDOW\_RESOLUTION}{BBOP\_WINDOW\_RESOLUTION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2i}{Vector2i}} BBOP\+\_\+\+WINDOW\+\_\+\+RESOLUTION(0, 0) (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bbopGlobal_8cpp_a72ec0cece9cd8dc6ac3ec89f411a0e6c}\label{bbopGlobal_8cpp_a72ec0cece9cd8dc6ac3ec89f411a0e6c}} 
 \index{bbopGlobal.cpp@{bbopGlobal.cpp}!BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}}
 \index{BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}!bbopGlobal.cpp@{bbopGlobal.cpp}}
 \doxysubsubsection{\texorpdfstring{BBOP\_WINDOW\_SIZE}{BBOP\_WINDOW\_SIZE}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2i}{Vector2i}} BBOP\+\_\+\+WINDOW\+\_\+\+SIZE(1920, 1080) (\begin{DoxyParamCaption}\item[{1920}]{,  }\item[{1080}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2i}{Vector2i}} BBOP\+\_\+\+WINDOW\+\_\+\+SIZE(0, 0) (\begin{DoxyParamCaption}\item[{0}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
 

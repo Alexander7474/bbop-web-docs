@@ -42,6 +42,8 @@ int \mbox{\hyperlink{bbopGlobal_8h_aa11aa73a4cbfdcdedf4e7cfda7c4e714}{BBOP\+\_\+
 int \mbox{\hyperlink{bbopGlobal_8h_ab1d5df0342c6b8efc705e0a54b09f5a5}{BBOP\+\_\+\+SHADER\+\_\+\+MODE\+\_\+\+MIX}}
 \begin{DoxyCompactList}\small\item\em Render\+Mode en mixant les textures et les couleurs. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}{BBOP\+\_\+\+WINDOW\+\_\+\+SIZE}}
+\begin{DoxyCompactList}\small\item\em Variable global qui stoke la taille de la fenêtre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8h_aab5088d67a1f295b589fb44bc21834c9}{BBOP\+\_\+\+WINDOW\+\_\+\+RESOLUTION}}
 \begin{DoxyCompactList}\small\item\em Variable global qui stoke la résolution de la fenêtre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -104,7 +106,17 @@ Render\+Mode en mixant les textures et les couleurs.
 
 Render\+Mode avec uniquement les textures. 
 
-Local headers External headers \mbox{\Hypertarget{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}\label{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}} 
+Local headers External headers \mbox{\Hypertarget{bbopGlobal_8h_aab5088d67a1f295b589fb44bc21834c9}\label{bbopGlobal_8h_aab5088d67a1f295b589fb44bc21834c9}} 
+\index{bbopGlobal.h@{bbopGlobal.h}!BBOP\_WINDOW\_RESOLUTION@{BBOP\_WINDOW\_RESOLUTION}}
+\index{BBOP\_WINDOW\_RESOLUTION@{BBOP\_WINDOW\_RESOLUTION}!bbopGlobal.h@{bbopGlobal.h}}
+\doxysubsubsection{\texorpdfstring{BBOP\_WINDOW\_RESOLUTION}{BBOP\_WINDOW\_RESOLUTION}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2i}{Vector2i}} BBOP\+\_\+\+WINDOW\+\_\+\+RESOLUTION\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable global qui stoke la résolution de la fenêtre. 
+
+\mbox{\Hypertarget{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}\label{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}} 
 \index{bbopGlobal.h@{bbopGlobal.h}!BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}}
 \index{BBOP\_WINDOW\_SIZE@{BBOP\_WINDOW\_SIZE}!bbopGlobal.h@{bbopGlobal.h}}
 \doxysubsubsection{\texorpdfstring{BBOP\_WINDOW\_SIZE}{BBOP\_WINDOW\_SIZE}}
@@ -112,6 +124,5 @@ Local headers External headers \mbox{\Hypertarget{bbopGlobal_8h_aef57dad90411a93
 
 
 
-Variable global qui stoke la résolution de la fenêtre. 
+Variable global qui stoke la taille de la fenêtre. 
 
-Pour récupérer la taille réel de la fenêtre (si elle est redimenstionné après sa création) il faut utiliser glfw\+Get\+Window\+Size(). 

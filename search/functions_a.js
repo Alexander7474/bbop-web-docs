@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['move_328',['move',['../classShape.html#a6422e2d9f7dfc2002175d573e39a4533',1,'Shape']]]
+  ['operator_3d_345',['operator=',['../classTexteBox.html#aa6686aa79c2060c208b97184ce6b2e03',1,'TexteBox::operator=()'],['../classConvexShape.html#acb4e6c079deca6cb0b3fda2c44fa8f9e',1,'ConvexShape::operator=()'],['../classSprite.html#abb3f0673884d42b6b116f0c4d1a47b77',1,'Sprite::operator=()']]]
 ];

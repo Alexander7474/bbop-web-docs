@@ -33,31 +33,89 @@ void \mbox{\hyperlink{bbopFunc_8h_a5d733089419e11fe8e926841bbcd1272}{bbop\+Clean
 \begin{DoxyCompactList}\small\item\em Fonction de nettoyage de la fenêtre. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{bbopFunc_8h_a0d595e2d014b7c5c35460bb922ae1de5}{bbop\+Error\+Check}} ()
 \begin{DoxyCompactList}\small\item\em Fonction de verification d\textquotesingle{}erreur d\textquotesingle{}opengl. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{bbopFunc_8h_aee49ee51537a672b227dc627d6cebad1}{bbop\+Change\+Window\+Size}} (\mbox{\hyperlink{classVector2i}{Vector2i}} n\+Win\+Size)
-\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}initialisation de Bbop Library. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{bbopFunc_8h_aaa19d8bfa52dbd2bb7f42072b1bf4198}{bbop\+Debug\+Collision\+Box}} (\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $\ast$box, \mbox{\hyperlink{classScene}{Scene}} \&scene)
+void \mbox{\hyperlink{bbopFunc_8h_a40d4f0ba8ff2d812c2f202bf16a9b75c}{bbop\+Change\+Window\+Resolution}} (const \mbox{\hyperlink{classVector2i}{Vector2i}} \&n\+WinR)
+\begin{DoxyCompactList}\small\item\em Change la resolution de la fenêtre glfw utilisé dans bbop\+Init. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bbopFunc_8h_ab34f567e75194911da25b61c1f5ee149}{bbop\+Change\+Window\+Resolution}} (int x\+\_\+, int y\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change la resolution de la fenêtre glfw utilisé dans bbop\+Init. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bbopFunc_8h_a85b9b8cca4e7a224eb3d10e6cde7fdea}{bbop\+Change\+Window\+Size}} (const \mbox{\hyperlink{classVector2i}{Vector2i}} \&n\+WinS)
+\begin{DoxyCompactList}\small\item\em Change la taille de la fenêtre glfw utilisé dans bbop\+Init. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bbopFunc_8h_a6039f6e9194b368ffb8e647a43d03ac9}{bbop\+Change\+Window\+Size}} (int x\+\_\+, int y\+\_\+)
+\begin{DoxyCompactList}\small\item\em Change la taille de la fenêtre glfw utilisé dans bbop\+Init. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bbopFunc_8h_adb58533b6c571ff05497756cc224b28a}{bbop\+Debug\+Collision\+Box}} (const \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \&box, \mbox{\hyperlink{classScene}{Scene}} \&scene)
 \begin{DoxyCompactList}\small\item\em Debug de collision en affichant une box. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{bbopFunc_8h_aee49ee51537a672b227dc627d6cebad1}\label{bbopFunc_8h_aee49ee51537a672b227dc627d6cebad1}} 
-\index{bbopFunc.h@{bbopFunc.h}!bbopChangeWindowSize@{bbopChangeWindowSize}}
-\index{bbopChangeWindowSize@{bbopChangeWindowSize}!bbopFunc.h@{bbopFunc.h}}
-\doxysubsubsection{\texorpdfstring{bbopChangeWindowSize()}{bbopChangeWindowSize()}}
-{\footnotesize\ttfamily void bbop\+Change\+Window\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2i}{Vector2i}}}]{n\+Win\+Size }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{bbopFunc_8h_a40d4f0ba8ff2d812c2f202bf16a9b75c}\label{bbopFunc_8h_a40d4f0ba8ff2d812c2f202bf16a9b75c}} 
+\index{bbopFunc.h@{bbopFunc.h}!bbopChangeWindowResolution@{bbopChangeWindowResolution}}
+\index{bbopChangeWindowResolution@{bbopChangeWindowResolution}!bbopFunc.h@{bbopFunc.h}}
+\doxysubsubsection{\texorpdfstring{bbopChangeWindowResolution()}{bbopChangeWindowResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void bbop\+Change\+Window\+Resolution (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2i}{Vector2i}} \&}]{n\+WinR }\end{DoxyParamCaption})}
 
 
 
-Fonction d\textquotesingle{}initialisation de Bbop Library. 
+Change la resolution de la fenêtre glfw utilisé dans bbop\+Init. 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em w\+Win\+Size} & Nouvelle taille de la fenêtre\\
+\mbox{\texttt{ in}}  & {\em w\+WinR} & Nouvelle resolution de la fenêtre\\
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
-Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}} 
+\mbox{\hyperlink{bbopFunc_8h_a697650ee78695079a1f5549465584e43}{bbop\+Init}} 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{bbopFunc_8h_ab34f567e75194911da25b61c1f5ee149}\label{bbopFunc_8h_ab34f567e75194911da25b61c1f5ee149}} 
+\index{bbopFunc.h@{bbopFunc.h}!bbopChangeWindowResolution@{bbopChangeWindowResolution}}
+\index{bbopChangeWindowResolution@{bbopChangeWindowResolution}!bbopFunc.h@{bbopFunc.h}}
+\doxysubsubsection{\texorpdfstring{bbopChangeWindowResolution()}{bbopChangeWindowResolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void bbop\+Change\+Window\+Resolution (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change la resolution de la fenêtre glfw utilisé dans bbop\+Init. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & resolution x \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & resolution y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bbopFunc_8h_a85b9b8cca4e7a224eb3d10e6cde7fdea}\label{bbopFunc_8h_a85b9b8cca4e7a224eb3d10e6cde7fdea}} 
+\index{bbopFunc.h@{bbopFunc.h}!bbopChangeWindowSize@{bbopChangeWindowSize}}
+\index{bbopChangeWindowSize@{bbopChangeWindowSize}!bbopFunc.h@{bbopFunc.h}}
+\doxysubsubsection{\texorpdfstring{bbopChangeWindowSize()}{bbopChangeWindowSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void bbop\+Change\+Window\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2i}{Vector2i}} \&}]{n\+WinS }\end{DoxyParamCaption})}
+
+
+
+Change la taille de la fenêtre glfw utilisé dans bbop\+Init. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w\+WinS} & Nouvelle taille de la fenêtre\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{bbopFunc_8h_a697650ee78695079a1f5549465584e43}{bbop\+Init}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{bbopFunc_8h_a6039f6e9194b368ffb8e647a43d03ac9}\label{bbopFunc_8h_a6039f6e9194b368ffb8e647a43d03ac9}} 
+\index{bbopFunc.h@{bbopFunc.h}!bbopChangeWindowSize@{bbopChangeWindowSize}}
+\index{bbopChangeWindowSize@{bbopChangeWindowSize}!bbopFunc.h@{bbopFunc.h}}
+\doxysubsubsection{\texorpdfstring{bbopChangeWindowSize()}{bbopChangeWindowSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void bbop\+Change\+Window\+Size (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+,  }\item[{int}]{y\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Change la taille de la fenêtre glfw utilisé dans bbop\+Init. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x\+\_\+} & taille x \\
+\hline
+\mbox{\texttt{ in}}  & {\em y\+\_\+} & taille y \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{bbopFunc_8h_a5d733089419e11fe8e926841bbcd1272}\label{bbopFunc_8h_a5d733089419e11fe8e926841bbcd1272}} 
 \index{bbopFunc.h@{bbopFunc.h}!bbopCleanWindow@{bbopCleanWindow}}
 \index{bbopCleanWindow@{bbopCleanWindow}!bbopFunc.h@{bbopFunc.h}}
@@ -74,20 +132,14 @@ Fonction de nettoyage de la fenêtre.
 \hline
 \mbox{\texttt{ in}}  & {\em rgb} & Couleur de fond de la fenêtre \\
 \hline
-\mbox{\texttt{ in}}  & {\em alpha} & Transaprence du nettoyage\\
+\mbox{\texttt{ in}}  & {\em alpha} & Transaprence du nettoyage \\
 \hline
 \end{DoxyParams}
-\begin{DoxySeeAlso}{See also}
-Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}}
-\end{DoxySeeAlso}
-\begin{DoxyNote}{Note}
-window dois-\/être un pointeur 
-\end{DoxyNote}
-\mbox{\Hypertarget{bbopFunc_8h_aaa19d8bfa52dbd2bb7f42072b1bf4198}\label{bbopFunc_8h_aaa19d8bfa52dbd2bb7f42072b1bf4198}} 
+\mbox{\Hypertarget{bbopFunc_8h_adb58533b6c571ff05497756cc224b28a}\label{bbopFunc_8h_adb58533b6c571ff05497756cc224b28a}} 
 \index{bbopFunc.h@{bbopFunc.h}!bbopDebugCollisionBox@{bbopDebugCollisionBox}}
 \index{bbopDebugCollisionBox@{bbopDebugCollisionBox}!bbopFunc.h@{bbopFunc.h}}
 \doxysubsubsection{\texorpdfstring{bbopDebugCollisionBox()}{bbopDebugCollisionBox()}}
-{\footnotesize\ttfamily void bbop\+Debug\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $\ast$}]{box,  }\item[{\mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void bbop\+Debug\+Collision\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \&}]{box,  }\item[{\mbox{\hyperlink{classScene}{Scene}} \&}]{scene }\end{DoxyParamCaption})}
 
 
 
@@ -101,7 +153,7 @@ Debug de collision en affichant une box.
 \hline
 \end{DoxyParams}
 \begin{DoxySeeAlso}{See also}
-Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}} 
+\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} 
 \end{DoxySeeAlso}
 \mbox{\Hypertarget{bbopFunc_8h_a0d595e2d014b7c5c35460bb922ae1de5}\label{bbopFunc_8h_a0d595e2d014b7c5c35460bb922ae1de5}} 
 \index{bbopFunc.h@{bbopFunc.h}!bbopErrorCheck@{bbopErrorCheck}}
@@ -113,10 +165,7 @@ Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}}
 
 Fonction de verification d\textquotesingle{}erreur d\textquotesingle{}opengl. 
 
-\begin{DoxySeeAlso}{See also}
-Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}} 
-\end{DoxySeeAlso}
-\mbox{\Hypertarget{bbopFunc_8h_a697650ee78695079a1f5549465584e43}\label{bbopFunc_8h_a697650ee78695079a1f5549465584e43}} 
+Affiche toutes les erreurs acumulées dans le cache opengl \mbox{\Hypertarget{bbopFunc_8h_a697650ee78695079a1f5549465584e43}\label{bbopFunc_8h_a697650ee78695079a1f5549465584e43}} 
 \index{bbopFunc.h@{bbopFunc.h}!bbopInit@{bbopInit}}
 \index{bbopInit@{bbopInit}!bbopFunc.h@{bbopFunc.h}}
 \doxysubsubsection{\texorpdfstring{bbopInit()}{bbopInit()}}
@@ -137,9 +186,6 @@ Fonction d\textquotesingle{}initialisation de Bbop Library.
 \mbox{\texttt{ in,out}}  & {\em window} & Fenêtre glfw à utiliser\\
 \hline
 \end{DoxyParams}
-\begin{DoxySeeAlso}{See also}
-Dans \mbox{\hyperlink{bbopFunc_8cpp}{bbop\+Func.\+cpp}}
-\end{DoxySeeAlso}
 \begin{DoxyNote}{Note}
 window dois-\/être un pointeur 
 \end{DoxyNote}

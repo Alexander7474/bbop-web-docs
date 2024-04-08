@@ -1,6 +1,7 @@
 <map id="include/BBOP/Graphics/collisionBoxClass.h" name="include/BBOP/Graphics/collisionBoxClass.h">
-<area shape="rect" id="node1" title=" " alt="" coords="53,5,223,47"/>
-<area shape="rect" id="node2" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,95,140,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="165,95,245,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="41,169,104,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="54,5,225,47"/>
+<area shape="rect" id="node2" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,169,140,196"/>
+<area shape="rect" id="node4" href="$geometricClass_8h.html" title=" " alt="" coords="72,95,207,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="185,169,265,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="41,244,104,271"/>
 </map>
