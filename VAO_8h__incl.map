@@ -1,6 +1,11 @@
 <map id="include/BBOP/Graphics/VAO.h" name="include/BBOP/Graphics/VAO.h">
-<area shape="rect" id="node1" title=" " alt="" coords="24,5,195,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,169,91,196"/>
-<area shape="rect" id="node3" title=" " alt="" coords="119,169,230,196"/>
-<area shape="rect" id="node4" href="$VBO_8h.html" title=" " alt="" coords="78,95,141,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="29,5,188,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,168,86,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,48,69,95,53,153,47,151,64,93,91,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,168,222,193"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,45,152,93,168,151,163,153,147,95,120,48"/>
+<area shape="rect" id="Node000004" href="$VBO_8h.html" title=" " alt="" coords="79,94,138,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,46,111,78,106,78,106,46"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="100,122,68,157,64,154,96,118"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="120,118,151,154,147,157,116,122"/>
 </map>

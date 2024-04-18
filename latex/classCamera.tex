@@ -1,8 +1,8 @@
-\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
-\label{classCamera}\index{Camera@{Camera}}
+\doxysection{Camera Class Reference}
+\hypertarget{classCamera}{}\label{classCamera}\index{Camera@{Camera}}
 
 
-Permet de modifier les point de vue et la position de l\textquotesingle{}affichage de la class \mbox{\hyperlink{classScene}{Scene}}.  
+Permet de modifier les point de vue et la position de l\textquotesingle{}affichage de la class \doxylink{classScene}{Scene}.  
 
 
 
@@ -16,14 +16,14 @@ Collaboration diagram for Camera\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{classCamera__coll__graph}
+\includegraphics[width=164pt]{classCamera__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classCamera_a82bc038e6fd98292192f0f1d101af5e3}{Camera}} (\mbox{\hyperlink{classVector2f}{Vector2f}} n\+Pos, float n\+Scale)
-\begin{DoxyCompactList}\small\item\em Constructeur de la \mbox{\hyperlink{classCamera}{Camera}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de la \doxylink{classCamera}{Camera}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur par défault de la camera. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}{build\+Camera}} ()
@@ -39,8 +39,8 @@ void \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{set\+Positi
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screen\+Pos\+To\+Cam\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} screen\+Pos)
 \begin{DoxyCompactList}\small\item\em Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées du monde à travers le prisme de la camera. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{is\+In\+Cam\+View}} (\mbox{\hyperlink{classShape}{Shape}} \&obj)
-\begin{DoxyCompactList}\small\item\em Détermine si un objet \mbox{\hyperlink{classShape}{Shape}} est visible sur l\textquotesingle{}écran à travers le prisme de la \mbox{\hyperlink{classCamera}{Camera}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
+\begin{DoxyCompactList}\small\item\em Détermine si un objet \doxylink{classShape}{Shape} est visible sur l\textquotesingle{}écran à travers le prisme de la \doxylink{classCamera}{Camera}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ab404f2ac7d7c1b21301eace5baf42018}{camX}}
@@ -50,15 +50,15 @@ bool \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{is\+In\+Cam
 
 
 \doxysubsection{Detailed Description}
-Permet de modifier les point de vue et la position de l\textquotesingle{}affichage de la class \mbox{\hyperlink{classScene}{Scene}}. 
+Permet de modifier les point de vue et la position de l\textquotesingle{}affichage de la class \doxylink{classScene}{Scene}. 
 
 \begin{DoxyNote}{Note}
-Les attribut de cette class sont utilisé par \mbox{\hyperlink{classScene}{Scene}} pour fabriquer la matrice de projection du vertex shader 
+Les attribut de cette class sont utilisé par \doxylink{classScene}{Scene} pour fabriquer la matrice de projection du vertex shader 
 \end{DoxyNote}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCamera_a82bc038e6fd98292192f0f1d101af5e3}\label{classCamera_a82bc038e6fd98292192f0f1d101af5e3}} 
+\Hypertarget{classCamera_a82bc038e6fd98292192f0f1d101af5e3}\label{classCamera_a82bc038e6fd98292192f0f1d101af5e3} 
 \index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -66,16 +66,16 @@ Les attribut de cette class sont utilisé par \mbox{\hyperlink{classScene}{Scene
 
 
 
-Constructeur de la \mbox{\hyperlink{classCamera}{Camera}}. 
+Constructeur de la \doxylink{classCamera}{Camera}. 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em n\+Pos} & Position du centre de la \mbox{\hyperlink{classCamera}{Camera}} \\
+\mbox{\texttt{ in}}  & {\em n\+Pos} & Position du centre de la \doxylink{classCamera}{Camera} \\
 \hline
 \mbox{\texttt{ in}}  & {\em n\+Scale} & Scale de la camera, a 1.\+0 la camera à la même proportion que la résolution BBOP\+\_\+\+WINDOW\+\_\+\+SIZE \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331}} 
+\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331} 
 \index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -88,12 +88,12 @@ Constructeur par défault de la camera.
 La position de la camera est le milieu de BBOP\+\_\+\+WINDOW\+\_\+\+SIZE et la scale est de 1.\+0
 
 \begin{DoxyNote}{Note}
-Une \mbox{\hyperlink{classCamera}{Camera}} par défault peut être utile pour convertir des coordonnées de la souris en coordonnées dans le monde avec les méthodes de \mbox{\hyperlink{classCamera}{Camera}} 
+Une \doxylink{classCamera}{Camera} par défault peut être utile pour convertir des coordonnées de la souris en coordonnées dans le monde avec les méthodes de \doxylink{classCamera}{Camera} 
 \end{DoxyNote}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}\label{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}} 
+\Hypertarget{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}\label{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5} 
 \index{Camera@{Camera}!buildCamera@{buildCamera}}
 \index{buildCamera@{buildCamera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{buildCamera()}{buildCamera()}}
@@ -103,7 +103,7 @@ Une \mbox{\hyperlink{classCamera}{Camera}} par défault peut être utile pour co
 
 Determine les limites x et y de la cam avec ces attribut. 
 
-\mbox{\Hypertarget{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}\label{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}} 
+\Hypertarget{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}\label{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f} 
 \index{Camera@{Camera}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
@@ -116,7 +116,7 @@ Renvoie la position actuelle de la camera.
 \begin{DoxyReturn}{Returns}
 pos 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classCamera_a69a3797ab7fe29eccb0eef48727b0099}\label{classCamera_a69a3797ab7fe29eccb0eef48727b0099}} 
+\Hypertarget{classCamera_a69a3797ab7fe29eccb0eef48727b0099}\label{classCamera_a69a3797ab7fe29eccb0eef48727b0099} 
 \index{Camera@{Camera}!getScale@{getScale}}
 \index{getScale@{getScale}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
@@ -129,7 +129,7 @@ Renvoie la scale de la camera.
 \begin{DoxyReturn}{Returns}
 scale 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}\label{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}} 
+\Hypertarget{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}\label{classCamera_a46ef91b662041d7d5cf0a4280259a1d7} 
 \index{Camera@{Camera}!isInCamView@{isInCamView}}
 \index{isInCamView@{isInCamView}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{isInCamView()}{isInCamView()}}
@@ -137,7 +137,7 @@ scale
 
 
 
-Détermine si un objet \mbox{\hyperlink{classShape}{Shape}} est visible sur l\textquotesingle{}écran à travers le prisme de la \mbox{\hyperlink{classCamera}{Camera}}. 
+Détermine si un objet \doxylink{classShape}{Shape} est visible sur l\textquotesingle{}écran à travers le prisme de la \doxylink{classCamera}{Camera}. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -151,9 +151,9 @@ bool Oui ou Non l\textquotesingle{}objet est visible
 Cette méthode est très utile pour eviter d\textquotesingle{}afficher des objet non visible par le joueur ou même les détruirze quand ils sortent de l\textquotesingle{}écran. 
 \end{DoxyNote}
 \begin{DoxyAttention}{Attention}
-La méthode n\textquotesingle{}a été testé que sur des \mbox{\hyperlink{classRectangleShape}{Rectangle\+Shape}} et des \mbox{\hyperlink{classSprite}{Sprite}}, Il peut y avaoir certain disfonctionnement avec les \mbox{\hyperlink{classConvexShape}{Convex\+Shape}} et les \mbox{\hyperlink{classCircleShape}{Circle\+Shape}}. 
+La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectangleShape}{Rectangle\+Shape} et des \doxylink{classSprite}{Sprite}, Il peut y avaoir certain disfonctionnement avec les \doxylink{classConvexShape}{Convex\+Shape} et les \doxylink{classCircleShape}{Circle\+Shape}. 
 \end{DoxyAttention}
-\mbox{\Hypertarget{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}\label{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}} 
+\Hypertarget{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}\label{classCamera_ac122993172d14a6f1c677cd5bf5f0c15} 
 \index{Camera@{Camera}!screenPosToCamPos@{screenPosToCamPos}}
 \index{screenPosToCamPos@{screenPosToCamPos}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{screenPosToCamPos()}{screenPosToCamPos()}}
@@ -171,7 +171,7 @@ Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnée
 \begin{DoxyReturn}{Returns}
 final\+Pos Position du monde calculé à partir de screen\+Pos 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classCamera_a6f2223bda52e49bf526b5219d2c0c103}\label{classCamera_a6f2223bda52e49bf526b5219d2c0c103}} 
+\Hypertarget{classCamera_a6f2223bda52e49bf526b5219d2c0c103}\label{classCamera_a6f2223bda52e49bf526b5219d2c0c103} 
 \index{Camera@{Camera}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
@@ -189,7 +189,7 @@ Change la position de la camera.
 \begin{DoxyAttention}{Attention}
 La postion de la camera est les coordonnées du centre de celle ci 
 \end{DoxyAttention}
-\mbox{\Hypertarget{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}\label{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}} 
+\Hypertarget{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}\label{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5} 
 \index{Camera@{Camera}!setScale@{setScale}}
 \index{setScale@{setScale}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
@@ -207,7 +207,7 @@ Change la scale de la camera.
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classCamera_ab404f2ac7d7c1b21301eace5baf42018}\label{classCamera_ab404f2ac7d7c1b21301eace5baf42018}} 
+\Hypertarget{classCamera_ab404f2ac7d7c1b21301eace5baf42018}\label{classCamera_ab404f2ac7d7c1b21301eace5baf42018} 
 \index{Camera@{Camera}!camX@{camX}}
 \index{camX@{camX}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{camX}{camX}}
@@ -217,7 +217,7 @@ Change la scale de la camera.
 
 Limites de la camera en X. 
 
-\mbox{\Hypertarget{classCamera_a37187407737501e8575d8417c032486b}\label{classCamera_a37187407737501e8575d8417c032486b}} 
+\Hypertarget{classCamera_a37187407737501e8575d8417c032486b}\label{classCamera_a37187407737501e8575d8417c032486b} 
 \index{Camera@{Camera}!camY@{camY}}
 \index{camY@{camY}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{camY}{camY}}

@@ -1,5 +1,5 @@
-\hypertarget{classTexteBox}{}\doxysection{Texte\+Box Class Reference}
-\label{classTexteBox}\index{TexteBox@{TexteBox}}
+\doxysection{Texte\+Box Class Reference}
+\hypertarget{classTexteBox}{}\label{classTexteBox}\index{TexteBox@{TexteBox}}
 
 
 Stock du texte pour le draw dans la fenêtre.  
@@ -16,7 +16,7 @@ Inheritance diagram for Texte\+Box\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=168pt]{classTexteBox__inherit__graph}
+\includegraphics[width=159pt]{classTexteBox__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -26,17 +26,17 @@ Collaboration diagram for Texte\+Box\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=168pt]{classTexteBox__coll__graph}
+\includegraphics[width=159pt]{classTexteBox__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{Texte\+Box}} (const char $\ast$n\+Texte, \mbox{\hyperlink{classFont}{Font}} $\ast$n\+Font)
+\mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{Texte\+Box}} (const char \texorpdfstring{$\ast$}{*}n\+Texte, \mbox{\hyperlink{classFont}{Font}} \texorpdfstring{$\ast$}{*}n\+Font)
 \begin{DoxyCompactList}\small\item\em Constructeur de la boîter de texte. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classTexteBox_af14956c5e4e70fb729b3e585ca4c2d26}{Texte\+Box}} (const \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \&other)
 \item 
-\mbox{\hyperlink{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}{$\sim$\+Texte\+Box}} ()
+\mbox{\hyperlink{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}{\texorpdfstring{$\sim$}{\string~}\+Texte\+Box}} ()
 \item 
 \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \& \mbox{\hyperlink{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}{operator=}} (const \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \&other)
 \item 
@@ -60,12 +60,14 @@ float \mbox{\hyperlink{classTexteBox_a8cd1e85563d939c59dbfc93526d4ca52}{get\+Rot
 \item 
 void \mbox{\hyperlink{classTexteBox_ab0e7b96abb50c36262371ee5a9446614}{set\+Rotation}} (float n\+Rotation)
 \item 
-const char $\ast$ \mbox{\hyperlink{classTexteBox_a8a387213874d3e5fcd064ee87f0e0fbe}{get\+Texte}} ()
+void \mbox{\hyperlink{classTexteBox_a54022b299cd1cd2198dd036f1ba09a17}{set\+Font}} (\mbox{\hyperlink{classFont}{Font}} \texorpdfstring{$\ast$}{*}font)
+\begin{DoxyCompactList}\small\item\em Change la font de la texte box. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTexteBox_adf60e3937b2d156de8b681ea42a9f266}{get\+Texte}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie la chaine de caractères affiché \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classTexteBox_ae9a932a7fc1d404c2f4141815affe751}{set\+Texte}} (const char $\ast$n\+Texte)
+void \mbox{\hyperlink{classTexteBox_ae9a932a7fc1d404c2f4141815affe751}{set\+Texte}} (const char \texorpdfstring{$\ast$}{*}n\+Texte)
 \begin{DoxyCompactList}\small\item\em Change la chaine de caractères. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTexteBox_a135516640b52173098a952829136390f}{build\+Texte\+Box}} ()
-\begin{DoxyCompactList}\small\item\em Fabrique la liste de \mbox{\hyperlink{classNoTextureSprite}{No\+Texture\+Sprite}} glyph\+List. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fabrique la liste de \doxylink{classNoTextureSprite}{No\+Texture\+Sprite} glyph\+List. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}{Draw}} (GLint render\+Mode\+Loc) const override
 \begin{DoxyCompactList}\small\item\em Dessine la boîte de texte This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -79,11 +81,11 @@ Cette class peut produire des erreurs de segementation dans un tableau dynamique
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}\label{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}} 
+\Hypertarget{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}\label{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db} 
 \index{TexteBox@{TexteBox}!TexteBox@{TexteBox}}
 \index{TexteBox@{TexteBox}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{TexteBox()}{TexteBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Texte\+Box\+::\+Texte\+Box (\begin{DoxyParamCaption}\item[{const char $\ast$}]{n\+Texte,  }\item[{\mbox{\hyperlink{classFont}{Font}} $\ast$}]{n\+Font }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Texte\+Box\+::\+Texte\+Box (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{n\+Texte,  }\item[{\mbox{\hyperlink{classFont}{Font}} \texorpdfstring{$\ast$}{*}}]{n\+Font }\end{DoxyParamCaption})}
 
 
 
@@ -96,22 +98,22 @@ Constructeur de la boîter de texte.
 \mbox{\texttt{ in}}  & {\em n\+Font} & Police de caractère à utiliser avec la boîte de texte \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classTexteBox_af14956c5e4e70fb729b3e585ca4c2d26}\label{classTexteBox_af14956c5e4e70fb729b3e585ca4c2d26}} 
+\Hypertarget{classTexteBox_af14956c5e4e70fb729b3e585ca4c2d26}\label{classTexteBox_af14956c5e4e70fb729b3e585ca4c2d26} 
 \index{TexteBox@{TexteBox}!TexteBox@{TexteBox}}
 \index{TexteBox@{TexteBox}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{TexteBox()}{TexteBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Texte\+Box\+::\+Texte\+Box (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \&}]{other }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}\label{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}} 
-\index{TexteBox@{TexteBox}!````~TexteBox@{$\sim$TexteBox}}
-\index{````~TexteBox@{$\sim$TexteBox}!TexteBox@{TexteBox}}
-\doxysubsubsection{\texorpdfstring{$\sim$TexteBox()}{~TexteBox()}}
-{\footnotesize\ttfamily Texte\+Box\+::$\sim$\+Texte\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\Hypertarget{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}\label{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3} 
+\index{TexteBox@{TexteBox}!````~TexteBox@{\texorpdfstring{$\sim$}{\string~}TexteBox}}
+\index{````~TexteBox@{\texorpdfstring{$\sim$}{\string~}TexteBox}!TexteBox@{TexteBox}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TexteBox()}{\string~TexteBox()}}
+{\footnotesize\ttfamily Texte\+Box\+::\texorpdfstring{$\sim$}{\string~}\+Texte\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classTexteBox_a135516640b52173098a952829136390f}\label{classTexteBox_a135516640b52173098a952829136390f}} 
+\Hypertarget{classTexteBox_a135516640b52173098a952829136390f}\label{classTexteBox_a135516640b52173098a952829136390f} 
 \index{TexteBox@{TexteBox}!buildTexteBox@{buildTexteBox}}
 \index{buildTexteBox@{buildTexteBox}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{buildTexteBox()}{buildTexteBox()}}
@@ -119,9 +121,9 @@ Constructeur de la boîter de texte.
 
 
 
-Fabrique la liste de \mbox{\hyperlink{classNoTextureSprite}{No\+Texture\+Sprite}} glyph\+List. 
+Fabrique la liste de \doxylink{classNoTextureSprite}{No\+Texture\+Sprite} glyph\+List. 
 
-Cette liste de \mbox{\hyperlink{classNoTextureSprite}{No\+Texture\+Sprite}} est utilisé par Draw \mbox{\Hypertarget{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}\label{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}} 
+Cette liste de \doxylink{classNoTextureSprite}{No\+Texture\+Sprite} est utilisé par Draw \Hypertarget{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}\label{classTexteBox_a0c452f1a6afeb9922537218b790d13d1} 
 \index{TexteBox@{TexteBox}!Draw@{Draw}}
 \index{Draw@{Draw}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
@@ -140,41 +142,41 @@ Dessine la boîte de texte This is an overloaded member function, provided for c
 
 Implements \mbox{\hyperlink{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}{Bbop\+Drawable}}.
 
-\mbox{\Hypertarget{classTexteBox_a0bf2c8b01a09bb424e0235c817c0784f}\label{classTexteBox_a0bf2c8b01a09bb424e0235c817c0784f}} 
+\Hypertarget{classTexteBox_a0bf2c8b01a09bb424e0235c817c0784f}\label{classTexteBox_a0bf2c8b01a09bb424e0235c817c0784f} 
 \index{TexteBox@{TexteBox}!getAlpha@{getAlpha}}
 \index{getAlpha@{getAlpha}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getAlpha()}{getAlpha()}}
 {\footnotesize\ttfamily float Texte\+Box\+::get\+Alpha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a909dc207bc703c4a281e6094f58f7c7d}\label{classTexteBox_a909dc207bc703c4a281e6094f58f7c7d}} 
+\Hypertarget{classTexteBox_a909dc207bc703c4a281e6094f58f7c7d}\label{classTexteBox_a909dc207bc703c4a281e6094f58f7c7d} 
 \index{TexteBox@{TexteBox}!getColor@{getColor}}
 \index{getColor@{getColor}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classVector3i}{Vector3i}} Texte\+Box\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a103719512b93cf3760af77e39e877dec}\label{classTexteBox_a103719512b93cf3760af77e39e877dec}} 
+\Hypertarget{classTexteBox_a103719512b93cf3760af77e39e877dec}\label{classTexteBox_a103719512b93cf3760af77e39e877dec} 
 \index{TexteBox@{TexteBox}!getOrigin@{getOrigin}}
 \index{getOrigin@{getOrigin}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Texte\+Box\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a8f42d357542f2806b836c0a5c5403c2f}\label{classTexteBox_a8f42d357542f2806b836c0a5c5403c2f}} 
+\Hypertarget{classTexteBox_a8f42d357542f2806b836c0a5c5403c2f}\label{classTexteBox_a8f42d357542f2806b836c0a5c5403c2f} 
 \index{TexteBox@{TexteBox}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Texte\+Box\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a8cd1e85563d939c59dbfc93526d4ca52}\label{classTexteBox_a8cd1e85563d939c59dbfc93526d4ca52}} 
+\Hypertarget{classTexteBox_a8cd1e85563d939c59dbfc93526d4ca52}\label{classTexteBox_a8cd1e85563d939c59dbfc93526d4ca52} 
 \index{TexteBox@{TexteBox}!getRotation@{getRotation}}
 \index{getRotation@{getRotation}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
 {\footnotesize\ttfamily float Texte\+Box\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a8a387213874d3e5fcd064ee87f0e0fbe}\label{classTexteBox_a8a387213874d3e5fcd064ee87f0e0fbe}} 
+\Hypertarget{classTexteBox_adf60e3937b2d156de8b681ea42a9f266}\label{classTexteBox_adf60e3937b2d156de8b681ea42a9f266} 
 \index{TexteBox@{TexteBox}!getTexte@{getTexte}}
 \index{getTexte@{getTexte}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{getTexte()}{getTexte()}}
-{\footnotesize\ttfamily const char$\ast$ Texte\+Box\+::get\+Texte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} Texte\+Box\+::get\+Texte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -183,47 +185,62 @@ Renvoie la chaine de caractères affiché
 \begin{DoxyReturn}{Returns}
 texte 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}\label{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}} 
+\Hypertarget{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}\label{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03} 
 \index{TexteBox@{TexteBox}!operator=@{operator=}}
 \index{operator=@{operator=}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \& Texte\+Box\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTexteBox}{Texte\+Box}} \&}]{other }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_ad90700e36544195595330ac5281dab6d}\label{classTexteBox_ad90700e36544195595330ac5281dab6d}} 
+\Hypertarget{classTexteBox_ad90700e36544195595330ac5281dab6d}\label{classTexteBox_ad90700e36544195595330ac5281dab6d} 
 \index{TexteBox@{TexteBox}!setAlpha@{setAlpha}}
 \index{setAlpha@{setAlpha}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setAlpha()}{setAlpha()}}
 {\footnotesize\ttfamily void Texte\+Box\+::set\+Alpha (\begin{DoxyParamCaption}\item[{float}]{n\+Alpha }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_aa2906dc4685c0a1f10895e3775ae3888}\label{classTexteBox_aa2906dc4685c0a1f10895e3775ae3888}} 
+\Hypertarget{classTexteBox_aa2906dc4685c0a1f10895e3775ae3888}\label{classTexteBox_aa2906dc4685c0a1f10895e3775ae3888} 
 \index{TexteBox@{TexteBox}!setColor@{setColor}}
 \index{setColor@{setColor}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
 {\footnotesize\ttfamily void Texte\+Box\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_aa4f1e613aa38b0ef6f58adad838d3b70}\label{classTexteBox_aa4f1e613aa38b0ef6f58adad838d3b70}} 
+\Hypertarget{classTexteBox_a54022b299cd1cd2198dd036f1ba09a17}\label{classTexteBox_a54022b299cd1cd2198dd036f1ba09a17} 
+\index{TexteBox@{TexteBox}!setFont@{setFont}}
+\index{setFont@{setFont}!TexteBox@{TexteBox}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void Texte\+Box\+::set\+Font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFont}{Font}} \texorpdfstring{$\ast$}{*}}]{font }\end{DoxyParamCaption})}
+
+
+
+Change la font de la texte box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em font\+\_\+} & nouvelle font \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTexteBox_aa4f1e613aa38b0ef6f58adad838d3b70}\label{classTexteBox_aa4f1e613aa38b0ef6f58adad838d3b70} 
 \index{TexteBox@{TexteBox}!setOrigin@{setOrigin}}
 \index{setOrigin@{setOrigin}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
 {\footnotesize\ttfamily void Texte\+Box\+::set\+Origin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_a45fe1f925eeb9d2dfc89a0a7a4a3fadf}\label{classTexteBox_a45fe1f925eeb9d2dfc89a0a7a4a3fadf}} 
+\Hypertarget{classTexteBox_a45fe1f925eeb9d2dfc89a0a7a4a3fadf}\label{classTexteBox_a45fe1f925eeb9d2dfc89a0a7a4a3fadf} 
 \index{TexteBox@{TexteBox}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
 {\footnotesize\ttfamily void Texte\+Box\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_ab0e7b96abb50c36262371ee5a9446614}\label{classTexteBox_ab0e7b96abb50c36262371ee5a9446614}} 
+\Hypertarget{classTexteBox_ab0e7b96abb50c36262371ee5a9446614}\label{classTexteBox_ab0e7b96abb50c36262371ee5a9446614} 
 \index{TexteBox@{TexteBox}!setRotation@{setRotation}}
 \index{setRotation@{setRotation}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
 {\footnotesize\ttfamily void Texte\+Box\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classTexteBox_ae9a932a7fc1d404c2f4141815affe751}\label{classTexteBox_ae9a932a7fc1d404c2f4141815affe751}} 
+\Hypertarget{classTexteBox_ae9a932a7fc1d404c2f4141815affe751}\label{classTexteBox_ae9a932a7fc1d404c2f4141815affe751} 
 \index{TexteBox@{TexteBox}!setTexte@{setTexte}}
 \index{setTexte@{setTexte}!TexteBox@{TexteBox}}
 \doxysubsubsection{\texorpdfstring{setTexte()}{setTexte()}}
-{\footnotesize\ttfamily void Texte\+Box\+::set\+Texte (\begin{DoxyParamCaption}\item[{const char $\ast$}]{n\+Texte }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Texte\+Box\+::set\+Texte (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{n\+Texte }\end{DoxyParamCaption})}
 
 
 

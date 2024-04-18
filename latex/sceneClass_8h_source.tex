@@ -1,0 +1,91 @@
+\doxysection{scene\+Class.\+h}
+\hypertarget{sceneClass_8h_source}{}\label{sceneClass_8h_source}\index{include/BBOP/Graphics/sceneClass.h@{include/BBOP/Graphics/sceneClass.h}}
+\mbox{\hyperlink{sceneClass_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ sceneClass.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Ce\ programme\ est\ distribué\ sous\ les\ termes\ de\ la\ Licence\ Publique}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Générale\ GNU,\ version\ 3.0,\ telle\ que\ publiée\ par\ la\ Free\ Software}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Foundation.\ Consultez\ la\ Licence\ Publique\ Générale\ GNU\ pour\ plus\ de}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ détails.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Vous\ devez\ avoir\ reçu\ une\ copie\ de\ la\ Licence\ Publique\ Générale\ GNU}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ en\ même\ temps\ que\ ce\ programme.\ Si\ ce\ n'est\ pas\ le\ cas,\ consultez}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ SCENE\_CLASS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ SCENE\_CLASS\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <glm/glm.hpp>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <glm/gtc/type\_ptr.hpp>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <glm/gtc/matrix\_transform.hpp>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{cameraClass_8h}{cameraClass.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopMathClass_8h}{bbopMathClass.h}}"{}}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{spriteClass_8h}{spriteClass.h}}"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shaderClass_8h}{shaderClass.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shaders_8h}{shaders.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopGlobal_8h}{bbopGlobal.h}}"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{lightClass_8h}{lightClass.h}}"{}}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structUniformLight}{UniformLight}}\ \{}
+\DoxyCodeLine{00035\ \ \ glm::vec2\ \mbox{\hyperlink{structUniformLight_abc68d67ac63ce6bef418eb8512f0fee5}{pos}};\ \textcolor{comment}{//\ Position\ de\ la\ source\ de\ lumière\ (2D)}}
+\DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_a3fafa248ac7671581985b863d9e49ec1}{p0}}[2];}
+\DoxyCodeLine{00037\ \ \ glm::vec3\ \mbox{\hyperlink{structUniformLight_a24bc5b1c3fa4b2ef494a90dbd40875f6}{color}};\ \textcolor{comment}{//\ Couleur\ de\ la\ lumière}}
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_ae5da93c48a841f9022fdf21a88e69be5}{intensity}};\ \textcolor{comment}{//\ Intensité\ de\ la\ lumière}}
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_a1df743c468c413af912b648f2d522437}{constantAttenuation}};\ \textcolor{comment}{//\ Attnuation\ constante}}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_a9bcd3147847a46e4d8a66e5af54cd88c}{linearAttenuation}};\ \textcolor{comment}{//\ Attnuation\ linéaire}}
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_ae10e54fab974b55ac6e03f5155f88519}{quadraticAttenuation}};\ \textcolor{comment}{//\ Attnuation\ quadratique}}
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structUniformLight_ab244725f048a0055337cf10307c99d32}{p1}}[1];}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classScene}{Scene}}}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{classScene_ad10176d75a9cc0da56626f682d083507}{Scene}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{classScene_ad10176d75a9cc0da56626f682d083507}{Scene}}(\textcolor{keywordtype}{float}\ nAmbiantLightValue,\ \mbox{\hyperlink{classVector3i}{Vector3i}}\ nAmbiantLightColor);}
+\DoxyCodeLine{00072\ \ \ \mbox{\hyperlink{classScene_a3b8cec2e32546713915f8c6303c951f1}{\string~Scene}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_ab006725913220d544544131e81b4f59d}{Use}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00090\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a7148467de487cd0cb787fc84c5e8b75d}{useCamera}}(\mbox{\hyperlink{classCamera}{Camera}}\ *camAddr);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}{setAmbiantLightValue}}(\textcolor{keywordtype}{float}\ nAmbiantLightValue);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}{getAmbiantLightValue}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a1d8b8687167783ae52e33f69f053e3bd}{setAmbiantLightColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector3i}{Vector3i}}\ \&nAmbiantLightColor);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector3i}{Vector3i}}\ \&\mbox{\hyperlink{classScene_ab5128cc4211b19612557c84f021de576}{getAmbiantLightColor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00129\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a09b1a0e0628434ef0c78ed3094f67c14}{addLight}}(\mbox{\hyperlink{classLight}{Light}}\&\ l);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00136\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}{Draw}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classBbopDrawable}{BbopDrawable}}\&\ spr)\textcolor{keyword}{const};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00139\ \ \ \mbox{\hyperlink{classShader}{Shader}}\ sceneShader;\ \textcolor{comment}{//<!\ shader\ }}
+\DoxyCodeLine{00140\ \ \ \textcolor{keywordtype}{float}\ ambiantLightValue;\ \textcolor{comment}{//<!\ intensité\ lumière\ ambiante}}
+\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{classVector3i}{Vector3i}}\ ambiantLightColor;\ \textcolor{comment}{//<!\ couleur\ lumière\ ambiante}}
+\DoxyCodeLine{00142\ \ \ GLint\ ambiantLightLoc;\ \textcolor{comment}{//<!\ GPU\ MEM\ addr\ de\ la\ lumière\ ambiante}}
+\DoxyCodeLine{00143\ \ \ GLint\ renderModeLoc;\ \textcolor{comment}{//<!\ GPU\ MEM\ addr\ du\ mode\ de\ renue\ (BBOP\_SHADER\_MODE\_COLOR,\ BBOP\_SHADER\_MODE\_TEXTURE,\ BBOP\_SHADER\_MODE\_MIX)}}
+\DoxyCodeLine{00144\ \ \ GLint\ windowSizeLoc;\ \textcolor{comment}{//<!\ GPU\ MEM\ addr\ de\ la\ taille\ en\ pixel\ de\ l'écran\ }}
+\DoxyCodeLine{00145\ \ \ GLint\ windowResoLoc;\ \textcolor{comment}{//<!\ GPU\ MEM\ addr\ de\ la\ resolution\ d'affichage\ de\ bbop}}
+\DoxyCodeLine{00146\ \ \ GLint\ nLightLoc;\ \textcolor{comment}{//<!\ GPU\ MEM\ addr\ de\ la\ list\ de\ lumière\ dans\ le\ shader}}
+\DoxyCodeLine{00147\ \ \ GLuint\ lightsUBO;\ \textcolor{comment}{//<!\ ID\ de\ l'ubo\ pour\ transfert\ la\ list\ de\ UniformLight\ vers\ la\ list\ de\ Light\ ddu\ shader}}
+\DoxyCodeLine{00148\ \ \ std::vector<UniformLight>\ lightsVec;\ \textcolor{comment}{//<!\ Liste\ des\ lumières\ à\ transférer\ vers\ le\ shader\ avec\ lightUBO}}
+\DoxyCodeLine{00149\ \ \ \mbox{\hyperlink{classVector3f}{Vector3f}}\ ambiantLight;\ \textcolor{comment}{//<!\ lumière\ ambiante\ de\ Scene}}
+\DoxyCodeLine{00150\ \ \ \mbox{\hyperlink{classCamera}{Camera}}*\ sceneCamera;\ \textcolor{comment}{//<!\ camera\ à\ utilser\ lors\ de\ Draw()}}
+\DoxyCodeLine{00151\ \};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !SCENE\_CLASS\_H}}
+
+\end{DoxyCode}

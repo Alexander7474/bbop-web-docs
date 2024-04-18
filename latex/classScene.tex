@@ -1,58 +1,58 @@
-\hypertarget{classScene}{}\doxysection{Scene Class Reference}
-\label{classScene}\index{Scene@{Scene}}
+\doxysection{Scene Class Reference}
+\hypertarget{classScene}{}\label{classScene}\index{Scene@{Scene}}
 
 
-Gère la scene et affiche des \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}}.  
+Gère la scene et affiche des \doxylink{classBbopDrawable}{Bbop\+Drawable}.  
 
 
 
 
 {\ttfamily \#include $<$scene\+Class.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classScene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
-\begin{DoxyCompactList}\small\item\em Constructeur par défault de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}{Scene}} (float n\+Ambiant\+Light\+Value, \mbox{\hyperlink{classVector3i}{Vector3i}} n\+Ambiant\+Light\+Color)
-\begin{DoxyCompactList}\small\item\em Constructeur de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classScene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScene_a3b8cec2e32546713915f8c6303c951f1}{\texorpdfstring{$\sim$}{\string~}\+Scene}} ()
 \item 
 void \mbox{\hyperlink{classScene_ab006725913220d544544131e81b4f59d}{Use}} ()
 \begin{DoxyCompactList}\small\item\em Charge les valeur de la scene dans le shader de celle ci. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classScene_a7148467de487cd0cb787fc84c5e8b75d}{use\+Camera}} (\mbox{\hyperlink{classCamera}{Camera}} $\ast$cam\+Addr)
+void \mbox{\hyperlink{classScene_a7148467de487cd0cb787fc84c5e8b75d}{use\+Camera}} (\mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*}cam\+Addr)
 \begin{DoxyCompactList}\small\item\em Utilise une camera pour Draw avec la scene. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}{set\+Ambiant\+Light\+Value}} (float n\+Ambiant\+Light\+Value)
-\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}intensité de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}intensité de la lumière ambiante de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}{get\+Ambiant\+Light\+Value}} () const
-\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}intensité de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}intensité de la lumière ambiante de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classScene_a1d8b8687167783ae52e33f69f053e3bd}{set\+Ambiant\+Light\+Color}} (const \mbox{\hyperlink{classVector3i}{Vector3i}} \&n\+Ambiant\+Light\+Color)
-\begin{DoxyCompactList}\small\item\em Change la couleur de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Change la couleur de la lumière ambiante de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classVector3i}{Vector3i}} \& \mbox{\hyperlink{classScene_ab5128cc4211b19612557c84f021de576}{get\+Ambiant\+Light\+Color}} () const
-\begin{DoxyCompactList}\small\item\em Renvoie la couleur de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Renvoie la couleur de la lumière ambiante de \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classScene_a09b1a0e0628434ef0c78ed3094f67c14}{add\+Light}} (\mbox{\hyperlink{classLight}{Light}} \&l)
-\begin{DoxyCompactList}\small\item\em Ajoute un point de lumière dans la \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Ajoute un point de lumière dans la \doxylink{classScene}{Scene}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}{Draw}} (const \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}} \&spr) const
-\begin{DoxyCompactList}\small\item\em Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\textquotesingle{}environement de la \mbox{\hyperlink{classScene}{Scene}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\textquotesingle{}environement de la \doxylink{classScene}{Scene}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Gère la scene et affiche des \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}}. 
+Gère la scene et affiche des \doxylink{classBbopDrawable}{Bbop\+Drawable}. 
 
-Tous les paramètre d\textquotesingle{}affichage sont gèré par \mbox{\hyperlink{classScene}{Scene}} comme la lumières ambiante, la camera ou encore les points de lumièrender\+Mode\+Loc. La \mbox{\hyperlink{classScene}{Scene}} gère donc l\textquotesingle{}environement de vos \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}}
+Tous les paramètre d\textquotesingle{}affichage sont gèré par \doxylink{classScene}{Scene} comme la lumières ambiante, la camera ou encore les points de lumièrender\+Mode\+Loc. La \doxylink{classScene}{Scene} gère donc l\textquotesingle{}environement de vos \doxylink{classBbopDrawable}{Bbop\+Drawable}
 
-La class \mbox{\hyperlink{classScene}{Scene}} gère les shaders d\textquotesingle{}affichage \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}}
+La class \doxylink{classScene}{Scene} gère les shaders d\textquotesingle{}affichage \begin{DoxySeeAlso}{See also}
+\doxylink{classBbopDrawable}{Bbop\+Drawable}
 \end{DoxySeeAlso}
 \begin{DoxyAttention}{Attention}
 Cette class est obligatoire pour afficher des éléments 
 \end{DoxyAttention}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Ajouter la possibilité de créer des shader personnalisé et de gérer des normal maps \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Ajouter la possibilité de créer des shader personnalisé et de gérer des normal maps \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classScene_ad10176d75a9cc0da56626f682d083507}\label{classScene_ad10176d75a9cc0da56626f682d083507}} 
+\Hypertarget{classScene_ad10176d75a9cc0da56626f682d083507}\label{classScene_ad10176d75a9cc0da56626f682d083507} 
 \index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
@@ -60,9 +60,9 @@ Cette class est obligatoire pour afficher des éléments
 
 
 
-Constructeur par défault de \mbox{\hyperlink{classScene}{Scene}}. 
+Constructeur par défault de \doxylink{classScene}{Scene}. 
 
-La scene par défault est éclairé par une lumière blanche d\textquotesingle{}intensité 1.\+0 \mbox{\Hypertarget{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}\label{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}} 
+La scene par défault est éclairé par une lumière blanche d\textquotesingle{}intensité 1.\+0 \Hypertarget{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}\label{classScene_a05f4829799d40e4fb5ceee1a4ee3b983} 
 \index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -70,7 +70,7 @@ La scene par défault est éclairé par une lumière blanche d\textquotesingle{}
 
 
 
-Constructeur de \mbox{\hyperlink{classScene}{Scene}}. 
+Constructeur de \doxylink{classScene}{Scene}. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -79,16 +79,16 @@ Constructeur de \mbox{\hyperlink{classScene}{Scene}}.
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Color} & Couleur de la lumière ambiante \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScene_a3b8cec2e32546713915f8c6303c951f1}\label{classScene_a3b8cec2e32546713915f8c6303c951f1}} 
-\index{Scene@{Scene}!````~Scene@{$\sim$Scene}}
-\index{````~Scene@{$\sim$Scene}!Scene@{Scene}}
-\doxysubsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
-{\footnotesize\ttfamily Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\Hypertarget{classScene_a3b8cec2e32546713915f8c6303c951f1}\label{classScene_a3b8cec2e32546713915f8c6303c951f1} 
+\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classScene_a09b1a0e0628434ef0c78ed3094f67c14}\label{classScene_a09b1a0e0628434ef0c78ed3094f67c14}} 
+\Hypertarget{classScene_a09b1a0e0628434ef0c78ed3094f67c14}\label{classScene_a09b1a0e0628434ef0c78ed3094f67c14} 
 \index{Scene@{Scene}!addLight@{addLight}}
 \index{addLight@{addLight}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{addLight()}{addLight()}}
@@ -96,10 +96,10 @@ Constructeur de \mbox{\hyperlink{classScene}{Scene}}.
 
 
 
-Ajoute un point de lumière dans la \mbox{\hyperlink{classScene}{Scene}}. 
+Ajoute un point de lumière dans la \doxylink{classScene}{Scene}. 
 
 \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{classLight}{Light}}
+\doxylink{classLight}{Light}
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}[1]{Parameters}
@@ -107,9 +107,9 @@ Ajoute un point de lumière dans la \mbox{\hyperlink{classScene}{Scene}}.
 \hline
 \end{DoxyParams}
 \begin{DoxyAttention}{Attention}
-La list de \mbox{\hyperlink{classLight}{Light}} de \mbox{\hyperlink{classScene}{Scene}} est reset à chaque usage de \mbox{\hyperlink{classScene_ab006725913220d544544131e81b4f59d}{Use()}}, il est donc nécessaire d\textquotesingle{}ajouter vos point de lumière avant de spécifier la scene à utilser dans votre rendue de frame 
+La list de \doxylink{classLight}{Light} de \doxylink{classScene}{Scene} est reset à chaque usage de \doxylink{classScene_ab006725913220d544544131e81b4f59d}{Use()}, il est donc nécessaire d\textquotesingle{}ajouter vos point de lumière avant de spécifier la scene à utilser dans votre rendue de frame 
 \end{DoxyAttention}
-\mbox{\Hypertarget{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}\label{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}} 
+\Hypertarget{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}\label{classScene_af943707e7fdfd9c1c90bb6fa3acecb35} 
 \index{Scene@{Scene}!Draw@{Draw}}
 \index{Draw@{Draw}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
@@ -117,14 +117,14 @@ La list de \mbox{\hyperlink{classLight}{Light}} de \mbox{\hyperlink{classScene}{
 
 
 
-Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\textquotesingle{}environement de la \mbox{\hyperlink{classScene}{Scene}}. 
+Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\textquotesingle{}environement de la \doxylink{classScene}{Scene}. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em spr} & Objet à dessiner \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScene_ab5128cc4211b19612557c84f021de576}\label{classScene_ab5128cc4211b19612557c84f021de576}} 
+\Hypertarget{classScene_ab5128cc4211b19612557c84f021de576}\label{classScene_ab5128cc4211b19612557c84f021de576} 
 \index{Scene@{Scene}!getAmbiantLightColor@{getAmbiantLightColor}}
 \index{getAmbiantLightColor@{getAmbiantLightColor}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{getAmbiantLightColor()}{getAmbiantLightColor()}}
@@ -132,12 +132,12 @@ Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\tex
 
 
 
-Renvoie la couleur de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. 
+Renvoie la couleur de la lumière ambiante de \doxylink{classScene}{Scene}. 
 
 \begin{DoxyReturn}{Returns}
 ambiant\+Light\+Color Couleur de la lumière ambiante 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}\label{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}} 
+\Hypertarget{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}\label{classScene_a1fa7cc93e28be137f6155a7d6b2b2402} 
 \index{Scene@{Scene}!getAmbiantLightValue@{getAmbiantLightValue}}
 \index{getAmbiantLightValue@{getAmbiantLightValue}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{getAmbiantLightValue()}{getAmbiantLightValue()}}
@@ -145,12 +145,12 @@ ambiant\+Light\+Color Couleur de la lumière ambiante
 
 
 
-Renvoie l\textquotesingle{}intensité de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. 
+Renvoie l\textquotesingle{}intensité de la lumière ambiante de \doxylink{classScene}{Scene}. 
 
 \begin{DoxyReturn}{Returns}
 ambiant\+Light\+Value Intensité de la lumière ambiante 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classScene_a1d8b8687167783ae52e33f69f053e3bd}\label{classScene_a1d8b8687167783ae52e33f69f053e3bd}} 
+\Hypertarget{classScene_a1d8b8687167783ae52e33f69f053e3bd}\label{classScene_a1d8b8687167783ae52e33f69f053e3bd} 
 \index{Scene@{Scene}!setAmbiantLightColor@{setAmbiantLightColor}}
 \index{setAmbiantLightColor@{setAmbiantLightColor}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{setAmbiantLightColor()}{setAmbiantLightColor()}}
@@ -158,14 +158,14 @@ ambiant\+Light\+Value Intensité de la lumière ambiante
 
 
 
-Change la couleur de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. 
+Change la couleur de la lumière ambiante de \doxylink{classScene}{Scene}. 
 
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Color} & Couleur de la lumière ambiante \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}\label{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}} 
+\Hypertarget{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}\label{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f} 
 \index{Scene@{Scene}!setAmbiantLightValue@{setAmbiantLightValue}}
 \index{setAmbiantLightValue@{setAmbiantLightValue}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{setAmbiantLightValue()}{setAmbiantLightValue()}}
@@ -173,17 +173,17 @@ Change la couleur de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}
 
 
 
-Change l\textquotesingle{}intensité de la lumière ambiante de \mbox{\hyperlink{classScene}{Scene}}. 
+Change l\textquotesingle{}intensité de la lumière ambiante de \doxylink{classScene}{Scene}. 
 
 \begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{classCamera}{Camera}}
+\doxylink{classCamera}{Camera}
 \end{DoxySeeAlso}
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Value} & Intensité \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classScene_ab006725913220d544544131e81b4f59d}\label{classScene_ab006725913220d544544131e81b4f59d}} 
+\Hypertarget{classScene_ab006725913220d544544131e81b4f59d}\label{classScene_ab006725913220d544544131e81b4f59d} 
 \index{Scene@{Scene}!Use@{Use}}
 \index{Use@{Use}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Use()}{Use()}}
@@ -195,17 +195,17 @@ Charge les valeur de la scene dans le shader de celle ci.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em window} & Fenêtre GLFW utilisée par votre programme et initialisée avec \mbox{\hyperlink{bbopFunc_8cpp_a697650ee78695079a1f5549465584e43}{bbop\+Init()}}\\
+\mbox{\texttt{ in}}  & {\em window} & Fenêtre GLFW utilisée par votre programme et initialisée avec \doxylink{bbopFunc_8cpp_a697650ee78695079a1f5549465584e43}{bbop\+Init()}\\
 \hline
 \end{DoxyParams}
 \begin{DoxyAttention}{Attention}
 Cette méthode est à utiliser à l\textquotesingle{}initialisation de votre programme et avant chaque changement de scene si la scene doit changer 
 \end{DoxyAttention}
-\mbox{\Hypertarget{classScene_a7148467de487cd0cb787fc84c5e8b75d}\label{classScene_a7148467de487cd0cb787fc84c5e8b75d}} 
+\Hypertarget{classScene_a7148467de487cd0cb787fc84c5e8b75d}\label{classScene_a7148467de487cd0cb787fc84c5e8b75d} 
 \index{Scene@{Scene}!useCamera@{useCamera}}
 \index{useCamera@{useCamera}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{useCamera()}{useCamera()}}
-{\footnotesize\ttfamily void Scene\+::use\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} $\ast$}]{cam\+Addr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Scene\+::use\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*}}]{cam\+Addr }\end{DoxyParamCaption})}
 
 
 
@@ -217,7 +217,7 @@ Utilise une camera pour Draw avec la scene.
 \hline
 \end{DoxyParams}
 \begin{DoxyAttention}{Attention}
-Cette méthode utilise le prisme de la camera passé en paramètre pour tous les prochains \mbox{\hyperlink{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}{Draw()}}, pour revenir à la camera par défault il faut l\textquotesingle{}utilser avec nullptr comme cam\+Addr 
+Cette méthode utilise le prisme de la camera passé en paramètre pour tous les prochains \doxylink{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}{Draw()}, pour revenir à la camera par défault il faut l\textquotesingle{}utilser avec nullptr comme cam\+Addr 
 \end{DoxyAttention}
 
 

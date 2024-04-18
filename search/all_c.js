@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['p0_112',['p0',['../structUniformLight.html#a3fafa248ac7671581985b863d9e49ec1',1,'UniformLight']]],
-  ['p1_113',['p1',['../structUniformLight.html#ab244725f048a0055337cf10307c99d32',1,'UniformLight']]],
-  ['pos_114',['pos',['../classGeometric.html#a14611c9ff07c9c8d5ebbb1f41f126717',1,'Geometric::pos()'],['../structUniformLight.html#abc68d67ac63ce6bef418eb8512f0fee5',1,'UniformLight::pos()'],['../classShape.html#ab65e13cd350073f848241ae3060acb20',1,'Shape::pos()']]]
+  ['operator_3d_0',['operator=',['../classTexteBox.html#aa6686aa79c2060c208b97184ce6b2e03',1,'TexteBox::operator=()'],['../classConvexShape.html#acb4e6c079deca6cb0b3fda2c44fa8f9e',1,'ConvexShape::operator=()'],['../classSprite.html#abb3f0673884d42b6b116f0c4d1a47b77',1,'Sprite::operator=()']]],
+  ['origin_1',['origin',['../classGeometric.html#a1f8404d4bcf821ab4f238c955f3cf0bf',1,'Geometric::origin'],['../classShape.html#ae0409dbc3387fb78e49a1d5378ca2581',1,'Shape::origin']]]
 ];

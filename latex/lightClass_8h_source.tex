@@ -1,0 +1,67 @@
+\doxysection{light\+Class.\+h}
+\hypertarget{lightClass_8h_source}{}\label{lightClass_8h_source}\index{include/BBOP/Graphics/lightClass.h@{include/BBOP/Graphics/lightClass.h}}
+\mbox{\hyperlink{lightClass_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ lightClass.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Ce\ programme\ est\ distribué\ sous\ les\ termes\ de\ la\ Licence\ Publique}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Générale\ GNU,\ version\ 3.0,\ telle\ que\ publiée\ par\ la\ Free\ Software}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Foundation.\ Consultez\ la\ Licence\ Publique\ Générale\ GNU\ pour\ plus\ de}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ détails.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Vous\ devez\ avoir\ reçu\ une\ copie\ de\ la\ Licence\ Publique\ Générale\ GNU}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ en\ même\ temps\ que\ ce\ programme.\ Si\ ce\ n'est\ pas\ le\ cas,\ consultez}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ LIGHT\_CLASS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ LIGHT\_CLASS\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopMathClass_8h}{bbopMathClass.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopGlobal_8h}{bbopGlobal.h}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLight}{Light}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{classLight_aa7ca93de13c3d0ff60c26328b79dd008}{Light}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos,\ \textcolor{keywordtype}{float}\ nIntensity,\ \mbox{\hyperlink{classVector3i}{Vector3i}}\ nRGB,\ \textcolor{keywordtype}{float}\ nConstantAttenuation,\textcolor{keywordtype}{float}\ nLinearAttenuation,\ \textcolor{keywordtype}{float}\ nQuadraticAttenuation);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classVector3i}{Vector3i}}\ \mbox{\hyperlink{classLight_a411518c34dd3a944d18f10067de5a449}{getColor}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_aa194ff3fb8d1af710ac66d86995f48e6}{setColor}}(\mbox{\hyperlink{classVector3i}{Vector3i}}\ nRGB);}
+\DoxyCodeLine{00055\ \ \ }
+\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classLight_a865a33affa6fd6723bfcc171771183cd}{getPosistion}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_a9ab919af95d2b4a4e9ebd2cf6e61e1d2}{setPosition}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos);}
+\DoxyCodeLine{00069\ \ \ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classLight_afd1b21b442f3a8e168b6f58ebbb93778}{getIntensity}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_afab9de0e37e7a131142e2631a0420976}{setIntensity}}(\textcolor{keywordtype}{float}\ nIntensity);}
+\DoxyCodeLine{00083\ \ \ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classLight_a2ce9f92eb7b1ecf6c2ec1af1f0e9005a}{getConstant}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_ad52dcbee76589880d21b9f9169e1cbb1}{setConstant}}(\textcolor{keywordtype}{float}\ nConstant);}
+\DoxyCodeLine{00097\ \ \ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classLight_ae34e98dd8c41d62a7e523442046dd9cc}{getLinear}}();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_a174fbcb37fc638d329b9c115094dded6}{setLinear}}(\textcolor{keywordtype}{float}\ nLinear);}
+\DoxyCodeLine{00111\ \ \ }
+\DoxyCodeLine{00117\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classLight_a00c361277bfc6806c18126f665f64e74}{getQuadratic}}();}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLight_abfac3752d0bbd946fa8bd0cd0503c30c}{setQuadratic}}(\textcolor{keywordtype}{float}\ nQuadratic);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00127\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ pos;\ \textcolor{comment}{//<!\ postion\ de\ Light}}
+\DoxyCodeLine{00128\ \ \ \mbox{\hyperlink{classVector3i}{Vector3i}}\ RGB;\ \textcolor{comment}{//<!\ Couleur\ de\ la\ lumière}}
+\DoxyCodeLine{00129\ \ \ \textcolor{keywordtype}{float}\ intensity;\ \textcolor{comment}{//<!\ Intensité\ de\ la\ lumière}}
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{float}\ constantAttenuation;\ \textcolor{comment}{//<!\ Attnuation\ constante}}
+\DoxyCodeLine{00131\ \ \ \textcolor{keywordtype}{float}\ linearAttenuation;\ \textcolor{comment}{//<!\ Attnuation\ linéaire}}
+\DoxyCodeLine{00132\ \ \ \textcolor{keywordtype}{float}\ quadraticAttenuation;\ \textcolor{comment}{//<!\ Attnuation\ quadratique}}
+\DoxyCodeLine{00133\ \};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !\ LIGHT\_CLASS\_H}}
+
+\end{DoxyCode}

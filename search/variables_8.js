@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quadraticattenuation_423',['quadraticAttenuation',['../structUniformLight.html#ae10e54fab974b55ac6e03f5155f88519',1,'UniformLight']]]
+  ['origin_0',['origin',['../classGeometric.html#a1f8404d4bcf821ab4f238c955f3cf0bf',1,'Geometric::origin'],['../classShape.html#ae0409dbc3387fb78e49a1d5378ca2581',1,'Shape::origin']]]
 ];

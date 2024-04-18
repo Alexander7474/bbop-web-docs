@@ -1,8 +1,13 @@
 <map id="include/BBOP/Graphics/lightClass.h" name="include/BBOP/Graphics/lightClass.h">
-<area shape="rect" id="node1" title=" " alt="" coords="152,5,323,47"/>
-<area shape="rect" id="node2" href="$lightClass_8cpp.html" title=" " alt="" coords="5,102,243,129"/>
-<area shape="rect" id="node3" href="$sceneClass_8h.html" title=" " alt="" coords="267,95,437,136"/>
-<area shape="rect" id="node4" href="$sceneClass_8cpp.html" title=" " alt="" coords="113,191,359,218"/>
-<area shape="rect" id="node5" href="$bbopFunc_8h.html" title=" " alt="" coords="384,184,555,225"/>
-<area shape="rect" id="node6" href="$bbopFunc_8cpp.html" title=" " alt="" coords="352,273,587,300"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="252,5,412,46"/>
+<area shape="rect" id="Node000002" href="$sceneClass_8h.html" title=" " alt="" coords="146,94,305,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,58,251,96,248,91,294,54"/>
+<area shape="rect" id="Node000006" href="$lightClass_8cpp.html" title=" " alt="" coords="329,102,551,127"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="370,54,427,99,424,103,366,58"/>
+<area shape="rect" id="Node000003" href="$bbopFunc_8h.html" title=" " alt="" coords="36,183,196,223"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,147,142,184,139,180,187,143"/>
+<area shape="rect" id="Node000005" href="$sceneClass_8cpp.html" title=" " alt="" coords="220,190,452,216"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="264,142,322,188,319,192,261,147"/>
+<area shape="rect" id="Node000004" href="$bbopFunc_8cpp.html" title=" " alt="" coords="5,271,227,297"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,239,119,271,113,271,113,239"/>
 </map>

@@ -1,0 +1,51 @@
+\doxysection{bbop\+Global.\+h}
+\hypertarget{bbopGlobal_8h_source}{}\label{bbopGlobal_8h_source}\index{include/BBOP/Graphics/bbopGlobal.h@{include/BBOP/Graphics/bbopGlobal.h}}
+\mbox{\hyperlink{bbopGlobal_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ bbopGlobal.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Ce\ programme\ est\ distribué\ sous\ les\ termes\ de\ la\ Licence\ Publique}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ Générale\ GNU,\ version\ 3.0,\ telle\ que\ publiée\ par\ la\ Free\ Software}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ Foundation.\ Consultez\ la\ Licence\ Publique\ Générale\ GNU\ pour\ plus\ de}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ détails.}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Vous\ devez\ avoir\ reçu\ une\ copie\ de\ la\ Licence\ Publique\ Générale\ GNU}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ en\ même\ temps\ que\ ce\ programme.\ Si\ ce\ n'est\ pas\ le\ cas,\ consultez}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ <https://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ GLOBALS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ GLOBALS\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopMathClass_8h}{bbopMathClass.h}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{bbopGlobal_8h_a2bd6ca7b9ba892cf01317f0639b01169}{BBOP\_SHADER\_MODE\_ENUM}}:\textcolor{keywordtype}{int}\ \{}
+\DoxyCodeLine{00035\ \ \ \mbox{\hyperlink{bbopGlobal_8h_a2bd6ca7b9ba892cf01317f0639b01169a9b815b1c9a6cb3b69241e9bd1e1367f4}{BBOP\_SHADER\_MODE\_TEXTURE}}=0,}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{bbopGlobal_8h_a2bd6ca7b9ba892cf01317f0639b01169a49aa58859de9e3d5e522471e26122a35}{BBOP\_SHADER\_MODE\_COLOR}}=1,}
+\DoxyCodeLine{00037\ \ \ \mbox{\hyperlink{bbopGlobal_8h_a2bd6ca7b9ba892cf01317f0639b01169a983ca8a5acf9a6a0f97b874453a5482c}{BBOP\_SHADER\_MODE\_MIX}}=2}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{classVector2i}{Vector2i}}\ \mbox{\hyperlink{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}{BBOP\_WINDOW\_SIZE}};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{classVector2i}{Vector2i}}\ \mbox{\hyperlink{bbopGlobal_8h_aab5088d67a1f295b589fb44bc21834c9}{BBOP\_WINDOW\_RESOLUTION}};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00057\ std::string\ \mbox{\hyperlink{bbopGlobal_8h_a5887937da025250f07c56783a4099d21}{bbopGetFileData}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBbopDrawable}{BbopDrawable}}}
+\DoxyCodeLine{00067\ \{}
+\DoxyCodeLine{00068\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classBbopDrawable_aa5e3bb4b5f543296e3fd4040d182a93a}{Draw}}(GLint\ renderModeLoc)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !\ GLOBALS\_H}}
+
+\end{DoxyCode}

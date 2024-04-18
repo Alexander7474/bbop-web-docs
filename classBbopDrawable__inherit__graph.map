@@ -1,10 +1,17 @@
 <map id="BbopDrawable" name="BbopDrawable">
-<area shape="rect" id="node1" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="193,5,310,32"/>
-<area shape="rect" id="node2" href="$classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="172,80,235,107"/>
-<area shape="rect" id="node8" href="$classTexteBox.html" title="Stock du texte pour le draw dans la fenêtre." alt="" coords="259,80,342,107"/>
-<area shape="rect" id="node3" href="$classConvexShape.html" title="Gère une convex." alt="" coords="5,155,116,181"/>
-<area shape="rect" id="node5" href="$classRectangleShape.html" title="Gère un rectangle/carré" alt="" coords="140,155,267,181"/>
-<area shape="rect" id="node6" href="$classSprite.html" title="Gère un Sprite (Rectangle avec une Texture)" alt="" coords="291,155,351,181"/>
-<area shape="rect" id="node4" href="$classCircleShape.html" title="Gère un cercle." alt="" coords="11,229,110,256"/>
-<area shape="rect" id="node7" href="$classNoTextureSprite.html" title=" " alt="" coords="257,229,384,256"/>
+<area shape="rect" id="Node000001" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="182,5,287,31"/>
+<area shape="rect" id="Node000002" href="$classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="160,79,219,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,45,199,80,195,77,217,42"/>
+<area shape="rect" id="Node000008" href="$classTexteBox.html" title="Stock du texte pour le draw dans la fenêtre." alt="" coords="242,79,318,105"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="252,42,275,77,270,80,248,45"/>
+<area shape="rect" id="Node000003" href="$classConvexShape.html" title="Gère une convex." alt="" coords="5,153,107,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,115,80,154,77,150,152,110"/>
+<area shape="rect" id="Node000005" href="$classRectangleShape.html" title="Gère un rectangle/carré" alt="" coords="131,153,248,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="192,120,192,152,187,152,187,120"/>
+<area shape="rect" id="Node000006" href="$classSprite.html" title="Gère un Sprite (Rectangle avec une Texture)" alt="" coords="271,153,326,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="222,111,281,150,279,154,219,115"/>
+<area shape="rect" id="Node000004" href="$classCircleShape.html" title="Gère un cercle." alt="" coords="10,226,102,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="59,194,59,226,53,226,53,194"/>
+<area shape="rect" id="Node000007" href="$classNoTextureSprite.html" title=" " alt="" coords="241,226,356,252"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="301,194,301,226,296,226,296,194"/>
 </map>

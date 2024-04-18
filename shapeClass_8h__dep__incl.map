@@ -1,14 +1,27 @@
 <map id="include/BBOP/Graphics/shapeClass.h" name="include/BBOP/Graphics/shapeClass.h">
-<area shape="rect" id="node1" title=" " alt="" coords="270,5,441,47"/>
-<area shape="rect" id="node2" href="$shapeClass_8cpp.html" title=" " alt="" coords="5,102,252,129"/>
-<area shape="rect" id="node3" href="$bbopFunc_8h.html" title=" " alt="" coords="258,273,429,315"/>
-<area shape="rect" id="node5" href="$cameraClass_8h.html" title=" " alt="" coords="338,95,509,136"/>
-<area shape="rect" id="node9" href="$spriteClass_8h.html" title=" " alt="" coords="645,95,815,136"/>
-<area shape="rect" id="node4" href="$bbopFunc_8cpp.html" title=" " alt="" coords="226,363,461,389"/>
-<area shape="rect" id="node6" href="$cameraClass_8cpp.html" title=" " alt="" coords="326,184,521,225"/>
-<area shape="rect" id="node7" href="$sceneClass_8h.html" title=" " alt="" coords="545,184,715,225"/>
-<area shape="rect" id="node8" href="$sceneClass_8cpp.html" title=" " alt="" coords="507,281,753,307"/>
-<area shape="rect" id="node10" href="$spriteClass_8cpp.html" title=" " alt="" coords="740,184,923,225"/>
-<area shape="rect" id="node11" href="$fontsClass_8h.html" title=" " alt="" coords="947,184,1118,225"/>
-<area shape="rect" id="node12" href="$fontsClass_8cpp.html" title=" " alt="" coords="912,281,1153,307"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="308,5,468,46"/>
+<area shape="rect" id="Node000002" href="$bbopFunc_8h.html" title=" " alt="" coords="36,271,196,312"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,48,237,67,179,95,152,112,128,133,107,157,90,184,85,206,88,229,105,270,101,272,83,230,80,205,86,182,103,154,124,129,149,108,176,90,235,62,292,43"/>
+<area shape="rect" id="Node000004" href="$cameraClass_8h.html" title=" " alt="" coords="216,94,376,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="358,59,319,96,315,92,354,55"/>
+<area shape="rect" id="Node000008" href="$spriteClass_8h.html" title=" " alt="" coords="400,94,560,135"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="422,55,461,92,457,96,418,59"/>
+<area shape="rect" id="Node000012" href="$shapeClass_8cpp.html" title=" " alt="" coords="584,102,816,127"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="475,48,657,98,655,103,473,53"/>
+<area shape="rect" id="Node000003" href="$bbopFunc_8cpp.html" title=" " alt="" coords="5,360,227,386"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,328,119,359,113,359,113,328"/>
+<area shape="rect" id="Node000005" href="$sceneClass_8h.html" title=" " alt="" coords="308,183,468,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="330,143,369,180,365,184,326,147"/>
+<area shape="rect" id="Node000007" href="$cameraClass_8cpp.html" title=" " alt="" coords="100,183,284,223"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="263,147,217,184,214,180,259,143"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="312,231,179,273,177,268,311,226"/>
+<area shape="rect" id="Node000006" href="$sceneClass_8cpp.html" title=" " alt="" coords="237,279,470,305"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="377,239,361,280,356,278,372,237"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="450,147,411,184,407,180,446,143"/>
+<area shape="rect" id="Node000009" href="$fontsClass_8h.html" title=" " alt="" coords="492,183,652,223"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="514,143,553,180,549,184,510,147"/>
+<area shape="rect" id="Node000011" href="$spriteClass_8cpp.html" title=" " alt="" coords="675,183,848,223"/>
+<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="559,137,698,180,697,185,558,142"/>
+<area shape="rect" id="Node000010" href="$fontsClass_8cpp.html" title=" " alt="" coords="494,279,720,305"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="588,237,604,278,599,280,583,239"/>
 </map>

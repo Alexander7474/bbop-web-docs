@@ -1,55 +1,57 @@
-\hypertarget{shaders_8cpp}{}\doxysection{src/\+BBOP/\+Graphics/shaders.cpp File Reference}
-\label{shaders_8cpp}\index{src/BBOP/Graphics/shaders.cpp@{src/BBOP/Graphics/shaders.cpp}}
-{\ttfamily \#include \char`\"{}../../../include/\+BBOP/\+Graphics/shaders.\+h\char`\"{}}\newline
+\doxysection{src/\+BBOP/\+Graphics/shaders.cpp File Reference}
+\hypertarget{shaders_8cpp}{}\label{shaders_8cpp}\index{src/BBOP/Graphics/shaders.cpp@{src/BBOP/Graphics/shaders.cpp}}
+{\ttfamily \#include "{}../../../include/\+BBOP/\+Graphics/shaders.\+h"{}}\newline
 Include dependency graph for shaders.\+cpp\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=248pt]{shaders_8cpp__incl}
+\includegraphics[width=238pt]{shaders_8cpp__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const char $\ast$ \mbox{\hyperlink{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3}{default\+Vertex}}
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3}{default\+Vertex}}
 \item 
-const char $\ast$ \mbox{\hyperlink{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8}{default\+Fragment}}
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8}{default\+Fragment}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8}\label{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8}} 
+\Hypertarget{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8}\label{shaders_8cpp_aa4e3821fb3d25cef0fcd8bd89a1666e8} 
 \index{shaders.cpp@{shaders.cpp}!defaultFragment@{defaultFragment}}
 \index{defaultFragment@{defaultFragment}!shaders.cpp@{shaders.cpp}}
 \doxysubsubsection{\texorpdfstring{defaultFragment}{defaultFragment}}
-{\footnotesize\ttfamily const char$\ast$ default\+Fragment}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} default\+Fragment}
 
-\mbox{\Hypertarget{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3}\label{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3}} 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]utiliser des matrices de model, de view et de projection pour le vertex sahder \end{DoxyRefDesc}
+\Hypertarget{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3}\label{shaders_8cpp_affe7023f9b3452bdc25366a3fb1da4c3} 
 \index{shaders.cpp@{shaders.cpp}!defaultVertex@{defaultVertex}}
 \index{defaultVertex@{defaultVertex}!shaders.cpp@{shaders.cpp}}
 \doxysubsubsection{\texorpdfstring{defaultVertex}{defaultVertex}}
-{\footnotesize\ttfamily const char$\ast$ default\+Vertex}
+{\footnotesize\ttfamily const char\texorpdfstring{$\ast$}{*} default\+Vertex}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{= R\textcolor{stringliteral}{"{}glsl(}}
-\DoxyCodeLine{\textcolor{stringliteral}{\#version 330 core}}
-\DoxyCodeLine{\textcolor{stringliteral}{layout (location = 0) in vec2 aPos;}}
-\DoxyCodeLine{\textcolor{stringliteral}{layout (location = 1) in vec4 aColor;}}
-\DoxyCodeLine{\textcolor{stringliteral}{layout (location = 2) in vec2 aTexCoord;}}
+\DoxyCodeLine{=\ R\textcolor{stringliteral}{"{}glsl(}}
+\DoxyCodeLine{\textcolor{stringliteral}{\#version\ 330\ core}}
+\DoxyCodeLine{\textcolor{stringliteral}{layout\ (location\ =\ 0)\ in\ vec2\ aPos;}}
+\DoxyCodeLine{\textcolor{stringliteral}{layout\ (location\ =\ 1)\ in\ vec4\ aColor;}}
+\DoxyCodeLine{\textcolor{stringliteral}{layout\ (location\ =\ 2)\ in\ vec2\ aTexCoord;}}
 \DoxyCodeLine{\textcolor{stringliteral}{}}
-\DoxyCodeLine{\textcolor{stringliteral}{uniform mat4 projection;}}
+\DoxyCodeLine{\textcolor{stringliteral}{uniform\ mat4\ projection;}}
 \DoxyCodeLine{\textcolor{stringliteral}{}}
-\DoxyCodeLine{\textcolor{stringliteral}{out vec4 outColor;}}
-\DoxyCodeLine{\textcolor{stringliteral}{out vec2 TexCoord;}}
+\DoxyCodeLine{\textcolor{stringliteral}{out\ vec4\ outColor;}}
+\DoxyCodeLine{\textcolor{stringliteral}{out\ vec2\ TexCoord;}}
 \DoxyCodeLine{\textcolor{stringliteral}{}}
-\DoxyCodeLine{\textcolor{stringliteral}{void main()}}
+\DoxyCodeLine{\textcolor{stringliteral}{void\ main()}}
 \DoxyCodeLine{\textcolor{stringliteral}{\{}}
-\DoxyCodeLine{\textcolor{stringliteral}{    gl\_Position = projection * vec4(aPos, 0.0, 1.0);}}
-\DoxyCodeLine{\textcolor{stringliteral}{    outColor = aColor;}}
-\DoxyCodeLine{\textcolor{stringliteral}{    TexCoord = aTexCoord;}}
-\DoxyCodeLine{\textcolor{stringliteral}{\} }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ gl\_Position\ =\ projection\ *\ vec4(aPos,\ 0.0,\ 1.0);}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ outColor\ =\ aColor;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ TexCoord\ =\ aTexCoord;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}\ }}
 \DoxyCodeLine{\textcolor{stringliteral}{)glsl"{}}}
 
 \end{DoxyCode}

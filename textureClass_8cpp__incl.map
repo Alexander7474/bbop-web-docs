@@ -1,10 +1,21 @@
 <map id="src/BBOP/Graphics/textureClass.cpp" name="src/BBOP/Graphics/textureClass.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="261,5,455,47"/>
-<area shape="rect" id="node2" href="$textureClass_8h.html" title=" " alt="" coords="178,95,359,136"/>
-<area shape="rect" id="node8" title=" " alt="" coords="384,102,511,129"/>
-<area shape="rect" id="node3" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,184,140,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="165,184,250,211"/>
-<area shape="rect" id="node6" title=" " alt="" coords="275,184,385,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="410,184,490,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="41,259,104,285"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="362,5,541,46"/>
+<area shape="rect" id="Node000002" href="$textureClass_8h.html" title=" " alt="" coords="226,94,389,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="420,49,354,88,351,84,417,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="384,183,455,208"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="450,47,427,168,422,167,445,46"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="479,183,536,208"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="460,45,501,167,496,169,455,47"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="515,102,628,127"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="480,44,544,90,541,94,477,49"/>
+<area shape="rect" id="Node000003" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,183,127,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,138,119,180,117,175,246,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="151,183,232,208"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="280,137,223,176,220,171,277,133"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="255,183,360,208"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="310,135,310,167,305,167,305,135"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="337,133,391,171,388,175,333,137"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="358,133,465,175,463,180,356,138"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="37,256,95,282"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,209,69,241,63,241,63,209"/>
 </map>

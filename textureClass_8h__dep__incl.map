@@ -1,12 +1,22 @@
 <map id="include/BBOP/Graphics/textureClass.h" name="include/BBOP/Graphics/textureClass.h">
-<area shape="rect" id="node1" title=" " alt="" coords="119,5,290,47"/>
-<area shape="rect" id="node2" href="$textureClass_8cpp.html" title=" " alt="" coords="5,95,199,136"/>
-<area shape="rect" id="node3" href="$spriteClass_8h.html" title=" " alt="" coords="223,95,394,136"/>
-<area shape="rect" id="node4" href="$spriteClass_8cpp.html" title=" " alt="" coords="16,184,199,225"/>
-<area shape="rect" id="node5" href="$fontsClass_8h.html" title=" " alt="" coords="223,184,394,225"/>
-<area shape="rect" id="node7" href="$sceneClass_8h.html" title=" " alt="" coords="455,184,626,225"/>
-<area shape="rect" id="node6" href="$fontsClass_8cpp.html" title=" " alt="" coords="152,281,393,307"/>
-<area shape="rect" id="node8" href="$sceneClass_8cpp.html" title=" " alt="" coords="417,281,664,307"/>
-<area shape="rect" id="node9" href="$bbopFunc_8h.html" title=" " alt="" coords="689,273,859,315"/>
-<area shape="rect" id="node10" href="$bbopFunc_8cpp.html" title=" " alt="" coords="657,363,891,389"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="248,5,408,46"/>
+<area shape="rect" id="Node000002" href="$bbopFunc_8h.html" title=" " alt="" coords="36,271,196,312"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,57,245,80,208,109,172,144,144,184,127,229,120,271,115,270,121,228,139,181,168,141,204,105,242,76,277,52"/>
+<area shape="rect" id="Node000004" href="$spriteClass_8h.html" title=" " alt="" coords="248,94,408,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,62,331,94,325,94,325,62"/>
+<area shape="rect" id="Node000010" href="$textureClass_8cpp.html" title=" " alt="" coords="432,94,611,135"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="387,50,478,91,476,96,385,55"/>
+<area shape="rect" id="Node000003" href="$bbopFunc_8cpp.html" title=" " alt="" coords="5,360,227,386"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,328,119,359,113,359,113,328"/>
+<area shape="rect" id="Node000005" href="$fontsClass_8h.html" title=" " alt="" coords="532,183,692,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="408,137,548,180,547,185,407,142"/>
+<area shape="rect" id="Node000007" href="$sceneClass_8h.html" title=" " alt="" coords="154,183,313,223"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="297,147,257,184,253,180,293,143"/>
+<area shape="rect" id="Node000009" href="$spriteClass_8cpp.html" title=" " alt="" coords="337,183,509,223"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="363,143,403,180,399,184,359,147"/>
+<area shape="rect" id="Node000006" href="$fontsClass_8cpp.html" title=" " alt="" coords="499,279,725,305"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="615,239,615,279,609,279,609,239"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="196,235,144,273,141,269,193,230"/>
+<area shape="rect" id="Node000008" href="$sceneClass_8cpp.html" title=" " alt="" coords="220,279,452,305"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="270,231,324,277,320,281,266,236"/>
 </map>

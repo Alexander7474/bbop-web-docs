@@ -1,7 +1,11 @@
 <map id="src/BBOP/Graphics/geometricClass.cpp" name="src/BBOP/Graphics/geometricClass.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="32,5,244,47"/>
-<area shape="rect" id="node2" href="$geometricClass_8h.html" title=" " alt="" coords="38,95,238,136"/>
-<area shape="rect" id="node3" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,184,140,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="165,184,245,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="41,259,104,285"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,5,225,46"/>
+<area shape="rect" id="Node000002" href="$geometricClass_8h.html" title=" " alt="" coords="35,94,217,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,47,129,78,123,78,123,47"/>
+<area shape="rect" id="Node000003" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,183,127,208"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,137,87,172,82,168,109,133"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="150,183,222,208"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="143,133,170,168,165,172,139,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="37,256,95,282"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,209,69,241,63,241,63,209"/>
 </map>

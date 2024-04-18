@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['origin_419',['origin',['../classGeometric.html#a1f8404d4bcf821ab4f238c955f3cf0bf',1,'Geometric::origin()'],['../classShape.html#ae0409dbc3387fb78e49a1d5378ca2581',1,'Shape::origin()']]]
+  ['lasttime_0',['lastTime',['../benchmark_8cpp.html#a9648c4b3c5e8528ebc2745f7cb76ff62',1,'benchmark.cpp']]],
+  ['linearattenuation_1',['linearAttenuation',['../structUniformLight.html#a9bcd3147847a46e4d8a66e5af54cd88c',1,'UniformLight']]]
 ];

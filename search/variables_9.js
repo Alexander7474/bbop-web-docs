@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['rd_424',['rd',['../benchmark_8cpp.html#a5e7d225ba5a0794a0473ca8ddc08aaa3',1,'benchmark.cpp']]],
-  ['rectlist_425',['rectList',['../benchmark_8cpp.html#a6514ddf37475763f3a56bb4772532848',1,'benchmark.cpp']]],
-  ['rgb_426',['RGB',['../classShape.html#a7e043155fe1272d8beccc9031e80860f',1,'Shape']]],
-  ['rotation_427',['rotation',['../classGeometric.html#ac04c6ad67f220fa6fe1adbd49dad3891',1,'Geometric::rotation()'],['../classShape.html#ae74cb8b7d1fabcc37421ac58a681d521',1,'Shape::rotation()']]]
+  ['p0_0',['p0',['../structUniformLight.html#a3fafa248ac7671581985b863d9e49ec1',1,'UniformLight']]],
+  ['p1_1',['p1',['../structUniformLight.html#ab244725f048a0055337cf10307c99d32',1,'UniformLight']]],
+  ['pos_2',['pos',['../classGeometric.html#a14611c9ff07c9c8d5ebbb1f41f126717',1,'Geometric::pos'],['../structUniformLight.html#abc68d67ac63ce6bef418eb8512f0fee5',1,'UniformLight::pos'],['../classShape.html#ab65e13cd350073f848241ae3060acb20',1,'Shape::pos']]]
 ];

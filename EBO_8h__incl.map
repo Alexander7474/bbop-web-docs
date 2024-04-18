@@ -1,5 +1,7 @@
 <map id="include/BBOP/Graphics/EBO.h" name="include/BBOP/Graphics/EBO.h">
-<area shape="rect" id="node1" title=" " alt="" coords="24,5,195,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,95,91,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="115,95,226,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="23,5,183,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,86,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,48,66,83,61,79,87,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,94,214,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,45,146,80,141,83,115,48"/>
 </map>
