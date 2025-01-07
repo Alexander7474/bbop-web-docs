@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rectangleshape_0',['RectangleShape',['../classRectangleShape.html',1,'']]]
+  ['map_0',['Map',['../classMap.html',1,'']]]
 ];

@@ -16,7 +16,7 @@ Inheritance diagram for Geometric\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=149pt]{classGeometric__inherit__graph}
+\includegraphics[width=157pt]{classGeometric__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -26,7 +26,7 @@ Collaboration diagram for Geometric\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=164pt]{classGeometric__coll__graph}
+\includegraphics[width=178pt]{classGeometric__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -40,13 +40,19 @@ Collaboration diagram for Geometric\+:
 \item 
 void \mbox{\hyperlink{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}{set\+Position}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Pos)
 \item 
+void \mbox{\hyperlink{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea}{set\+Position}} (float x\+\_\+, float y\+\_\+)
+\item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}{get\+Position}} () const
 \item 
 void \mbox{\hyperlink{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}{set\+Size}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Size)
 \item 
+void \mbox{\hyperlink{classGeometric_a3349ad4b53502ef34045cd9918edf874}{set\+Size}} (float x\+\_\+, float y\+\_\+)
+\item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_a3fff20466217773ba98812edec671fd6}{get\+Size}} () const
 \item 
 void \mbox{\hyperlink{classGeometric_abbca7318025469c0f10e213091fc172b}{set\+Origin}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Origin)
+\item 
+void \mbox{\hyperlink{classGeometric_a781821c6563ce5f9aebf09c265318fe6}{set\+Origin}} (float x\+\_\+, float y\+\_\+)
 \item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}{get\+Origin}} () const
 \item 
@@ -73,104 +79,124 @@ gère un objet avec de propriété géométrique
 \begin{DoxyNote}{Note}
 Class utile pour décrire toute forme géometrique 
 \end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]ajouter a shape \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classGeometric_aefce0e819f3027bdb457cadd97c36feb}\label{classGeometric_aefce0e819f3027bdb457cadd97c36feb} 
-\index{Geometric@{Geometric}!Geometric@{Geometric}}
+\Hypertarget{classGeometric_aefce0e819f3027bdb457cadd97c36feb}\index{Geometric@{Geometric}!Geometric@{Geometric}}
 \index{Geometric@{Geometric}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{Geometric()}{Geometric()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily Geometric\+::\+Geometric (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size,  }\item[{float}]{n\+Rotation }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classGeometric_aefce0e819f3027bdb457cadd97c36feb} 
+Geometric\+::\+Geometric (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size}{, }\item[{float}]{n\+Rotation}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classGeometric_ab0b0fa4ae9960792d353f2103fdf0f94}\label{classGeometric_ab0b0fa4ae9960792d353f2103fdf0f94} 
-\index{Geometric@{Geometric}!Geometric@{Geometric}}
+\Hypertarget{classGeometric_ab0b0fa4ae9960792d353f2103fdf0f94}\index{Geometric@{Geometric}!Geometric@{Geometric}}
 \index{Geometric@{Geometric}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{Geometric()}{Geometric()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Geometric\+::\+Geometric (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGeometric}{Geometric}} \&}]{other }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classGeometric_ab0b0fa4ae9960792d353f2103fdf0f94} 
+Geometric\+::\+Geometric (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGeometric}{Geometric}} \&}]{other}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classGeometric_a741e184fee4d9abdeb2f565870eba117}\label{classGeometric_a741e184fee4d9abdeb2f565870eba117} 
-\index{Geometric@{Geometric}!Geometric@{Geometric}}
+\Hypertarget{classGeometric_a741e184fee4d9abdeb2f565870eba117}\index{Geometric@{Geometric}!Geometric@{Geometric}}
 \index{Geometric@{Geometric}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{Geometric()}{Geometric()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily Geometric\+::\+Geometric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classGeometric_a741e184fee4d9abdeb2f565870eba117} 
+Geometric\+::\+Geometric (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}\label{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc} 
-\index{Geometric@{Geometric}!getOrigin@{getOrigin}}
+\Hypertarget{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}\index{Geometric@{Geometric}!getOrigin@{getOrigin}}
 \index{getOrigin@{getOrigin}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc} 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Origin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-\Hypertarget{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}\label{classGeometric_ae6773c23bc49c577a746eceba0d61ae9} 
-\index{Geometric@{Geometric}!getPosition@{getPosition}}
+\Hypertarget{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}\index{Geometric@{Geometric}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classGeometric_ae6773c23bc49c577a746eceba0d61ae9} 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-\Hypertarget{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}\label{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e} 
-\index{Geometric@{Geometric}!getRotation@{getRotation}}
+\Hypertarget{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}\index{Geometric@{Geometric}!getRotation@{getRotation}}
 \index{getRotation@{getRotation}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
-{\footnotesize\ttfamily float Geometric\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e} 
+float Geometric\+::get\+Rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-\Hypertarget{classGeometric_a3fff20466217773ba98812edec671fd6}\label{classGeometric_a3fff20466217773ba98812edec671fd6} 
-\index{Geometric@{Geometric}!getSize@{getSize}}
+\Hypertarget{classGeometric_a3fff20466217773ba98812edec671fd6}\index{Geometric@{Geometric}!getSize@{getSize}}
 \index{getSize@{getSize}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classGeometric_a3fff20466217773ba98812edec671fd6} 
+const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-\Hypertarget{classGeometric_abbca7318025469c0f10e213091fc172b}\label{classGeometric_abbca7318025469c0f10e213091fc172b} 
-\index{Geometric@{Geometric}!setOrigin@{setOrigin}}
+\Hypertarget{classGeometric_abbca7318025469c0f10e213091fc172b}\index{Geometric@{Geometric}!setOrigin@{setOrigin}}
 \index{setOrigin@{setOrigin}!Geometric@{Geometric}}
-\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
-{\footnotesize\ttfamily void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Origin }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classGeometric_abbca7318025469c0f10e213091fc172b} 
+void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Origin}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}\label{classGeometric_adabfdba31abfe4bc3261ddba5780b30b} 
-\index{Geometric@{Geometric}!setPosition@{setPosition}}
+\Hypertarget{classGeometric_a781821c6563ce5f9aebf09c265318fe6}\index{Geometric@{Geometric}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!Geometric@{Geometric}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classGeometric_a781821c6563ce5f9aebf09c265318fe6} 
+void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}\index{Geometric@{Geometric}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Geometric@{Geometric}}
-\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Pos }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classGeometric_adabfdba31abfe4bc3261ddba5780b30b} 
+void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Pos}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classGeometric_aa2fabdf5c95688011676905b81bf154a}\label{classGeometric_aa2fabdf5c95688011676905b81bf154a} 
-\index{Geometric@{Geometric}!setRotation@{setRotation}}
+\Hypertarget{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea}\index{Geometric@{Geometric}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Geometric@{Geometric}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea} 
+void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGeometric_aa2fabdf5c95688011676905b81bf154a}\index{Geometric@{Geometric}!setRotation@{setRotation}}
 \index{setRotation@{setRotation}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
-{\footnotesize\ttfamily void Geometric\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classGeometric_aa2fabdf5c95688011676905b81bf154a} 
+void Geometric\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}\label{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9} 
-\index{Geometric@{Geometric}!setSize@{setSize}}
+\Hypertarget{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}\index{Geometric@{Geometric}!setSize@{setSize}}
 \index{setSize@{setSize}!Geometric@{Geometric}}
-\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
-{\footnotesize\ttfamily void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Size }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9} 
+void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2f}{Vector2f}} \&}]{n\+Size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classGeometric_a3349ad4b53502ef34045cd9918edf874}\index{Geometric@{Geometric}!setSize@{setSize}}
+\index{setSize@{setSize}!Geometric@{Geometric}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classGeometric_a3349ad4b53502ef34045cd9918edf874} 
+void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Data Documentation}
-\Hypertarget{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf}\label{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf} 
-\index{Geometric@{Geometric}!origin@{origin}}
+\Hypertarget{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf}\index{Geometric@{Geometric}!origin@{origin}}
 \index{origin@{origin}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{origin}{origin}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::origin\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::origin\hspace{0.3cm}{\ttfamily [protected]}}
 
-\Hypertarget{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717}\label{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717} 
-\index{Geometric@{Geometric}!pos@{pos}}
+\Hypertarget{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717}\index{Geometric@{Geometric}!pos@{pos}}
 \index{pos@{pos}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{pos}{pos}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
 
-\Hypertarget{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891}\label{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891} 
-\index{Geometric@{Geometric}!rotation@{rotation}}
+\Hypertarget{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891}\index{Geometric@{Geometric}!rotation@{rotation}}
 \index{rotation@{rotation}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{rotation}{rotation}}
-{\footnotesize\ttfamily float Geometric\+::rotation\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891} 
+float Geometric\+::rotation\hspace{0.3cm}{\ttfamily [protected]}}
 
-\Hypertarget{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56}\label{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56} 
-\index{Geometric@{Geometric}!size@{size}}
+\Hypertarget{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56}\index{Geometric@{Geometric}!size@{size}}
 \index{size@{size}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{size}{size}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::size\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Geometric\+::size\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 

@@ -21,30 +21,33 @@
 \DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bbopMathClass_8h}{bbopMathClass.h}}"{}}}
 \DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iostream>}}
 \DoxyCodeLine{00019\ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeometric}{Geometric}}\ }
-\DoxyCodeLine{00027\ \{}
-\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos,\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ nOrigin,\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ nSize,\ \textcolor{keywordtype}{float}\ nRotation);}
-\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classGeometric}{Geometric}}\ \&other);}
-\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}();}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nPos);}
-\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}{getPosition}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}{setSize}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nSize);}
-\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_a3fff20466217773ba98812edec671fd6}{getSize}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_abbca7318025469c0f10e213091fc172b}{setOrigin}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nOrigin);}
-\DoxyCodeLine{00038\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}{getOrigin}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_aa2fabdf5c95688011676905b81bf154a}{setRotation}}(\textcolor{keywordtype}{float}\ nRotation);}
-\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}{getRotation}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717}{pos}};}
-\DoxyCodeLine{00044\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf}{origin}};}
-\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56}{size}};}
-\DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891}{rotation}};}
-\DoxyCodeLine{00047\ \};}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !GEOMETRIC\_CLASS\_H}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGeometric_aefce0e819f3027bdb457cadd97c36feb}{Geometric}}\ }
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos,\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ nOrigin,\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ nSize,\ \textcolor{keywordtype}{float}\ nRotation);}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classGeometric_aefce0e819f3027bdb457cadd97c36feb}{Geometric}}\ \&other);}
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{classGeometric_a741e184fee4d9abdeb2f565870eba117}{Geometric}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nPos);}
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}{setPosition}}(\textcolor{keywordtype}{float}\ x\_,\ \textcolor{keywordtype}{float}\ y\_);}
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}{setSize}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nSize);}
+\DoxyCodeLine{00038\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}{setSize}}(\textcolor{keywordtype}{float}\ x\_,\ \textcolor{keywordtype}{float}\ y\_);}
+\DoxyCodeLine{00039\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_a3fff20466217773ba98812edec671fd6}{getSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_abbca7318025469c0f10e213091fc172b}{setOrigin}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&nOrigin);}
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_abbca7318025469c0f10e213091fc172b}{setOrigin}}(\textcolor{keywordtype}{float}\ x\_,\ \textcolor{keywordtype}{float}\ y\_);}
+\DoxyCodeLine{00042\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}{getOrigin}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGeometric_aa2fabdf5c95688011676905b81bf154a}{setRotation}}(\textcolor{keywordtype}{float}\ nRotation);}
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}{getRotation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_a14611c9ff07c9c8d5ebbb1f41f126717}{pos}};}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_a1f8404d4bcf821ab4f238c955f3cf0bf}{origin}};}
+\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classGeometric_aa66a8a8cb49a9b1bb20d6fc5e8426e56}{size}};}
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classGeometric_ac04c6ad67f220fa6fe1adbd49dad3891}{rotation}};}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !GEOMETRIC\_CLASS\_H}}
 
 \end{DoxyCode}

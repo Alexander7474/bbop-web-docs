@@ -16,7 +16,7 @@ Collaboration diagram for Camera\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=164pt]{classCamera__coll__graph}
+\includegraphics[width=178pt]{classCamera__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -39,7 +39,9 @@ void \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{set\+Positi
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screen\+Pos\+To\+Cam\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} screen\+Pos)
 \begin{DoxyCompactList}\small\item\em Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées du monde à travers le prisme de la camera. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{is\+In\+Cam\+View}} (\mbox{\hyperlink{classShape}{Shape}} \&obj)
-\begin{DoxyCompactList}\small\item\em Détermine si un objet \doxylink{classShape}{Shape} est visible sur l\textquotesingle{}écran à travers le prisme de la \doxylink{classCamera}{Camera}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Détermine si un objet \doxylink{classShape}{Shape} est visible sur l\textquotesingle{}écran à travers le prisme de la \doxylink{classCamera}{Camera}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCamera_a043c162e8ee7db433202ceed6d12d25f}{is\+In\+Cam\+View}} (\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \&obj)
+\begin{DoxyCompactList}\small\item\em Détermine si un geometrix est dans le champs de la camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,11 +60,11 @@ Les attribut de cette class sont utilisé par \doxylink{classScene}{Scene} pour 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classCamera_a82bc038e6fd98292192f0f1d101af5e3}\label{classCamera_a82bc038e6fd98292192f0f1d101af5e3} 
-\index{Camera@{Camera}!Camera@{Camera}}
+\Hypertarget{classCamera_a82bc038e6fd98292192f0f1d101af5e3}\index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos,  }\item[{float}]{n\+Scale }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_a82bc038e6fd98292192f0f1d101af5e3} 
+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{, }\item[{float}]{n\+Scale}{}\end{DoxyParamCaption})}
 
 
 
@@ -75,11 +77,11 @@ Constructeur de la \doxylink{classCamera}{Camera}.
 \mbox{\texttt{ in}}  & {\em n\+Scale} & Scale de la camera, a 1.\+0 la camera à la même proportion que la résolution BBOP\+\_\+\+WINDOW\+\_\+\+SIZE \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331} 
-\index{Camera@{Camera}!Camera@{Camera}}
+\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\index{Camera@{Camera}!Camera@{Camera}}
 \index{Camera@{Camera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{Camera()}{Camera()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_a01f94c3543f56ede7af49dc778f19331} 
+Camera\+::\+Camera (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -93,21 +95,21 @@ Une \doxylink{classCamera}{Camera} par défault peut être utile pour convertir 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}\label{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5} 
-\index{Camera@{Camera}!buildCamera@{buildCamera}}
+\Hypertarget{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}\index{Camera@{Camera}!buildCamera@{buildCamera}}
 \index{buildCamera@{buildCamera}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{buildCamera()}{buildCamera()}}
-{\footnotesize\ttfamily void Camera\+::build\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5} 
+void Camera\+::build\+Camera (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Determine les limites x et y de la cam avec ces attribut. 
 
-\Hypertarget{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}\label{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f} 
-\index{Camera@{Camera}!getPosition@{getPosition}}
+\Hypertarget{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}\index{Camera@{Camera}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -116,11 +118,11 @@ Renvoie la position actuelle de la camera.
 \begin{DoxyReturn}{Returns}
 pos 
 \end{DoxyReturn}
-\Hypertarget{classCamera_a69a3797ab7fe29eccb0eef48727b0099}\label{classCamera_a69a3797ab7fe29eccb0eef48727b0099} 
-\index{Camera@{Camera}!getScale@{getScale}}
+\Hypertarget{classCamera_a69a3797ab7fe29eccb0eef48727b0099}\index{Camera@{Camera}!getScale@{getScale}}
 \index{getScale@{getScale}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
-{\footnotesize\ttfamily float Camera\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_a69a3797ab7fe29eccb0eef48727b0099} 
+float Camera\+::get\+Scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -129,11 +131,37 @@ Renvoie la scale de la camera.
 \begin{DoxyReturn}{Returns}
 scale 
 \end{DoxyReturn}
-\Hypertarget{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}\label{classCamera_a46ef91b662041d7d5cf0a4280259a1d7} 
-\index{Camera@{Camera}!isInCamView@{isInCamView}}
+\Hypertarget{classCamera_a043c162e8ee7db433202ceed6d12d25f}\index{Camera@{Camera}!isInCamView@{isInCamView}}
 \index{isInCamView@{isInCamView}!Camera@{Camera}}
-\doxysubsubsection{\texorpdfstring{isInCamView()}{isInCamView()}}
-{\footnotesize\ttfamily bool Camera\+::is\+In\+Cam\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShape}{Shape}} \&}]{obj }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{isInCamView()}{isInCamView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classCamera_a043c162e8ee7db433202ceed6d12d25f} 
+bool Camera\+::is\+In\+Cam\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \&}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Détermine si un geometrix est dans le champs de la camera. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em obj} & Objet à tester \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Oui ou Non l\textquotesingle{}objet est visible
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Cette méthode est très utile pour eviter d\textquotesingle{}afficher des objet non visible par le joueur ou même les détruirze quand ils sortent de l\textquotesingle{}écran. 
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectangleShape}{Rectangle\+Shape} et des \doxylink{classSprite}{Sprite}, Il peut y avaoir certain disfonctionnement avec les \doxylink{classConvexShape}{Convex\+Shape} et les \doxylink{classCircleShape}{Circle\+Shape}. 
+\end{DoxyAttention}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Gérer l\textquotesingle{}héritage de geometric sur shape pour avoir seulement une methode \end{DoxyRefDesc}
+\Hypertarget{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}\index{Camera@{Camera}!isInCamView@{isInCamView}}
+\index{isInCamView@{isInCamView}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{isInCamView()}{isInCamView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classCamera_a46ef91b662041d7d5cf0a4280259a1d7} 
+bool Camera\+::is\+In\+Cam\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShape}{Shape}} \&}]{obj}{}\end{DoxyParamCaption})}
 
 
 
@@ -153,11 +181,11 @@ Cette méthode est très utile pour eviter d\textquotesingle{}afficher des objet
 \begin{DoxyAttention}{Attention}
 La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectangleShape}{Rectangle\+Shape} et des \doxylink{classSprite}{Sprite}, Il peut y avaoir certain disfonctionnement avec les \doxylink{classConvexShape}{Convex\+Shape} et les \doxylink{classCircleShape}{Circle\+Shape}. 
 \end{DoxyAttention}
-\Hypertarget{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}\label{classCamera_ac122993172d14a6f1c677cd5bf5f0c15} 
-\index{Camera@{Camera}!screenPosToCamPos@{screenPosToCamPos}}
+\Hypertarget{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}\index{Camera@{Camera}!screenPosToCamPos@{screenPosToCamPos}}
 \index{screenPosToCamPos@{screenPosToCamPos}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{screenPosToCamPos()}{screenPosToCamPos()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::screen\+Pos\+To\+Cam\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{screen\+Pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_ac122993172d14a6f1c677cd5bf5f0c15} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::screen\+Pos\+To\+Cam\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{screen\+Pos}{}\end{DoxyParamCaption})}
 
 
 
@@ -171,11 +199,11 @@ Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnée
 \begin{DoxyReturn}{Returns}
 final\+Pos Position du monde calculé à partir de screen\+Pos 
 \end{DoxyReturn}
-\Hypertarget{classCamera_a6f2223bda52e49bf526b5219d2c0c103}\label{classCamera_a6f2223bda52e49bf526b5219d2c0c103} 
-\index{Camera@{Camera}!setPosition@{setPosition}}
+\Hypertarget{classCamera_a6f2223bda52e49bf526b5219d2c0c103}\index{Camera@{Camera}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
-{\footnotesize\ttfamily void Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_a6f2223bda52e49bf526b5219d2c0c103} 
+void Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{}\end{DoxyParamCaption})}
 
 
 
@@ -189,11 +217,11 @@ Change la position de la camera.
 \begin{DoxyAttention}{Attention}
 La postion de la camera est les coordonnées du centre de celle ci 
 \end{DoxyAttention}
-\Hypertarget{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}\label{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5} 
-\index{Camera@{Camera}!setScale@{setScale}}
+\Hypertarget{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}\index{Camera@{Camera}!setScale@{setScale}}
 \index{setScale@{setScale}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
-{\footnotesize\ttfamily void Camera\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{n\+Scale }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5} 
+void Camera\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{n\+Scale}{}\end{DoxyParamCaption})}
 
 
 
@@ -207,21 +235,21 @@ Change la scale de la camera.
 
 
 \doxysubsection{Member Data Documentation}
-\Hypertarget{classCamera_ab404f2ac7d7c1b21301eace5baf42018}\label{classCamera_ab404f2ac7d7c1b21301eace5baf42018} 
-\index{Camera@{Camera}!camX@{camX}}
+\Hypertarget{classCamera_ab404f2ac7d7c1b21301eace5baf42018}\index{Camera@{Camera}!camX@{camX}}
 \index{camX@{camX}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{camX}{camX}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::camX}
+{\footnotesize\ttfamily \label{classCamera_ab404f2ac7d7c1b21301eace5baf42018} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::camX}
 
 
 
 Limites de la camera en X. 
 
-\Hypertarget{classCamera_a37187407737501e8575d8417c032486b}\label{classCamera_a37187407737501e8575d8417c032486b} 
-\index{Camera@{Camera}!camY@{camY}}
+\Hypertarget{classCamera_a37187407737501e8575d8417c032486b}\index{Camera@{Camera}!camY@{camY}}
 \index{camY@{camY}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{camY}{camY}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::camY}
+{\footnotesize\ttfamily \label{classCamera_a37187407737501e8575d8417c032486b} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::camY}
 
 
 

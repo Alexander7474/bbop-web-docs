@@ -1,19 +1,19 @@
 <map id="src/BBOP/Graphics/bbopGlobal.cpp" name="src/BBOP/Graphics/bbopGlobal.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="249,5,478,31"/>
-<area shape="rect" id="Node000002" href="$bbopGlobal_8h.html" title=" " alt="" coords="285,79,442,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,31,366,64,361,64,361,31"/>
-<area shape="rect" id="Node000003" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,168,127,193"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,123,127,166,126,161,288,118"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="151,168,232,193"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="321,123,233,163,230,158,319,118"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="255,168,360,193"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="352,122,327,156,323,153,347,119"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="384,168,458,193"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="380,118,405,153,401,156,375,122"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="482,168,554,193"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="403,118,482,158,480,163,401,123"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="577,168,643,193"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="426,118,563,162,562,167,424,123"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="37,241,95,267"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="69,194,69,226,63,226,63,194"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="268,5,515,31"/>
+<area shape="rect" id="Node000002" href="$bbopGlobal_8h.html" title=" " alt="" coords="305,79,478,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,31,394,65,389,65,389,31"/>
+<area shape="rect" id="Node000003" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,167,140,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,121,133,166,132,161,314,116"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="165,167,250,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="348,121,248,164,246,159,346,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="275,167,385,192"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="379,121,350,157,345,154,374,117"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="410,167,495,192"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="408,117,437,154,433,157,404,121"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="519,167,599,192"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="433,116,523,158,521,163,430,121"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="624,167,697,192"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="457,116,611,161,610,166,455,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="41,240,104,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="75,192,75,226,70,226,70,192"/>
 </map>

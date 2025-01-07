@@ -1,0 +1,245 @@
+\doxysection{Map Class Reference}
+\hypertarget{classMap}{}\label{classMap}\index{Map@{Map}}
+
+
+La class \doxylink{classMap}{Map} initialise une map avec un tableau de case en 16x16 depuis un fichier map contenant toute les cellules.  
+
+
+
+
+{\ttfamily \#include $<$map\+Class.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMap_a0f5ad0fd4563497b4214038cbca8b582}{Map}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classMap}{Map}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMap_af2aea75012c24f79aad04afad9451cf7}{Map}} (const char \texorpdfstring{$\ast$}{*}map\+\_\+folder)
+\begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{classMap}{Map}. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMap_af19b58ddac9be188873d8e24133dd95b}{Map}} (const \mbox{\hyperlink{classMap}{Map}} \&other)
+\begin{DoxyCompactList}\small\item\em Conctructeur par copie de \doxylink{classMap}{Map}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a39d2887c926e64b2fc0954ea7fb7885a}{Draw}} (\mbox{\hyperlink{classScene}{Scene}} \&scene, \mbox{\hyperlink{classCamera}{Camera}} \&ground\+\_\+camera)
+\begin{DoxyCompactList}\small\item\em Dessine la map sur l\textquotesingle{}écran, à utiliser avec une scene ou une autre méthode draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_aec249fed8550d4817d39039d49532243}{remplissage}} (const char \texorpdfstring{$\ast$}{*}tiles\+\_\+folder)
+\begin{DoxyCompactList}\small\item\em Ouvre le fichier defnition.\+bmm , puis définis les Sprites selon les valeurs du fichier et les ajoute au vecteur tiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a2c37db36bc6e8bae99d4c9cdfdf5ba02}{index\+Zone}} (\mbox{\hyperlink{classVector2f}{Vector2f}} position, float zone, int \texorpdfstring{$\ast$}{*}tab, int \&cpt)
+\begin{DoxyCompactList}\small\item\em Remplie un tableau d\textquotesingle{}entier correspondant aux index des sprites/blocks de la map qui se trouvent dans la zone d\textquotesingle{}explosion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_a6596b54b4d58391d44c5fc5078dbfb59}{destroy\+Block}} (\mbox{\hyperlink{classVector2f}{Vector2f}} position, float zone)
+\begin{DoxyCompactList}\small\item\em supprime les bloques qui sont dans la zone d\textquotesingle{}explosion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMap_ab12643cc3a8d5e48f566c1abb571e9bf}{update}} ()
+\begin{DoxyCompactList}\small\item\em update de la map \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classSprite}{Sprite}} $>$ \& \mbox{\hyperlink{classMap_a7eefb13fe0cd86c6b887f46ddb0157bd}{get\+Tiles}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $>$ \& \mbox{\hyperlink{classMap_a36789dcf2d9fce57daeac83fa3b6fd6f}{get\+Collision}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classVector2f}{Vector2f}} $>$ \& \mbox{\hyperlink{classMap_a091b561e6f70168ad371f047a105d9cf}{get\+Spawn\+Points}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMap_aa2fab026580d6f14280c2ffb8063a314}{Game}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La class \doxylink{classMap}{Map} initialise une map avec un tableau de case en 16x16 depuis un fichier map contenant toute les cellules. 
+
+\begin{DoxyAuthor}{Author}
+Alexandre 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMap_a0f5ad0fd4563497b4214038cbca8b582}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classMap_a0f5ad0fd4563497b4214038cbca8b582} 
+Map\+::\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur par défault de \doxylink{classMap}{Map}. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{classMap_a0f5ad0fd4563497b4214038cbca8b582}{Map\+::\+Map()}; 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_af2aea75012c24f79aad04afad9451cf7}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classMap_af2aea75012c24f79aad04afad9451cf7} 
+Map\+::\+Map (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{map\+\_\+folder}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur de \doxylink{classMap}{Map}. This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles\+\_\+folder} & Chemin d\textquotesingle{}accès vers le dossier contenant les tuiles de la map de la forme img/map/glace/ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Le dossier doit contenir un fichier background.\+png, definition.\+bmc et un set de tuiles en fonctions de defintion.\+bmc
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classMap_af2aea75012c24f79aad04afad9451cf7}{Map\+::\+Map(const char\texorpdfstring{$\ast$}{*} tiles\+\_\+folder)}; 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_af19b58ddac9be188873d8e24133dd95b}\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classMap_af19b58ddac9be188873d8e24133dd95b} 
+Map\+::\+Map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMap}{Map}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Conctructeur par copie de \doxylink{classMap}{Map}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Autre \doxylink{classMap}{Map}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classMap_af19b58ddac9be188873d8e24133dd95b}{Map\+::\+Map(const Map\& other)}; 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMap_a6596b54b4d58391d44c5fc5078dbfb59}\index{Map@{Map}!destroyBlock@{destroyBlock}}
+\index{destroyBlock@{destroyBlock}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{destroyBlock()}{destroyBlock()}}
+{\footnotesize\ttfamily \label{classMap_a6596b54b4d58391d44c5fc5078dbfb59} 
+void Map\+::destroy\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{position}{, }\item[{float}]{zone}{}\end{DoxyParamCaption})}
+
+
+
+supprime les bloques qui sont dans la zone d\textquotesingle{}explosion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & coordonnées x et y de l\textquotesingle{}explosion \\
+\hline
+{\em zone} & périmètre de l\textquotesingle{}explosion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+les arguments sont récupérés par la fonction Index\+Zone(\+Vector2f position, float zone, int \texorpdfstring{$\ast$}{*}tab, int \&cpt)
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+Map\+::\+Destroy\+Block(\+Vector2f position, float zone); 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_a39d2887c926e64b2fc0954ea7fb7885a}\index{Map@{Map}!Draw@{Draw}}
+\index{Draw@{Draw}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily \label{classMap_a39d2887c926e64b2fc0954ea7fb7885a} 
+void Map\+::\+Draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScene}{Scene}} \&}]{scene}{, }\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{ground\+\_\+camera}{}\end{DoxyParamCaption})}
+
+
+
+Dessine la map sur l\textquotesingle{}écran, à utiliser avec une scene ou une autre méthode draw. 
+
+\begin{DoxySeeAlso}{See also}
+Map\+::\+Draw(\+GLint render\+Mod\+Loc) const; 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_a36789dcf2d9fce57daeac83fa3b6fd6f}\index{Map@{Map}!getCollision@{getCollision}}
+\index{getCollision@{getCollision}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getCollision()}{getCollision()}}
+{\footnotesize\ttfamily \label{classMap_a36789dcf2d9fce57daeac83fa3b6fd6f} 
+vector$<$ \mbox{\hyperlink{classCollisionBox}{Collision\+Box}} $>$ \& Map\+::get\+Collision (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMap_a091b561e6f70168ad371f047a105d9cf}\index{Map@{Map}!getSpawnPoints@{getSpawnPoints}}
+\index{getSpawnPoints@{getSpawnPoints}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getSpawnPoints()}{getSpawnPoints()}}
+{\footnotesize\ttfamily \label{classMap_a091b561e6f70168ad371f047a105d9cf} 
+vector$<$ \mbox{\hyperlink{classVector2f}{Vector2f}} $>$ \& Map\+::get\+Spawn\+Points (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMap_a7eefb13fe0cd86c6b887f46ddb0157bd}\index{Map@{Map}!getTiles@{getTiles}}
+\index{getTiles@{getTiles}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getTiles()}{getTiles()}}
+{\footnotesize\ttfamily \label{classMap_a7eefb13fe0cd86c6b887f46ddb0157bd} 
+vector$<$ \mbox{\hyperlink{classSprite}{Sprite}} $>$ \& Map\+::get\+Tiles (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classMap_a2c37db36bc6e8bae99d4c9cdfdf5ba02}\index{Map@{Map}!indexZone@{indexZone}}
+\index{indexZone@{indexZone}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{indexZone()}{indexZone()}}
+{\footnotesize\ttfamily \label{classMap_a2c37db36bc6e8bae99d4c9cdfdf5ba02} 
+void Map\+::index\+Zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{position}{, }\item[{float}]{zone}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{tab}{, }\item[{int \&}]{cpt}{}\end{DoxyParamCaption})}
+
+
+
+Remplie un tableau d\textquotesingle{}entier correspondant aux index des sprites/blocks de la map qui se trouvent dans la zone d\textquotesingle{}explosion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & coordonnées x et y de l\textquotesingle{}explosion \\
+\hline
+{\em zone} & périmètre de l\textquotesingle{}explosion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+A faire pour plus tard \+: augmenter ou réduire la zone avec un nombre aléatoire
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+Map\+::\+Index\+Zone(\+Vector2f, float); 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_aec249fed8550d4817d39039d49532243}\index{Map@{Map}!remplissage@{remplissage}}
+\index{remplissage@{remplissage}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{remplissage()}{remplissage()}}
+{\footnotesize\ttfamily \label{classMap_aec249fed8550d4817d39039d49532243} 
+void Map\+::remplissage (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{tiles\+\_\+folder}{}\end{DoxyParamCaption})}
+
+
+
+Ouvre le fichier defnition.\+bmm , puis définis les Sprites selon les valeurs du fichier et les ajoute au vecteur tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tiles\+\_\+folder} & chemin d\textquotesingle{}accès des tuiles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+colonne du fichier definition.\+bmm \+: 
+
+colonne 1 \+: correspond à l\textquotesingle{}index du sprite 
+
+colonne 2 \+: position x du premier sprite 
+
+colonne 3 \+: position x du dernier sprite 
+
+colonne 4 \+: position y du premier sprite 
+
+colonne 5 \+: position y du dernier sprite 
+
+les positions sont des multiples de 16 (tailles des blocks de sprite)
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+Map\+::\+Remplissage(const char\texorpdfstring{$\ast$}{*} tiles\+\_\+folder); 
+\end{DoxySeeAlso}
+\Hypertarget{classMap_ab12643cc3a8d5e48f566c1abb571e9bf}\index{Map@{Map}!update@{update}}
+\index{update@{update}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classMap_ab12643cc3a8d5e48f566c1abb571e9bf} 
+void Map\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+update de la map 
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classMap_aa2fab026580d6f14280c2ffb8063a314}\index{Map@{Map}!Game@{Game}}
+\index{Game@{Game}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{Game}{Game}}
+{\footnotesize\ttfamily \label{classMap_aa2fab026580d6f14280c2ffb8063a314} 
+friend class Game\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+BBOP/\+Graphics/\mbox{\hyperlink{mapClass_8h}{map\+Class.\+h}}\item 
+src/\+BBOP/\+Graphics/\mbox{\hyperlink{mapClass_8cpp}{map\+Class.\+cpp}}\end{DoxyCompactItemize}

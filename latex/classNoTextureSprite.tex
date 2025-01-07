@@ -11,7 +11,7 @@ Inheritance diagram for No\+Texture\+Sprite\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=167pt]{classNoTextureSprite__inherit__graph}
+\includegraphics[width=175pt]{classNoTextureSprite__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -43,14 +43,14 @@ void \mbox{\hyperlink{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}{Dr
 \mbox{\hyperlink{classSprite_a12cba3ac1868418add3c4d95ce87e615}{Sprite}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classSprite}{Sprite}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSprite_ac17f0e18a22c84234a659b1c0bbb69de}{Sprite}} (const \mbox{\hyperlink{classSprite}{Sprite}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur de srpite. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSprite_a8accab430f9d90ae5117b57d67e32b84}{\texorpdfstring{$\sim$}{\string~}\+Sprite}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructeur de sprite. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSprite}{Sprite}} \& \mbox{\hyperlink{classSprite_abb3f0673884d42b6b116f0c4d1a47b77}{operator=}} (const \mbox{\hyperlink{classSprite}{Sprite}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur = de sprite. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSprite_af9be42bc2be161b8eec4bcc9d1141ba5}{Draw}} (GLint render\+Mode\+Loc) const override
 \begin{DoxyCompactList}\small\item\em Déssine l\textquotesingle{}objet héritant de la class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classSprite_a5177a8fbde9047995ec899fa0f72e477}{set\+Texture}} (\mbox{\hyperlink{classTexture}{Texture}} n\+Texture)
+void \mbox{\hyperlink{classSprite_a2e579e2e543017ea87acc42e5d7108b0}{set\+Texture}} (const \mbox{\hyperlink{classTexture}{Texture}} \&n\+Texture)
 \begin{DoxyCompactList}\small\item\em Change la texture du sprite. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSprite_a893f004e6c5e827be939b0e362c97cc9}{get\+RGBFilter\+State}} () const
 \begin{DoxyCompactList}\small\item\em Renvoie si oui ou non le filtre de couleur est activé \end{DoxyCompactList}\item 
@@ -67,6 +67,10 @@ void \mbox{\hyperlink{classSprite_abe1f24ce55e6b541fcd3f43e8147b2a7}{flip\+Verti
 \begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShape_af929eaa4d0cbd6b2fe2e9026796b9cae}{Shape}} (const \mbox{\hyperlink{classShape}{Shape}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie de shape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShape_a935afc9e576015f967d90de56977167d}{\texorpdfstring{$\sim$}{\string~}\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de shape. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classShape_a5616a680b154c1460a7fc0fb0b2ab1d2}{init\+Shape}} (GLfloat \texorpdfstring{$\ast$}{*}vertices, GLsizeiptr vertices\+Size, GLuint \texorpdfstring{$\ast$}{*}indices, GLsizeiptr indices\+Size)
 \begin{DoxyCompactList}\small\item\em Initialise la \doxylink{classShape}{Shape} comme sont constructeur. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classShape_a7198b7b0d7dedae7914e6af66ee59494}{get\+Size}} () const
@@ -106,6 +110,8 @@ void \mbox{\hyperlink{classShape_a54928fc5424c4d183dd3d65ee072d8a8}{set\+Rotatio
 void \mbox{\hyperlink{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}{set\+Auto\+Update\+Collision}} (bool etat)
 \begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}état de l\textquotesingle{}automatisation de la mise a jour de la boîte de collision. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classShape_a6422e2d9f7dfc2002175d573e39a4533}{move}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&vecM)
+\begin{DoxyCompactList}\small\item\em Déplace la \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a3a6d420f0799c11546c8d6e13a7d1497}{move}} (float x\+\_\+, float y\+\_\+)
 \begin{DoxyCompactList}\small\item\em Déplace la \doxylink{classShape}{Shape}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classSprite}{Sprite}}}
@@ -156,11 +162,11 @@ float \mbox{\hyperlink{classShape_a66a52f9200f362ec1e754c5211e6ba6c}{alpha}}
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}\label{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60} 
-\index{NoTextureSprite@{NoTextureSprite}!Draw@{Draw}}
+\Hypertarget{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}\index{NoTextureSprite@{NoTextureSprite}!Draw@{Draw}}
 \index{Draw@{Draw}!NoTextureSprite@{NoTextureSprite}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void No\+Texture\+Sprite\+::\+Draw (\begin{DoxyParamCaption}\item[{GLint}]{render\+Mode\+Loc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily \label{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60} 
+void No\+Texture\+Sprite\+::\+Draw (\begin{DoxyParamCaption}\item[{GLint}]{render\+Mode\+Loc}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 

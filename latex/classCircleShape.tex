@@ -16,7 +16,7 @@ Inheritance diagram for Circle\+Shape\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=159pt]{classCircleShape__inherit__graph}
+\includegraphics[width=168pt]{classCircleShape__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -78,6 +78,10 @@ void \mbox{\hyperlink{classConvexShape_a4963a13641d5e3284cba8f8ccaf8551e}{Draw}}
 \begin{DoxyCompactList}\small\item\em Constructeur de \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classShape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape}} ()
 \begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShape_af929eaa4d0cbd6b2fe2e9026796b9cae}{Shape}} (const \mbox{\hyperlink{classShape}{Shape}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructeur par copie de shape. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShape_a935afc9e576015f967d90de56977167d}{\texorpdfstring{$\sim$}{\string~}\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de shape. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classShape_a5616a680b154c1460a7fc0fb0b2ab1d2}{init\+Shape}} (GLfloat \texorpdfstring{$\ast$}{*}vertices, GLsizeiptr vertices\+Size, GLuint \texorpdfstring{$\ast$}{*}indices, GLsizeiptr indices\+Size)
 \begin{DoxyCompactList}\small\item\em Initialise la \doxylink{classShape}{Shape} comme sont constructeur. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classShape_a7198b7b0d7dedae7914e6af66ee59494}{get\+Size}} () const
@@ -117,6 +121,8 @@ void \mbox{\hyperlink{classShape_a54928fc5424c4d183dd3d65ee072d8a8}{set\+Rotatio
 void \mbox{\hyperlink{classShape_a1dca8f2170a6e2c0f1098c4ba22250c0}{set\+Auto\+Update\+Collision}} (bool etat)
 \begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}état de l\textquotesingle{}automatisation de la mise a jour de la boîte de collision. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classShape_a6422e2d9f7dfc2002175d573e39a4533}{move}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&vecM)
+\begin{DoxyCompactList}\small\item\em Déplace la \doxylink{classShape}{Shape}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShape_a3a6d420f0799c11546c8d6e13a7d1497}{move}} (float x\+\_\+, float y\+\_\+)
 \begin{DoxyCompactList}\small\item\em Déplace la \doxylink{classShape}{Shape}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -163,11 +169,11 @@ Le cercle est un enfant de convex, il gère juste la convex comme un cercle
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classCircleShape_aef19b1cb8da6eb8da7fc72e3a83dcc59}\label{classCircleShape_aef19b1cb8da6eb8da7fc72e3a83dcc59} 
-\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
+\Hypertarget{classCircleShape_aef19b1cb8da6eb8da7fc72e3a83dcc59}\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{CircleShape()}{CircleShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{float}]{n\+Radius }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_aef19b1cb8da6eb8da7fc72e3a83dcc59} 
+Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point}{, }\item[{float}]{n\+Radius}{}\end{DoxyParamCaption})}
 
 
 
@@ -183,42 +189,42 @@ constructeur du cercle
 \begin{DoxyNote}{Note}
 Avec 3 point le cercle est un triangle !! 
 \end{DoxyNote}
-\Hypertarget{classCircleShape_aafefd53294d76a462bf8bea94b66aaa7}\label{classCircleShape_aafefd53294d76a462bf8bea94b66aaa7} 
-\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
+\Hypertarget{classCircleShape_aafefd53294d76a462bf8bea94b66aaa7}\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{CircleShape()}{CircleShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{float}]{n\+Radius,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_aafefd53294d76a462bf8bea94b66aaa7} 
+Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point}{, }\item[{float}]{n\+Radius}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classCircleShape_ae46df978939ca21440c2b99dbaba27f0}\label{classCircleShape_ae46df978939ca21440c2b99dbaba27f0} 
-\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
+\Hypertarget{classCircleShape_ae46df978939ca21440c2b99dbaba27f0}\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{CircleShape()}{CircleShape()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{float}]{n\+Radius,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos,  }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_ae46df978939ca21440c2b99dbaba27f0} 
+Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point}{, }\item[{float}]{n\+Radius}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{, }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin}{}\end{DoxyParamCaption})}
 
-\Hypertarget{classCircleShape_aa554e8bd5abd62783175524dfb0adb57}\label{classCircleShape_aa554e8bd5abd62783175524dfb0adb57} 
-\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
+\Hypertarget{classCircleShape_aa554e8bd5abd62783175524dfb0adb57}\index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \index{CircleShape@{CircleShape}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{CircleShape()}{CircleShape()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point,  }\item[{float}]{n\+Radius,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos,  }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB,  }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin,  }\item[{float}]{n\+Rotation,  }\item[{float}]{n\+Alpha }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_aa554e8bd5abd62783175524dfb0adb57} 
+Circle\+Shape\+::\+Circle\+Shape (\begin{DoxyParamCaption}\item[{int}]{nn\+Point}{, }\item[{float}]{n\+Radius}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Size}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{, }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB}{, }\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Origin}{, }\item[{float}]{n\+Rotation}{, }\item[{float}]{n\+Alpha}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classCircleShape_a45caf01c172013dae3261c86365d7c97}\label{classCircleShape_a45caf01c172013dae3261c86365d7c97} 
-\index{CircleShape@{CircleShape}!buildConvex@{buildConvex}}
+\Hypertarget{classCircleShape_a45caf01c172013dae3261c86365d7c97}\index{CircleShape@{CircleShape}!buildConvex@{buildConvex}}
 \index{buildConvex@{buildConvex}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{buildConvex()}{buildConvex()}}
-{\footnotesize\ttfamily void Circle\+Shape\+::build\+Convex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{classCircleShape_a45caf01c172013dae3261c86365d7c97} 
+void Circle\+Shape\+::build\+Convex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 Recalcule la géometrie du cercle. 
 
-\Hypertarget{classCircleShape_a5336ffea900fa52bd19263fad01d7552}\label{classCircleShape_a5336ffea900fa52bd19263fad01d7552} 
-\index{CircleShape@{CircleShape}!getNPointCircle@{getNPointCircle}}
+\Hypertarget{classCircleShape_a5336ffea900fa52bd19263fad01d7552}\index{CircleShape@{CircleShape}!getNPointCircle@{getNPointCircle}}
 \index{getNPointCircle@{getNPointCircle}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{getNPointCircle()}{getNPointCircle()}}
-{\footnotesize\ttfamily int Circle\+Shape\+::get\+NPoint\+Circle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classCircleShape_a5336ffea900fa52bd19263fad01d7552} 
+int Circle\+Shape\+::get\+NPoint\+Circle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -227,11 +233,11 @@ Renvoie le nombre de point du cercle.
 \begin{DoxyReturn}{Returns}
 n\+Point\+Circle 
 \end{DoxyReturn}
-\Hypertarget{classCircleShape_a8556eac048585784d44f2cce18aa05db}\label{classCircleShape_a8556eac048585784d44f2cce18aa05db} 
-\index{CircleShape@{CircleShape}!getRadius@{getRadius}}
+\Hypertarget{classCircleShape_a8556eac048585784d44f2cce18aa05db}\index{CircleShape@{CircleShape}!getRadius@{getRadius}}
 \index{getRadius@{getRadius}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
-{\footnotesize\ttfamily float Circle\+Shape\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classCircleShape_a8556eac048585784d44f2cce18aa05db} 
+float Circle\+Shape\+::get\+Radius (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -240,11 +246,11 @@ Renvoie le rayon du cercle.
 \begin{DoxyReturn}{Returns}
 radius 
 \end{DoxyReturn}
-\Hypertarget{classCircleShape_aefb325fe6e6e029a1fa03556faafdce6}\label{classCircleShape_aefb325fe6e6e029a1fa03556faafdce6} 
-\index{CircleShape@{CircleShape}!setNPointCircle@{setNPointCircle}}
+\Hypertarget{classCircleShape_aefb325fe6e6e029a1fa03556faafdce6}\index{CircleShape@{CircleShape}!setNPointCircle@{setNPointCircle}}
 \index{setNPointCircle@{setNPointCircle}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{setNPointCircle()}{setNPointCircle()}}
-{\footnotesize\ttfamily void Circle\+Shape\+::set\+NPoint\+Circle (\begin{DoxyParamCaption}\item[{int}]{nn\+Point }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_aefb325fe6e6e029a1fa03556faafdce6} 
+void Circle\+Shape\+::set\+NPoint\+Circle (\begin{DoxyParamCaption}\item[{int}]{nn\+Point}{}\end{DoxyParamCaption})}
 
 
 
@@ -255,11 +261,11 @@ Change le nombre de point du cercle.
 \mbox{\texttt{ in}}  & {\em nn\+Point} & nombre de point du cercle \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classCircleShape_aec9194edf7681dd797038bbba6c4b5c9}\label{classCircleShape_aec9194edf7681dd797038bbba6c4b5c9} 
-\index{CircleShape@{CircleShape}!setRadius@{setRadius}}
+\Hypertarget{classCircleShape_aec9194edf7681dd797038bbba6c4b5c9}\index{CircleShape@{CircleShape}!setRadius@{setRadius}}
 \index{setRadius@{setRadius}!CircleShape@{CircleShape}}
 \doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
-{\footnotesize\ttfamily void Circle\+Shape\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{n\+Radius }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classCircleShape_aec9194edf7681dd797038bbba6c4b5c9} 
+void Circle\+Shape\+::set\+Radius (\begin{DoxyParamCaption}\item[{float}]{n\+Radius}{}\end{DoxyParamCaption})}
 
 
 

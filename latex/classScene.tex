@@ -48,25 +48,25 @@ La class \doxylink{classScene}{Scene} gère les shaders d\textquotesingle{}affic
 Cette class est obligatoire pour afficher des éléments 
 \end{DoxyAttention}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Ajouter la possibilité de créer des shader personnalisé et de gérer des normal maps \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]Ajouter la possibilité de créer des shader personnalisé et de gérer des normal maps \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classScene_ad10176d75a9cc0da56626f682d083507}\label{classScene_ad10176d75a9cc0da56626f682d083507} 
-\index{Scene@{Scene}!Scene@{Scene}}
+\Hypertarget{classScene_ad10176d75a9cc0da56626f682d083507}\index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_ad10176d75a9cc0da56626f682d083507} 
+Scene\+::\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 Constructeur par défault de \doxylink{classScene}{Scene}. 
 
-La scene par défault est éclairé par une lumière blanche d\textquotesingle{}intensité 1.\+0 \Hypertarget{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}\label{classScene_a05f4829799d40e4fb5ceee1a4ee3b983} 
-\index{Scene@{Scene}!Scene@{Scene}}
+La scene par défault est éclairé par une lumière blanche d\textquotesingle{}intensité 1.\+0 \Hypertarget{classScene_a05f4829799d40e4fb5ceee1a4ee3b983}\index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{float}]{n\+Ambiant\+Light\+Value,  }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+Ambiant\+Light\+Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a05f4829799d40e4fb5ceee1a4ee3b983} 
+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{float}]{n\+Ambiant\+Light\+Value}{, }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+Ambiant\+Light\+Color}{}\end{DoxyParamCaption})}
 
 
 
@@ -79,20 +79,20 @@ Constructeur de \doxylink{classScene}{Scene}.
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Color} & Couleur de la lumière ambiante \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classScene_a3b8cec2e32546713915f8c6303c951f1}\label{classScene_a3b8cec2e32546713915f8c6303c951f1} 
-\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\Hypertarget{classScene_a3b8cec2e32546713915f8c6303c951f1}\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
 \index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
-{\footnotesize\ttfamily Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a3b8cec2e32546713915f8c6303c951f1} 
+Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classScene_a09b1a0e0628434ef0c78ed3094f67c14}\label{classScene_a09b1a0e0628434ef0c78ed3094f67c14} 
-\index{Scene@{Scene}!addLight@{addLight}}
+\Hypertarget{classScene_a09b1a0e0628434ef0c78ed3094f67c14}\index{Scene@{Scene}!addLight@{addLight}}
 \index{addLight@{addLight}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{addLight()}{addLight()}}
-{\footnotesize\ttfamily void Scene\+::add\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} \&}]{l }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a09b1a0e0628434ef0c78ed3094f67c14} 
+void Scene\+::add\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLight}{Light}} \&}]{l}{}\end{DoxyParamCaption})}
 
 
 
@@ -109,11 +109,11 @@ Ajoute un point de lumière dans la \doxylink{classScene}{Scene}.
 \begin{DoxyAttention}{Attention}
 La list de \doxylink{classLight}{Light} de \doxylink{classScene}{Scene} est reset à chaque usage de \doxylink{classScene_ab006725913220d544544131e81b4f59d}{Use()}, il est donc nécessaire d\textquotesingle{}ajouter vos point de lumière avant de spécifier la scene à utilser dans votre rendue de frame 
 \end{DoxyAttention}
-\Hypertarget{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}\label{classScene_af943707e7fdfd9c1c90bb6fa3acecb35} 
-\index{Scene@{Scene}!Draw@{Draw}}
+\Hypertarget{classScene_af943707e7fdfd9c1c90bb6fa3acecb35}\index{Scene@{Scene}!Draw@{Draw}}
 \index{Draw@{Draw}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
-{\footnotesize\ttfamily void Scene\+::\+Draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}} \&}]{spr }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classScene_af943707e7fdfd9c1c90bb6fa3acecb35} 
+void Scene\+::\+Draw (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}} \&}]{spr}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -124,11 +124,11 @@ Permet de dessiner sur la fenêtre GFLW initialisée dans bbop\+Int() avec l\tex
 \mbox{\texttt{ in}}  & {\em spr} & Objet à dessiner \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classScene_ab5128cc4211b19612557c84f021de576}\label{classScene_ab5128cc4211b19612557c84f021de576} 
-\index{Scene@{Scene}!getAmbiantLightColor@{getAmbiantLightColor}}
+\Hypertarget{classScene_ab5128cc4211b19612557c84f021de576}\index{Scene@{Scene}!getAmbiantLightColor@{getAmbiantLightColor}}
 \index{getAmbiantLightColor@{getAmbiantLightColor}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{getAmbiantLightColor()}{getAmbiantLightColor()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{classVector3i}{Vector3i}} \& Scene\+::get\+Ambiant\+Light\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classScene_ab5128cc4211b19612557c84f021de576} 
+const \mbox{\hyperlink{classVector3i}{Vector3i}} \& Scene\+::get\+Ambiant\+Light\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -137,11 +137,11 @@ Renvoie la couleur de la lumière ambiante de \doxylink{classScene}{Scene}.
 \begin{DoxyReturn}{Returns}
 ambiant\+Light\+Color Couleur de la lumière ambiante 
 \end{DoxyReturn}
-\Hypertarget{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}\label{classScene_a1fa7cc93e28be137f6155a7d6b2b2402} 
-\index{Scene@{Scene}!getAmbiantLightValue@{getAmbiantLightValue}}
+\Hypertarget{classScene_a1fa7cc93e28be137f6155a7d6b2b2402}\index{Scene@{Scene}!getAmbiantLightValue@{getAmbiantLightValue}}
 \index{getAmbiantLightValue@{getAmbiantLightValue}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{getAmbiantLightValue()}{getAmbiantLightValue()}}
-{\footnotesize\ttfamily float Scene\+::get\+Ambiant\+Light\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classScene_a1fa7cc93e28be137f6155a7d6b2b2402} 
+float Scene\+::get\+Ambiant\+Light\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -150,11 +150,11 @@ Renvoie l\textquotesingle{}intensité de la lumière ambiante de \doxylink{class
 \begin{DoxyReturn}{Returns}
 ambiant\+Light\+Value Intensité de la lumière ambiante 
 \end{DoxyReturn}
-\Hypertarget{classScene_a1d8b8687167783ae52e33f69f053e3bd}\label{classScene_a1d8b8687167783ae52e33f69f053e3bd} 
-\index{Scene@{Scene}!setAmbiantLightColor@{setAmbiantLightColor}}
+\Hypertarget{classScene_a1d8b8687167783ae52e33f69f053e3bd}\index{Scene@{Scene}!setAmbiantLightColor@{setAmbiantLightColor}}
 \index{setAmbiantLightColor@{setAmbiantLightColor}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{setAmbiantLightColor()}{setAmbiantLightColor()}}
-{\footnotesize\ttfamily void Scene\+::set\+Ambiant\+Light\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3i}{Vector3i}} \&}]{n\+Ambiant\+Light\+Color }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a1d8b8687167783ae52e33f69f053e3bd} 
+void Scene\+::set\+Ambiant\+Light\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3i}{Vector3i}} \&}]{n\+Ambiant\+Light\+Color}{}\end{DoxyParamCaption})}
 
 
 
@@ -165,11 +165,11 @@ Change la couleur de la lumière ambiante de \doxylink{classScene}{Scene}.
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Color} & Couleur de la lumière ambiante \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}\label{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f} 
-\index{Scene@{Scene}!setAmbiantLightValue@{setAmbiantLightValue}}
+\Hypertarget{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f}\index{Scene@{Scene}!setAmbiantLightValue@{setAmbiantLightValue}}
 \index{setAmbiantLightValue@{setAmbiantLightValue}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{setAmbiantLightValue()}{setAmbiantLightValue()}}
-{\footnotesize\ttfamily void Scene\+::set\+Ambiant\+Light\+Value (\begin{DoxyParamCaption}\item[{float}]{n\+Ambiant\+Light\+Value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a9a90b1ea7b5904b53445fbaadbfe6f9f} 
+void Scene\+::set\+Ambiant\+Light\+Value (\begin{DoxyParamCaption}\item[{float}]{n\+Ambiant\+Light\+Value}{}\end{DoxyParamCaption})}
 
 
 
@@ -183,11 +183,11 @@ Change l\textquotesingle{}intensité de la lumière ambiante de \doxylink{classS
 \mbox{\texttt{ in}}  & {\em n\+Ambiant\+Light\+Value} & Intensité \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classScene_ab006725913220d544544131e81b4f59d}\label{classScene_ab006725913220d544544131e81b4f59d} 
-\index{Scene@{Scene}!Use@{Use}}
+\Hypertarget{classScene_ab006725913220d544544131e81b4f59d}\index{Scene@{Scene}!Use@{Use}}
 \index{Use@{Use}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{Use()}{Use()}}
-{\footnotesize\ttfamily void Scene\+::\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_ab006725913220d544544131e81b4f59d} 
+void Scene\+::\+Use (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -201,11 +201,11 @@ Charge les valeur de la scene dans le shader de celle ci.
 \begin{DoxyAttention}{Attention}
 Cette méthode est à utiliser à l\textquotesingle{}initialisation de votre programme et avant chaque changement de scene si la scene doit changer 
 \end{DoxyAttention}
-\Hypertarget{classScene_a7148467de487cd0cb787fc84c5e8b75d}\label{classScene_a7148467de487cd0cb787fc84c5e8b75d} 
-\index{Scene@{Scene}!useCamera@{useCamera}}
+\Hypertarget{classScene_a7148467de487cd0cb787fc84c5e8b75d}\index{Scene@{Scene}!useCamera@{useCamera}}
 \index{useCamera@{useCamera}!Scene@{Scene}}
 \doxysubsubsection{\texorpdfstring{useCamera()}{useCamera()}}
-{\footnotesize\ttfamily void Scene\+::use\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*}}]{cam\+Addr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classScene_a7148467de487cd0cb787fc84c5e8b75d} 
+void Scene\+::use\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \texorpdfstring{$\ast$}{*}}]{cam\+Addr}{}\end{DoxyParamCaption})}
 
 
 

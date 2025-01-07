@@ -36,7 +36,7 @@
 \DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{fontsClass_8h_a0d43f15c662f8087b2e2d017d3557dbf}{loadFontTexture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ fontPath,\ \textcolor{keywordtype}{int}\ fontSize,\ \mbox{\hyperlink{structCharacter}{Character}}*\ charList,\ \textcolor{keywordtype}{int}\ numTextures);}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFont}{Font}}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFont_a41a7dca42ac0df85a27163dc9ace9de3}{Font}}}
 \DoxyCodeLine{00047\ \{}
 \DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00049\ }
@@ -46,15 +46,15 @@
 \DoxyCodeLine{00065\ }
 \DoxyCodeLine{00066\ \};}
 \DoxyCodeLine{00067\ }
-\DoxyCodeLine{00074\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTexteBox}{TexteBox}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBbopDrawable}{BbopDrawable}}}
+\DoxyCodeLine{00074\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBbopDrawable}{BbopDrawable}}}
 \DoxyCodeLine{00075\ \{}
 \DoxyCodeLine{00076\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00077\ }
 \DoxyCodeLine{00084\ \ \ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ nTexte,\ \mbox{\hyperlink{classFont}{Font}}\ *nFont);}
-\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexteBox}{TexteBox}}\&\ other);}
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}\&\ other);}
 \DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{classTexteBox_a2020c2579996cd680fa25ea0bc7da7f3}{\string~TexteBox}}();}
 \DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \mbox{\hyperlink{classTexteBox}{TexteBox}}\&\ \mbox{\hyperlink{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexteBox}{TexteBox}}\&\ other);}
+\DoxyCodeLine{00088\ \ \ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}\&\ \mbox{\hyperlink{classTexteBox_aa6686aa79c2060c208b97184ce6b2e03}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexteBox_a78a584a297d41f4eddc5aeecfc1ee1db}{TexteBox}}\&\ other);}
 \DoxyCodeLine{00089\ }
 \DoxyCodeLine{00090\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classTexteBox_a8f42d357542f2806b836c0a5c5403c2f}{getPosition}}();}
 \DoxyCodeLine{00091\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexteBox_a45fe1f925eeb9d2dfc89a0a7a4a3fadf}{setPosition}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos);}
@@ -77,19 +77,22 @@
 \DoxyCodeLine{00127\ }
 \DoxyCodeLine{00134\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexteBox_a0c452f1a6afeb9922537218b790d13d1}{Draw}}(GLint\ renderModeLoc)\ \textcolor{keyword}{const\ override};}
 \DoxyCodeLine{00135\ }
-\DoxyCodeLine{00136\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00137\ \ \ \mbox{\hyperlink{classFont}{Font}}\ *texteFont;}
-\DoxyCodeLine{00138\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ pos;}
-\DoxyCodeLine{00139\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ origin;}
-\DoxyCodeLine{00140\ \ \ \textcolor{keywordtype}{float}\ rotation;}
-\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{classVector3i}{Vector3i}}\ RGB;}
-\DoxyCodeLine{00142\ \ \ \textcolor{keywordtype}{float}\ alpha;}
-\DoxyCodeLine{00143\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ texte;}
-\DoxyCodeLine{00144\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ sizeTexte;}
-\DoxyCodeLine{00145\ \ \ \mbox{\hyperlink{classNoTextureSprite}{NoTextureSprite}}*\ glyphList;}
-\DoxyCodeLine{00146\ \ \ \textcolor{keywordtype}{float}\ offset;}
-\DoxyCodeLine{00147\ \};}
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !FONTS\_CLASS\_H}}
+\DoxyCodeLine{00141\ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \&\mbox{\hyperlink{classTexteBox_a79d43e903845cee35695e6953b187da0}{getSize}}();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00144\ \ \ \mbox{\hyperlink{classFont}{Font}}\ *texteFont;}
+\DoxyCodeLine{00145\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ pos;}
+\DoxyCodeLine{00146\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ origin;}
+\DoxyCodeLine{00147\ \ \ \textcolor{keywordtype}{float}\ rotation;}
+\DoxyCodeLine{00148\ \ \ \mbox{\hyperlink{classVector3i}{Vector3i}}\ RGB;}
+\DoxyCodeLine{00149\ \ \ \textcolor{keywordtype}{float}\ alpha;}
+\DoxyCodeLine{00150\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ texte;}
+\DoxyCodeLine{00151\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ sizeTexte;}
+\DoxyCodeLine{00152\ \ \ \mbox{\hyperlink{classNoTextureSprite}{NoTextureSprite}}*\ glyphList;}
+\DoxyCodeLine{00153\ \ \ \textcolor{keywordtype}{float}\ offset;}
+\DoxyCodeLine{00154\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ size;}
+\DoxyCodeLine{00155\ \};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !FONTS\_CLASS\_H}}
 
 \end{DoxyCode}

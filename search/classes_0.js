@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bbopdrawable_0',['BbopDrawable',['../classBbopDrawable.html',1,'']]]
+  ['animatedsprite_0',['AnimatedSprite',['../classAnimatedSprite.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notexturesprite_0',['NoTextureSprite',['../classNoTextureSprite.html',1,'']]]
+  ['light_0',['Light',['../classLight.html',1,'']]]
 ];

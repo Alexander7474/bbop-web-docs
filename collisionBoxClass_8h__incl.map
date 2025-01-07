@@ -1,13 +1,13 @@
 <map id="include/BBOP/Graphics/collisionBoxClass.h" name="include/BBOP/Graphics/collisionBoxClass.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="46,5,206,46"/>
-<area shape="rect" id="Node000002" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,168,127,193"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,48,73,69,55,95,51,109,51,124,57,152,52,154,46,124,46,108,50,93,69,65,93,44"/>
-<area shape="rect" id="Node000004" href="$geometricClass_8h.html" title=" " alt="" coords="65,94,187,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,46,129,78,123,78,123,46"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="169,168,240,193"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="158,44,182,66,202,93,210,123,211,153,205,153,205,124,197,95,178,69,155,48"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="37,241,95,267"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,194,69,226,63,226,63,194"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="118,122,88,157,84,154,114,118"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="141,118,182,155,178,159,138,122"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="54,5,225,45"/>
+<area shape="rect" id="Node000002" href="$bbopMathClass_8h.html" title=" " alt="" coords="5,167,140,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,47,81,68,62,95,58,109,57,124,64,153,59,155,52,125,52,108,57,92,77,64,103,43"/>
+<area shape="rect" id="Node000004" href="$geometricClass_8h.html" title=" " alt="" coords="72,93,207,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,46,142,79,137,79,137,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="185,167,265,192"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="174,43,201,64,222,92,230,123,231,153,225,153,225,124,217,95,197,68,171,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="41,240,104,265"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,192,75,226,70,226,70,192"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="130,121,95,158,91,155,126,117"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="155,117,202,156,199,160,151,121"/>
 </map>
