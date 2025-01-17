@@ -170,6 +170,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab58c9ae6bf88bc82ec6d36ecc5cb6969" id="r_ab58c9ae6bf88bc82ec6d36ecc5cb6969"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab58c9ae6bf88bc82ec6d36ecc5cb6969">getRight</a> ()</td></tr>
 <tr class="memdesc:ab58c9ae6bf88bc82ec6d36ecc5cb6969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la position x de la limite droite de la boite.  <br /></td></tr>
 <tr class="separator:ab58c9ae6bf88bc82ec6d36ecc5cb6969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0c01685c90a45c54f03a77b8232d3d" id="r_a8d0c01685c90a45c54f03a77b8232d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d0c01685c90a45c54f03a77b8232d3d">flipHorizontally</a> ()</td></tr>
+<tr class="memdesc:a8d0c01685c90a45c54f03a77b8232d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">renverse la boîte de collision horizontallement  <br /></td></tr>
+<tr class="separator:a8d0c01685c90a45c54f03a77b8232d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9026f7977f98c07ae905e68e0beb11" id="r_aee9026f7977f98c07ae905e68e0beb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee9026f7977f98c07ae905e68e0beb11">flipVertically</a> ()</td></tr>
+<tr class="memdesc:aee9026f7977f98c07ae905e68e0beb11"><td class="mdescLeft">&#160;</td><td class="mdescRight">renverse la boîte de collision verticallement  <br /></td></tr>
+<tr class="separator:aee9026f7977f98c07ae905e68e0beb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classGeometric"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classGeometric')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGeometric.html">Geometric</a></td></tr>
 <tr class="memitem:aefce0e819f3027bdb457cadd97c36feb inherit pub_methods_classGeometric" id="r_aefce0e819f3027bdb457cadd97c36feb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometric.html#aefce0e819f3027bdb457cadd97c36feb">Geometric</a> (<a class="el" href="classVector2f.html">Vector2f</a> nPos, <a class="el" href="classVector2f.html">Vector2f</a> nOrigin, <a class="el" href="classVector2f.html">Vector2f</a> nSize, float nRotation)</td></tr>
 <tr class="separator:aefce0e819f3027bdb457cadd97c36feb inherit pub_methods_classGeometric"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +360,44 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool true si la boîte est en collision avec otherBox et false si non</dd></dl>
 <p>@attenion Cette méthode prend en compte la rotation et est donc plus gourmand en ressource, à utiliser seulement si nécessaire </p>
+
+</div>
+</div>
+<a id="a8d0c01685c90a45c54f03a77b8232d3d" name="a8d0c01685c90a45c54f03a77b8232d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0c01685c90a45c54f03a77b8232d3d">&#9670;&#160;</a></span>flipHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionBox::flipHorizontally </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>renverse la boîte de collision horizontallement </p>
+
+</div>
+</div>
+<a id="aee9026f7977f98c07ae905e68e0beb11" name="aee9026f7977f98c07ae905e68e0beb11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9026f7977f98c07ae905e68e0beb11">&#9670;&#160;</a></span>flipVertically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CollisionBox::flipVertically </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>renverse la boîte de collision verticallement </p>
 
 </div>
 </div>

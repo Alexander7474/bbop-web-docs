@@ -37,7 +37,9 @@ void \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{set\+Positi
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}{get\+Position}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie la position actuelle de la camera. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screen\+Pos\+To\+Cam\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} screen\+Pos)
-\begin{DoxyCompactList}\small\item\em Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées du monde à travers le prisme de la camera. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Convertie des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées sur la caméra. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac}{cam\+Pos\+To\+World\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} cam\+Pos)
+\begin{DoxyCompactList}\small\item\em Convertie des coordonnées en pixel sur la caméra en coordonnées dans le monde. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{is\+In\+Cam\+View}} (\mbox{\hyperlink{classShape}{Shape}} \&obj)
 \begin{DoxyCompactList}\small\item\em Détermine si un objet \doxylink{classShape}{Shape} est visible sur l\textquotesingle{}écran à travers le prisme de la \doxylink{classCamera}{Camera}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classCamera_a043c162e8ee7db433202ceed6d12d25f}{is\+In\+Cam\+View}} (\mbox{\hyperlink{classCollisionBox}{Collision\+Box}} \&obj)
@@ -105,6 +107,24 @@ void Camera\+::build\+Camera (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}
 
 Determine les limites x et y de la cam avec ces attribut. 
 
+\Hypertarget{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac}\index{Camera@{Camera}!camPosToWorldPos@{camPosToWorldPos}}
+\index{camPosToWorldPos@{camPosToWorldPos}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{camPosToWorldPos()}{camPosToWorldPos()}}
+{\footnotesize\ttfamily \label{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac} 
+\mbox{\hyperlink{classVector2f}{Vector2f}} Camera\+::cam\+Pos\+To\+World\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{cam\+Pos}{}\end{DoxyParamCaption})}
+
+
+
+Convertie des coordonnées en pixel sur la caméra en coordonnées dans le monde. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cam\+Pos} & Position sur la caméra \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+final\+Pos dans le monde 
+\end{DoxyReturn}
 \Hypertarget{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}\index{Camera@{Camera}!getPosition@{getPosition}}
 \index{getPosition@{getPosition}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
@@ -189,7 +209,7 @@ La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectang
 
 
 
-Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées du monde à travers le prisme de la camera. 
+Convertie des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées sur la caméra. 
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -197,7 +217,7 @@ Convertue des coordonnées en pixel sur l\textquotesingle{}écran en coordonnée
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-final\+Pos Position du monde calculé à partir de screen\+Pos 
+final\+Pos Position sur la caméra calculé à partir de screen\+Pos 
 \end{DoxyReturn}
 \Hypertarget{classCamera_a6f2223bda52e49bf526b5219d2c0c103}\index{Camera@{Camera}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Camera@{Camera}}

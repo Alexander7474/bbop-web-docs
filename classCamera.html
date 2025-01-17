@@ -133,8 +133,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab3b9ec6e34ef3b004d9061d96d71302f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la position actuelle de la camera.  <br /></td></tr>
 <tr class="separator:ab3b9ec6e34ef3b004d9061d96d71302f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac122993172d14a6f1c677cd5bf5f0c15" id="r_ac122993172d14a6f1c677cd5bf5f0c15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac122993172d14a6f1c677cd5bf5f0c15">screenPosToCamPos</a> (<a class="el" href="classVector2f.html">Vector2f</a> screenPos)</td></tr>
-<tr class="memdesc:ac122993172d14a6f1c677cd5bf5f0c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertue des coordonnées en pixel sur l'écran en coordonnées du monde à travers le prisme de la camera.  <br /></td></tr>
+<tr class="memdesc:ac122993172d14a6f1c677cd5bf5f0c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie des coordonnées en pixel sur l'écran en coordonnées sur la caméra.  <br /></td></tr>
 <tr class="separator:ac122993172d14a6f1c677cd5bf5f0c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63b4e9c6b9da0e18f37badb070a62ac" id="r_ab63b4e9c6b9da0e18f37badb070a62ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector2f.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab63b4e9c6b9da0e18f37badb070a62ac">camPosToWorldPos</a> (<a class="el" href="classVector2f.html">Vector2f</a> camPos)</td></tr>
+<tr class="memdesc:ab63b4e9c6b9da0e18f37badb070a62ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convertie des coordonnées en pixel sur la caméra en coordonnées dans le monde.  <br /></td></tr>
+<tr class="separator:ab63b4e9c6b9da0e18f37badb070a62ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ef91b662041d7d5cf0a4280259a1d7" id="r_a46ef91b662041d7d5cf0a4280259a1d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ef91b662041d7d5cf0a4280259a1d7">isInCamView</a> (<a class="el" href="classShape.html">Shape</a> &amp;obj)</td></tr>
 <tr class="memdesc:a46ef91b662041d7d5cf0a4280259a1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détermine si un objet <a class="el" href="classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,...">Shape</a> est visible sur l'écran à travers le prisme de la <a class="el" href="classCamera.html" title="Permet de modifier les point de vue et la position de l&#39;affichage de la class Scene.">Camera</a>.  <br /></td></tr>
 <tr class="separator:a46ef91b662041d7d5cf0a4280259a1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +226,32 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine les limites x et y de la cam avec ces attribut. </p>
+
+</div>
+</div>
+<a id="ab63b4e9c6b9da0e18f37badb070a62ac" name="ab63b4e9c6b9da0e18f37badb070a62ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63b4e9c6b9da0e18f37badb070a62ac">&#9670;&#160;</a></span>camPosToWorldPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classVector2f.html">Vector2f</a> Camera::camPosToWorldPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVector2f.html">Vector2f</a></td>          <td class="paramname"><span class="paramname"><em>camPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convertie des coordonnées en pixel sur la caméra en coordonnées dans le monde. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">camPos</td><td>Position sur la caméra </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>finalPos dans le monde </dd></dl>
 
 </div>
 </div>
@@ -338,14 +367,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convertue des coordonnées en pixel sur l'écran en coordonnées du monde à travers le prisme de la camera. </p>
+<p>Convertie des coordonnées en pixel sur l'écran en coordonnées sur la caméra. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">screenPos</td><td>Position sur l'écran à convertir </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>finalPos Position du monde calculé à partir de screenPos </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>finalPos Position sur la caméra calculé à partir de screenPos </dd></dl>
 
 </div>
 </div>

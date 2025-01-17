@@ -6,6 +6,7 @@
 {\ttfamily \#include $<$algorithm$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
 Include dependency graph for bbop\+Global.\+h\+:
 \nopagebreak
 \begin{figure}[H]
@@ -27,6 +28,11 @@ This graph shows which files directly or indirectly include this file\+:
 \item 
 class \mbox{\hyperlink{classBbopDrawable}{Bbop\+Drawable}}
 \begin{DoxyCompactList}\small\item\em Class Parent de tous ce qui peut être dessiné par une \doxylink{classScene}{Scene}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{bbopGlobal_8h_a38cfa5a9f73ba8c98bd7795f47f777ba}{BBOP\+\_\+\+VERSION}}~"{}0.\+3"{}
+\begin{DoxyCompactList}\small\item\em Version de bbop. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -46,7 +52,22 @@ std\+::string \mbox{\hyperlink{bbopGlobal_8h_a5887937da025250f07c56783a4099d21}{
 \mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8h_aef57dad90411a93905fa9f29c6f459cf}{BBOP\+\_\+\+WINDOW\+\_\+\+SIZE}}
 \begin{DoxyCompactList}\small\item\em Variable global qui stoke la taille de la fenêtre. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2i}{Vector2i}} \mbox{\hyperlink{bbopGlobal_8h_aab5088d67a1f295b589fb44bc21834c9}{BBOP\+\_\+\+WINDOW\+\_\+\+RESOLUTION}}
-\begin{DoxyCompactList}\small\item\em Variable global qui stoke la résolution de la fenêtre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Variable global qui stoke la résolution de la fenêtre. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{bbopGlobal_8h_a05ea7bea4c3d99689174e9ee3f7c0b96}{LOGS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{bbopGlobal_8h_a38cfa5a9f73ba8c98bd7795f47f777ba}\index{bbopGlobal.h@{bbopGlobal.h}!BBOP\_VERSION@{BBOP\_VERSION}}
+\index{BBOP\_VERSION@{BBOP\_VERSION}!bbopGlobal.h@{bbopGlobal.h}}
+\doxysubsubsection{\texorpdfstring{BBOP\_VERSION}{BBOP\_VERSION}}
+{\footnotesize\ttfamily \label{bbopGlobal_8h_a38cfa5a9f73ba8c98bd7795f47f777ba} 
+\#define BBOP\+\_\+\+VERSION~"{}0.\+3"{}}
+
+
+
+Version de bbop. 
+
 
 
 \doxysubsection{Enumeration Type Documentation}
@@ -120,3 +141,10 @@ Variable global qui stoke la résolution de la fenêtre.
 
 Variable global qui stoke la taille de la fenêtre. 
 
+\Hypertarget{bbopGlobal_8h_a05ea7bea4c3d99689174e9ee3f7c0b96}\index{bbopGlobal.h@{bbopGlobal.h}!LOGS@{LOGS}}
+\index{LOGS@{LOGS}!bbopGlobal.h@{bbopGlobal.h}}
+\doxysubsubsection{\texorpdfstring{LOGS}{LOGS}}
+{\footnotesize\ttfamily \label{bbopGlobal_8h_a05ea7bea4c3d99689174e9ee3f7c0b96} 
+std\+::vector$<$std\+::string$>$ LOGS\hspace{0.3cm}{\ttfamily [extern]}}
+
+@stock les logs de la libs 

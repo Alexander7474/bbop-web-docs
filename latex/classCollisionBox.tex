@@ -63,7 +63,11 @@ float \mbox{\hyperlink{classCollisionBox_ad1988ce5c0496512b83bc31c4c03d765}{get\
 float \mbox{\hyperlink{classCollisionBox_ac46113d09cf1308431fc699de0bf39ce}{get\+Left}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie la position x de la limite gauche de la boite. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classCollisionBox_ab58c9ae6bf88bc82ec6d36ecc5cb6969}{get\+Right}} ()
-\begin{DoxyCompactList}\small\item\em Renvoie la position x de la limite droite de la boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renvoie la position x de la limite droite de la boite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollisionBox_a8d0c01685c90a45c54f03a77b8232d3d}{flip\+Horizontally}} ()
+\begin{DoxyCompactList}\small\item\em renverse la boîte de collision horizontallement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCollisionBox_aee9026f7977f98c07ae905e68e0beb11}{flip\+Vertically}} ()
+\begin{DoxyCompactList}\small\item\em renverse la boîte de collision verticallement \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classGeometric}{Geometric}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -203,7 +207,27 @@ Detecte si la boîte est en collision en prenant en compte la rotaion des deux b
 \begin{DoxyReturn}{Returns}
 bool true si la boîte est en collision avec other\+Box et false si non
 \end{DoxyReturn}
-@attenion Cette méthode prend en compte la rotation et est donc plus gourmand en ressource, à utiliser seulement si nécessaire \Hypertarget{classCollisionBox_ad9cc9886e37e4268366846287094cd07}\index{CollisionBox@{CollisionBox}!follow@{follow}}
+@attenion Cette méthode prend en compte la rotation et est donc plus gourmand en ressource, à utiliser seulement si nécessaire \Hypertarget{classCollisionBox_a8d0c01685c90a45c54f03a77b8232d3d}\index{CollisionBox@{CollisionBox}!flipHorizontally@{flipHorizontally}}
+\index{flipHorizontally@{flipHorizontally}!CollisionBox@{CollisionBox}}
+\doxysubsubsection{\texorpdfstring{flipHorizontally()}{flipHorizontally()}}
+{\footnotesize\ttfamily \label{classCollisionBox_a8d0c01685c90a45c54f03a77b8232d3d} 
+void Collision\+Box\+::flip\+Horizontally (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+renverse la boîte de collision horizontallement 
+
+\Hypertarget{classCollisionBox_aee9026f7977f98c07ae905e68e0beb11}\index{CollisionBox@{CollisionBox}!flipVertically@{flipVertically}}
+\index{flipVertically@{flipVertically}!CollisionBox@{CollisionBox}}
+\doxysubsubsection{\texorpdfstring{flipVertically()}{flipVertically()}}
+{\footnotesize\ttfamily \label{classCollisionBox_aee9026f7977f98c07ae905e68e0beb11} 
+void Collision\+Box\+::flip\+Vertically (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+renverse la boîte de collision verticallement 
+
+\Hypertarget{classCollisionBox_ad9cc9886e37e4268366846287094cd07}\index{CollisionBox@{CollisionBox}!follow@{follow}}
 \index{follow@{follow}!CollisionBox@{CollisionBox}}
 \doxysubsubsection{\texorpdfstring{follow()}{follow()}}
 {\footnotesize\ttfamily \label{classCollisionBox_ad9cc9886e37e4268366846287094cd07} 
