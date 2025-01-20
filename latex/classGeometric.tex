@@ -40,25 +40,25 @@ Collaboration diagram for Geometric\+:
 \item 
 void \mbox{\hyperlink{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}{set\+Position}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Pos)
 \item 
-void \mbox{\hyperlink{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea}{set\+Position}} (float x\+\_\+, float y\+\_\+)
+virtual void \mbox{\hyperlink{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea}{set\+Position}} (float x\+\_\+, float y\+\_\+)
 \item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_ae6773c23bc49c577a746eceba0d61ae9}{get\+Position}} () const
 \item 
 void \mbox{\hyperlink{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}{set\+Size}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Size)
 \item 
-void \mbox{\hyperlink{classGeometric_a3349ad4b53502ef34045cd9918edf874}{set\+Size}} (float x\+\_\+, float y\+\_\+)
+virtual void \mbox{\hyperlink{classGeometric_a3349ad4b53502ef34045cd9918edf874}{set\+Size}} (float x\+\_\+, float y\+\_\+)
 \item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_a3fff20466217773ba98812edec671fd6}{get\+Size}} () const
 \item 
 void \mbox{\hyperlink{classGeometric_abbca7318025469c0f10e213091fc172b}{set\+Origin}} (const \mbox{\hyperlink{classVector2f}{Vector2f}} \&n\+Origin)
 \item 
-void \mbox{\hyperlink{classGeometric_a781821c6563ce5f9aebf09c265318fe6}{set\+Origin}} (float x\+\_\+, float y\+\_\+)
+virtual void \mbox{\hyperlink{classGeometric_a781821c6563ce5f9aebf09c265318fe6}{set\+Origin}} (float x\+\_\+, float y\+\_\+)
 \item 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& \mbox{\hyperlink{classGeometric_a7f5fabeb15df60997cd99a0b6133d7fc}{get\+Origin}} () const
 \item 
-void \mbox{\hyperlink{classGeometric_aa2fabdf5c95688011676905b81bf154a}{set\+Rotation}} (float n\+Rotation)
+virtual void \mbox{\hyperlink{classGeometric_aa2fabdf5c95688011676905b81bf154a}{set\+Rotation}} (float n\+Rotation)
 \item 
-float \mbox{\hyperlink{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}{get\+Rotation}} () const
+const float \mbox{\hyperlink{classGeometric_a526ff2b9c1e4bc1738b0ba80a4a45dea}{get\+Rotation}} () const
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -80,7 +80,7 @@ gère un objet avec de propriété géométrique
 Class utile pour décrire toute forme géometrique 
 \end{DoxyNote}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]ajouter a shape \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]ajouter a shape \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -117,11 +117,11 @@ const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Origin (\b
 {\footnotesize\ttfamily \label{classGeometric_ae6773c23bc49c577a746eceba0d61ae9} 
 const \mbox{\hyperlink{classVector2f}{Vector2f}} \& Geometric\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-\Hypertarget{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e}\index{Geometric@{Geometric}!getRotation@{getRotation}}
+\Hypertarget{classGeometric_a526ff2b9c1e4bc1738b0ba80a4a45dea}\index{Geometric@{Geometric}!getRotation@{getRotation}}
 \index{getRotation@{getRotation}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
-{\footnotesize\ttfamily \label{classGeometric_a4c072bd3941b5cab3fe410e7fd76093e} 
-float Geometric\+::get\+Rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classGeometric_a526ff2b9c1e4bc1738b0ba80a4a45dea} 
+const float Geometric\+::get\+Rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 \Hypertarget{classGeometric_a3fff20466217773ba98812edec671fd6}\index{Geometric@{Geometric}!getSize@{getSize}}
 \index{getSize@{getSize}!Geometric@{Geometric}}
@@ -139,7 +139,7 @@ void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyper
 \index{setOrigin@{setOrigin}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classGeometric_a781821c6563ce5f9aebf09c265318fe6} 
-void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
+void Geometric\+::set\+Origin (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \Hypertarget{classGeometric_adabfdba31abfe4bc3261ddba5780b30b}\index{Geometric@{Geometric}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Geometric@{Geometric}}
@@ -151,13 +151,13 @@ void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyp
 \index{setPosition@{setPosition}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classGeometric_a5459f6fe26a932ddb96e58ce27e02bea} 
-void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
+void Geometric\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \Hypertarget{classGeometric_aa2fabdf5c95688011676905b81bf154a}\index{Geometric@{Geometric}!setRotation@{setRotation}}
 \index{setRotation@{setRotation}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}}
 {\footnotesize\ttfamily \label{classGeometric_aa2fabdf5c95688011676905b81bf154a} 
-void Geometric\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation}{}\end{DoxyParamCaption})}
+void Geometric\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \Hypertarget{classGeometric_a6b61d7c0fa963bc1dc505c9870064bc9}\index{Geometric@{Geometric}!setSize@{setSize}}
 \index{setSize@{setSize}!Geometric@{Geometric}}
@@ -169,7 +169,7 @@ void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperli
 \index{setSize@{setSize}!Geometric@{Geometric}}
 \doxysubsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{classGeometric_a3349ad4b53502ef34045cd9918edf874} 
-void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})}
+void Geometric\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+}{, }\item[{float}]{y\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 

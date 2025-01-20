@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lasttime_0',['lastTime',['../benchmark_8cpp.html#a9648c4b3c5e8528ebc2745f7cb76ff62',1,'benchmark.cpp']]],
-  ['light_1',['Light',['../classLight.html',1,'Light'],['../classLight.html#aa7ca93de13c3d0ff60c26328b79dd008',1,'Light::Light()']]],
+  ['light_1',['Light',['../classLight.html',1,'Light'],['../classLight.html#aa7ca93de13c3d0ff60c26328b79dd008',1,'Light::Light(Vector2f nPos, float nIntensity, Vector3i nRGB, float nConstantAttenuation, float nLinearAttenuation, float nQuadraticAttenuation)'],['../classLight.html#aeb5df09a25a32f19fdffa761268ba24f',1,'Light::Light()']]],
   ['lightclass_2ecpp_2',['lightClass.cpp',['../lightClass_8cpp.html',1,'']]],
   ['lightclass_2eh_3',['lightClass.h',['../lightClass_8h.html',1,'']]],
   ['linearattenuation_4',['linearAttenuation',['../structUniformLight.html#a9bcd3147847a46e4d8a66e5af54cd88c',1,'UniformLight']]],

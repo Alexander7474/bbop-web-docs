@@ -14,6 +14,8 @@ Gère un point de lumière en fonction de son Intensité, sa couleur et son atte
 \item 
 \mbox{\hyperlink{classLight_aa7ca93de13c3d0ff60c26328b79dd008}{Light}} (\mbox{\hyperlink{classVector2f}{Vector2f}} n\+Pos, float n\+Intensity, \mbox{\hyperlink{classVector3i}{Vector3i}} n\+RGB, float n\+Constant\+Attenuation, float n\+Linear\+Attenuation, float n\+Quadratic\+Attenuation)
 \begin{DoxyCompactList}\small\item\em Constructeur de light. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLight_aeb5df09a25a32f19fdffa761268ba24f}{Light}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défault de \doxylink{classLight}{Light}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector3i}{Vector3i}} \mbox{\hyperlink{classLight_a411518c34dd3a944d18f10067de5a449}{get\+Color}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie la couleur de \doxylink{classLight}{Light}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLight_aa194ff3fb8d1af710ac66d86995f48e6}{set\+Color}} (\mbox{\hyperlink{classVector3i}{Vector3i}} n\+RGB)
@@ -37,16 +39,32 @@ void \mbox{\hyperlink{classLight_a174fbcb37fc638d329b9c115094dded6}{set\+Linear}
 float \mbox{\hyperlink{classLight_a00c361277bfc6806c18126f665f64e74}{get\+Quadratic}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}attenuation quadratique de \doxylink{classLight}{Light}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classLight_abfac3752d0bbd946fa8bd0cd0503c30c}{set\+Quadratic}} (float n\+Quadratic)
-\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}attenuation quadratique de \doxylink{classLight}{Light}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Change l\textquotesingle{}attenuation quadratique de \doxylink{classLight}{Light}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ad1d69b33cde618d8e4e7c4ad000f804f}{set\+Open\+Angle}} (float n\+Open\+Angle)
+\begin{DoxyCompactList}\small\item\em change l\textquotesingle{}angle d\textquotesingle{}ouverture de la light \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLight_aa89b20415b9e4eb3bf6fbf1ee47efced}{get\+Open\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}angle d\textquotesingle{}ouverture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ad515c0e61eebb7b38d26f1fda4539cab}{set\+Rotation\+Angle}} (float n\+Rotation\+Angle)
+\begin{DoxyCompactList}\small\item\em change l\textquotesingle{}angle de rotation de la light \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classLight_a66ac101e4e247f8461a80c8be3544c7c}{get\+Rotation\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Renvoie l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Gère un point de lumière en fonction de son Intensité, sa couleur et son attenuation. 
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Créer une class Directionnal\+Light pour différentier certaine lumière 
+
+Ajouter la gestion d\textquotesingle{}une shadow\+Map pour empêcher le passage de la lumière 
+
+Ajouter la gestion d\textquotesingle{}une light\+Map sur \doxylink{classTexture}{Texture} pour gérer l\textquotesingle{}éclairage des textures \end{DoxyRefDesc}
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classLight_aa7ca93de13c3d0ff60c26328b79dd008}\index{Light@{Light}!Light@{Light}}
 \index{Light@{Light}!Light@{Light}}
-\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{classLight_aa7ca93de13c3d0ff60c26328b79dd008} 
 Light\+::\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{n\+Pos}{, }\item[{float}]{n\+Intensity}{, }\item[{\mbox{\hyperlink{classVector3i}{Vector3i}}}]{n\+RGB}{, }\item[{float}]{n\+Constant\+Attenuation}{, }\item[{float}]{n\+Linear\+Attenuation}{, }\item[{float}]{n\+Quadratic\+Attenuation}{}\end{DoxyParamCaption})}
 
@@ -69,7 +87,17 @@ Constructeur de light.
 \mbox{\texttt{ in}}  & {\em n\+Quadratic\+Attenuation} & attenuation quadratique \\
 \hline
 \end{DoxyParams}
+\Hypertarget{classLight_aeb5df09a25a32f19fdffa761268ba24f}\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classLight_aeb5df09a25a32f19fdffa761268ba24f} 
+Light\+::\+Light (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Constructeur par défault de \doxylink{classLight}{Light}. 
+
+Lumière blanche avec 0.\+2 d\textquotesingle{}intensité et 0.\+2 pour toute les attenuation 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classLight_a411518c34dd3a944d18f10067de5a449}\index{Light@{Light}!getColor@{getColor}}
@@ -124,6 +152,19 @@ Renvoie l\textquotesingle{}attenuation linéaire de \doxylink{classLight}{Light}
 \begin{DoxyReturn}{Returns}
 linear\+Attenuation 
 \end{DoxyReturn}
+\Hypertarget{classLight_aa89b20415b9e4eb3bf6fbf1ee47efced}\index{Light@{Light}!getOpenAngle@{getOpenAngle}}
+\index{getOpenAngle@{getOpenAngle}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getOpenAngle()}{getOpenAngle()}}
+{\footnotesize\ttfamily \label{classLight_aa89b20415b9e4eb3bf6fbf1ee47efced} 
+float Light\+::get\+Open\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Renvoie l\textquotesingle{}angle d\textquotesingle{}ouverture. 
+
+\begin{DoxyReturn}{Returns}
+open\+Angle 
+\end{DoxyReturn}
 \Hypertarget{classLight_a865a33affa6fd6723bfcc171771183cd}\index{Light@{Light}!getPosistion@{getPosistion}}
 \index{getPosistion@{getPosistion}!Light@{Light}}
 \doxysubsubsection{\texorpdfstring{getPosistion()}{getPosistion()}}
@@ -149,6 +190,19 @@ Renvoie l\textquotesingle{}attenuation quadratique de \doxylink{classLight}{Ligh
 
 \begin{DoxyReturn}{Returns}
 quadratic\+Attenuation 
+\end{DoxyReturn}
+\Hypertarget{classLight_a66ac101e4e247f8461a80c8be3544c7c}\index{Light@{Light}!getRotationAngle@{getRotationAngle}}
+\index{getRotationAngle@{getRotationAngle}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getRotationAngle()}{getRotationAngle()}}
+{\footnotesize\ttfamily \label{classLight_a66ac101e4e247f8461a80c8be3544c7c} 
+float Light\+::get\+Rotation\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Renvoie l\textquotesingle{}angle de rotation. 
+
+\begin{DoxyReturn}{Returns}
+rotation\+Angle 
 \end{DoxyReturn}
 \Hypertarget{classLight_aa194ff3fb8d1af710ac66d86995f48e6}\index{Light@{Light}!setColor@{setColor}}
 \index{setColor@{setColor}!Light@{Light}}
@@ -210,7 +264,17 @@ Change l\textquotesingle{}attenuation linéaire de \doxylink{classLight}{Light}.
 \mbox{\texttt{ in}}  & {\em n\+Linear} & attenuation linéaire \\
 \hline
 \end{DoxyParams}
-\Hypertarget{classLight_a9ab919af95d2b4a4e9ebd2cf6e61e1d2}\index{Light@{Light}!setPosition@{setPosition}}
+\Hypertarget{classLight_ad1d69b33cde618d8e4e7c4ad000f804f}\index{Light@{Light}!setOpenAngle@{setOpenAngle}}
+\index{setOpenAngle@{setOpenAngle}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setOpenAngle()}{setOpenAngle()}}
+{\footnotesize\ttfamily \label{classLight_ad1d69b33cde618d8e4e7c4ad000f804f} 
+void Light\+::set\+Open\+Angle (\begin{DoxyParamCaption}\item[{float}]{n\+Open\+Angle}{}\end{DoxyParamCaption})}
+
+
+
+change l\textquotesingle{}angle d\textquotesingle{}ouverture de la light 
+
+@parm\mbox{[}in\mbox{]} n\+Open\+Angle Nouvelle angle d\textquotesingle{}ouverture \Hypertarget{classLight_a9ab919af95d2b4a4e9ebd2cf6e61e1d2}\index{Light@{Light}!setPosition@{setPosition}}
 \index{setPosition@{setPosition}!Light@{Light}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
 {\footnotesize\ttfamily \label{classLight_a9ab919af95d2b4a4e9ebd2cf6e61e1d2} 
@@ -240,7 +304,17 @@ Change l\textquotesingle{}attenuation quadratique de \doxylink{classLight}{Light
 \mbox{\texttt{ in}}  & {\em n\+Quadratic} & attenuation quadratique \\
 \hline
 \end{DoxyParams}
+\Hypertarget{classLight_ad515c0e61eebb7b38d26f1fda4539cab}\index{Light@{Light}!setRotationAngle@{setRotationAngle}}
+\index{setRotationAngle@{setRotationAngle}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setRotationAngle()}{setRotationAngle()}}
+{\footnotesize\ttfamily \label{classLight_ad515c0e61eebb7b38d26f1fda4539cab} 
+void Light\+::set\+Rotation\+Angle (\begin{DoxyParamCaption}\item[{float}]{n\+Rotation\+Angle}{}\end{DoxyParamCaption})}
 
+
+
+change l\textquotesingle{}angle de rotation de la light 
+
+@parm\mbox{[}in\mbox{]} n\+Rotation\+Angle Nouvelle angle de rotation 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

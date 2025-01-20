@@ -32,41 +32,40 @@
 \DoxyCodeLine{00036\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structImage_a22b726c8306f78b5022e0670ddb0937f}{data}};\ \textcolor{comment}{//<!\ Données\ de\ l'image}}
 \DoxyCodeLine{00037\ \};}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00050\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}\ }
-\DoxyCodeLine{00051\ \{}
-\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureFileName);}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00072\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structImage}{Image}}\ \&textureImage);}
-\DoxyCodeLine{00073\ \ }
-\DoxyCodeLine{00079\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}\ \&other);}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00081\ \ \ \ \ }
-\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a7adfdce717ffb4414cf7b842bdcb1112}{Bind}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a0bff249ecfb46e9b08c6ba52d64a921e}{Unbind}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00099\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a653216bcd1509432e28502d9fc7826ce}{Delete}}();}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00106\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTexture_a2c2b502138a1a1786c4bf74016620885}{getWidth}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00113\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTexture_a23c3c1315267a5521d824982bb8d208c}{getHeight}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00114\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00115\ \ \ GLuint\ ID;\ \textcolor{comment}{//<!\ ID\ de\ la\ texture\ avec\ opengl}}
-\DoxyCodeLine{00116\ \ \ \textcolor{keywordtype}{int}\ width,\ height,\ nrChannels;\ \textcolor{comment}{//<!\ info\ sur\ la\ texture\ }}
-\DoxyCodeLine{00117\ \};}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00122\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_ad9978f53a1bdc02cc2e451629f844a7b}{bbopLoadImage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename,\ \textcolor{keywordtype}{int}\ nrChannels);}
-\DoxyCodeLine{00123\ }
-\DoxyCodeLine{00127\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_ab67e3b20d3067ccf575543258f6b554b}{bbopCCutImage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structImage}{Image}}\ \&toCC,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
-\DoxyCodeLine{00128\ }
-\DoxyCodeLine{00142\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_a91e008684a8ee4e1a2ea8b41bb8cf0d3}{bbopLoadPartialImage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename,\ \textcolor{keywordtype}{int}\ nrChannels,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
-\DoxyCodeLine{00143\ }
-\DoxyCodeLine{00154\ std::vector<Texture>\ \mbox{\hyperlink{textureClass_8h_a9c2c0d8fde5a6d4b81bb1e8fa5c76172}{bbopLoadSpriteSheet}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *spriteSheetPath,\ \textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ columns);}
-\DoxyCodeLine{00155\ }
-\DoxyCodeLine{00161\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{textureClass_8h_a782c15cd6dfae910dd14acf66e378e77}{bbopFreeImage}}(\mbox{\hyperlink{structImage}{Image}}\ \&image);}
-\DoxyCodeLine{00162\ }
-\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !TEXTURE\_CLASS\_H}}
+\DoxyCodeLine{00048\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}\ }
+\DoxyCodeLine{00049\ \{}
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00061\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ textureFileName);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structImage}{Image}}\ \&textureImage);}
+\DoxyCodeLine{00071\ \ }
+\DoxyCodeLine{00077\ \ \ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexture_a3ea9703ceb4acdae702565844036e284}{Texture}}\ \&other);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a7adfdce717ffb4414cf7b842bdcb1112}{Bind}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a0bff249ecfb46e9b08c6ba52d64a921e}{Unbind}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00096\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTexture_a653216bcd1509432e28502d9fc7826ce}{Delete}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTexture_a2c2b502138a1a1786c4bf74016620885}{getWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTexture_a23c3c1315267a5521d824982bb8d208c}{getHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00112\ \ \ GLuint\ ID;\ \textcolor{comment}{//<!\ ID\ de\ la\ texture\ avec\ opengl}}
+\DoxyCodeLine{00113\ \ \ \textcolor{keywordtype}{int}\ width,\ height,\ nrChannels;\ \textcolor{comment}{//<!\ info\ sur\ la\ texture\ }}
+\DoxyCodeLine{00114\ \};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00119\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_ad9978f53a1bdc02cc2e451629f844a7b}{bbopLoadImage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename,\ \textcolor{keywordtype}{int}\ nrChannels);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00124\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_ab67e3b20d3067ccf575543258f6b554b}{bbopCCutImage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structImage}{Image}}\ \&toCC,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00139\ \mbox{\hyperlink{structImage}{Image}}\ \mbox{\hyperlink{textureClass_8h_a91e008684a8ee4e1a2ea8b41bb8cf0d3}{bbopLoadPartialImage}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filename,\ \textcolor{keywordtype}{int}\ nrChannels,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00151\ std::vector<Texture>\ \mbox{\hyperlink{textureClass_8h_a9c2c0d8fde5a6d4b81bb1e8fa5c76172}{bbopLoadSpriteSheet}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *spriteSheetPath,\ \textcolor{keywordtype}{int}\ rows,\ \textcolor{keywordtype}{int}\ columns);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00158\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{textureClass_8h_a782c15cd6dfae910dd14acf66e378e77}{bbopFreeImage}}(\mbox{\hyperlink{structImage}{Image}}\ \&image);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !TEXTURE\_CLASS\_H}}
 
 \end{DoxyCode}

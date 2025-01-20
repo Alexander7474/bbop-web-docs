@@ -2,6 +2,11 @@
 \hypertarget{classAnimatedSprite}{}\label{classAnimatedSprite}\index{AnimatedSprite@{AnimatedSprite}}
 
 
+Gère un \doxylink{classSprite}{Sprite} qui joue une aniomation en boucle.  
+
+
+
+
 {\ttfamily \#include $<$animated\+Sprite\+Class.\+h$>$}
 
 
@@ -34,7 +39,9 @@ Collaboration diagram for Animated\+Sprite\+:
 \mbox{\hyperlink{classAnimatedSprite_a7e9717a6f7b8847358ad9784e77144a0}{Animated\+Sprite}} (std\+::string \+\_\+animated\+\_\+sprite\+\_\+sheet, \mbox{\hyperlink{classVector2i}{Vector2i}} \+\_\+size, float \+\_\+frame\+\_\+t, int \+\_\+dead\+\_\+frame)
 \item 
 bool \mbox{\hyperlink{classAnimatedSprite_a8441e07d3ae6bb4c76946bb82238d826}{update}} ()
-\begin{DoxyCompactList}\small\item\em Met a jour les particules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Met a jour les particules. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classTexture}{Texture}} $>$ \& \mbox{\hyperlink{classAnimatedSprite_a741ea12f5cd57621bc157e8c933f9274}{get\+Sprite\+Sheet}} ()
+\begin{DoxyCompactList}\small\item\em renvoie la liste de texture \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classSprite}{Sprite}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -58,6 +65,8 @@ void \mbox{\hyperlink{classSprite_af9be42bc2be161b8eec4bcc9d1141ba5}{Draw}} (GLi
 \begin{DoxyCompactList}\small\item\em Déssine l\textquotesingle{}objet héritant de la class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSprite_a2e579e2e543017ea87acc42e5d7108b0}{set\+Texture}} (const \mbox{\hyperlink{classTexture}{Texture}} \&n\+Texture)
 \begin{DoxyCompactList}\small\item\em Change la texture du sprite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTexture}{Texture}} \& \mbox{\hyperlink{classSprite_a9a0c1b20bc89e2898a75a7ec4c721427}{get\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em renvoie un pointeur vers la texture du sprite \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classSprite_a893f004e6c5e827be939b0e362c97cc9}{get\+RGBFilter\+State}} () const
 \begin{DoxyCompactList}\small\item\em Renvoie si oui ou non le filtre de couleur est activé \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSprite_ab299bab24ce0057164243ec5b8a2bb6b}{set\+RGBFilter\+State}} (bool etat)
@@ -167,6 +176,13 @@ float \mbox{\hyperlink{classShape_a66a52f9200f362ec1e754c5211e6ba6c}{alpha}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Gère un \doxylink{classSprite}{Sprite} qui joue une aniomation en boucle. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Ajouter une class State\+Sprite qui gère un sprite et qui l\textquotesingle{}anime en fonction d\textquotesingle{}une énumération d\textquotesingle{}état de ce \doxylink{classSprite}{Sprite} \end{DoxyRefDesc}
+
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{classAnimatedSprite_a1147eb833593fa4c28854b96a84413a9}\index{AnimatedSprite@{AnimatedSprite}!AnimatedSprite@{AnimatedSprite}}
 \index{AnimatedSprite@{AnimatedSprite}!AnimatedSprite@{AnimatedSprite}}
@@ -189,6 +205,16 @@ Animated\+Sprite\+::\+Animated\+Sprite (\begin{DoxyParamCaption}\item[{std\+::st
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{classAnimatedSprite_a741ea12f5cd57621bc157e8c933f9274}\index{AnimatedSprite@{AnimatedSprite}!getSpriteSheet@{getSpriteSheet}}
+\index{getSpriteSheet@{getSpriteSheet}!AnimatedSprite@{AnimatedSprite}}
+\doxysubsubsection{\texorpdfstring{getSpriteSheet()}{getSpriteSheet()}}
+{\footnotesize\ttfamily \label{classAnimatedSprite_a741ea12f5cd57621bc157e8c933f9274} 
+std\+::vector$<$ \mbox{\hyperlink{classTexture}{Texture}} $>$ \& Animated\+Sprite\+::get\+Sprite\+Sheet (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+renvoie la liste de texture 
+
 \Hypertarget{classAnimatedSprite_a8441e07d3ae6bb4c76946bb82238d826}\index{AnimatedSprite@{AnimatedSprite}!update@{update}}
 \index{update@{update}!AnimatedSprite@{AnimatedSprite}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}

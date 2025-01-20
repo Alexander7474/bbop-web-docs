@@ -5,5 +5,6 @@ var searchData=
   ['rectlist_2',['rectList',['../benchmark_8cpp.html#a6514ddf37475763f3a56bb4772532848',1,'benchmark.cpp']]],
   ['remplissage_3',['remplissage',['../classMap.html#aec249fed8550d4817d39039d49532243',1,'Map']]],
   ['rgb_4',['RGB',['../classShape.html#a7e043155fe1272d8beccc9031e80860f',1,'Shape']]],
-  ['rotation_5',['rotation',['../classGeometric.html#ac04c6ad67f220fa6fe1adbd49dad3891',1,'Geometric::rotation'],['../classShape.html#ae74cb8b7d1fabcc37421ac58a681d521',1,'Shape::rotation']]]
+  ['rotation_5',['rotation',['../classGeometric.html#ac04c6ad67f220fa6fe1adbd49dad3891',1,'Geometric::rotation'],['../classShape.html#ae74cb8b7d1fabcc37421ac58a681d521',1,'Shape::rotation']]],
+  ['rotationangle_6',['rotationAngle',['../structUniformLight.html#ac0a17a80f0fb5a3f0504e451bdffb960',1,'UniformLight']]]
 ];

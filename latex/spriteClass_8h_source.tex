@@ -52,33 +52,34 @@
 \DoxyCodeLine{00075\ }
 \DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a2e579e2e543017ea87acc42e5d7108b0}{setTexture}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classTexture}{Texture}}\ \&nTexture);}
 \DoxyCodeLine{00082\ }
-\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSprite_a893f004e6c5e827be939b0e362c97cc9}{getRGBFilterState}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00095\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab299bab24ce0057164243ec5b8a2bb6b}{setRGBFilterState}}(\textcolor{keywordtype}{bool}\ etat);}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_aa604258c288860ef9e9604cc9d932fec}{flipHorizontally}}();}
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{classTexture}{Texture}}\&\ \mbox{\hyperlink{classSprite_a9a0c1b20bc89e2898a75a7ec4c721427}{getTexture}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSprite_a893f004e6c5e827be939b0e362c97cc9}{getRGBFilterState}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab299bab24ce0057164243ec5b8a2bb6b}{setRGBFilterState}}(\textcolor{keywordtype}{bool}\ etat);}
 \DoxyCodeLine{00101\ }
-\DoxyCodeLine{00105\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_abe1f24ce55e6b541fcd3f43e8147b2a7}{flipVertically}}();}
+\DoxyCodeLine{00105\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_aa604258c288860ef9e9604cc9d932fec}{flipHorizontally}}();}
 \DoxyCodeLine{00106\ }
-\DoxyCodeLine{00107\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00108\ \ \ \mbox{\hyperlink{classTexture}{Texture}}*\ spriteTexture;}
-\DoxyCodeLine{00109\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00110\ \ \ GLfloat\ \mbox{\hyperlink{classSprite_ae3299c5e7dcc6a8eddfebb538f9354a3}{vertices}}[32];}
-\DoxyCodeLine{00111\ \ \ GLuint\ \mbox{\hyperlink{classSprite_a02928ae567a2c404d015f12105ca7be0}{indices}}[6];}
-\DoxyCodeLine{00112\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSprite_a5fbebfdd07cac349aeff218d5eb45f7f}{isRGBFilter}};}
-\DoxyCodeLine{00113\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a58ba7f507127d4e81ffe00be7d59c0bc}{buildVAO}}()\ \textcolor{keyword}{override};\ \textcolor{comment}{//<!\ Calcule\ de\ la\ geométrie\ }}
-\DoxyCodeLine{00114\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab8de3004c927130c36f888ec52712f0a}{updateVBO}}()\ \textcolor{keyword}{override};\ \textcolor{comment}{//<!\ Recalcule\ de\ la\ géométrie}}
-\DoxyCodeLine{00115\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab0926ec6fb759d24b1df3eab12f2a70e}{updateVBORGB}}()\ \textcolor{keyword}{override};\ }
-\DoxyCodeLine{00116\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a43628352a0e151acdb3b68c9be2c9109}{updateVBOAlpha}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00117\ \ \};}
-\DoxyCodeLine{00118\ }
-\DoxyCodeLine{00119\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNoTextureSprite}{NoTextureSprite}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSprite_a720f36fae066815cb8131606602b6095}{Sprite}}}
-\DoxyCodeLine{00120\ \{}
-\DoxyCodeLine{00121\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00122\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}{Draw}}(GLint\ renderModeLoc)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00110\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_abe1f24ce55e6b541fcd3f43e8147b2a7}{flipVertically}}();}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00113\ \ \ \mbox{\hyperlink{classTexture}{Texture}}*\ spriteTexture;\ \textcolor{comment}{//\ pointeur\ ves\ la\ Texture\ a\ bing\ avec\ opengl\ lors\ du\ dessin}}
+\DoxyCodeLine{00114\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00115\ \ \ GLfloat\ \mbox{\hyperlink{classSprite_ae3299c5e7dcc6a8eddfebb538f9354a3}{vertices}}[32];}
+\DoxyCodeLine{00116\ \ \ GLuint\ \mbox{\hyperlink{classSprite_a02928ae567a2c404d015f12105ca7be0}{indices}}[6];}
+\DoxyCodeLine{00117\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSprite_a5fbebfdd07cac349aeff218d5eb45f7f}{isRGBFilter}};}
+\DoxyCodeLine{00118\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a58ba7f507127d4e81ffe00be7d59c0bc}{buildVAO}}()\ \textcolor{keyword}{override};\ \textcolor{comment}{//<!\ Calcule\ de\ la\ geométrie\ }}
+\DoxyCodeLine{00119\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab8de3004c927130c36f888ec52712f0a}{updateVBO}}()\ \textcolor{keyword}{override};\ \textcolor{comment}{//<!\ Recalcule\ de\ la\ géométrie}}
+\DoxyCodeLine{00120\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_ab0926ec6fb759d24b1df3eab12f2a70e}{updateVBORGB}}()\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00121\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSprite_a43628352a0e151acdb3b68c9be2c9109}{updateVBOAlpha}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00122\ \ \};}
 \DoxyCodeLine{00123\ }
-\DoxyCodeLine{00124\ \};}
-\DoxyCodeLine{00125\ }
-\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !SPRITE\_CLASS\_H}}
+\DoxyCodeLine{00128\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNoTextureSprite}{NoTextureSprite}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classSprite_a720f36fae066815cb8131606602b6095}{Sprite}}}
+\DoxyCodeLine{00129\ \{}
+\DoxyCodeLine{00130\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00131\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classNoTextureSprite_a26e5983a4607658665c17b07fb17ce60}{Draw}}(GLint\ renderModeLoc)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00132\ \};}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !SPRITE\_CLASS\_H}}
 
 \end{DoxyCode}

@@ -26,42 +26,44 @@
 \DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
 \DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <GLFW/glfw3.h>}}
 \DoxyCodeLine{00024\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCamera_a82bc038e6fd98292192f0f1d101af5e3}{Camera}}\ }
-\DoxyCodeLine{00032\ \{}
-\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00034\ \ \ }
-\DoxyCodeLine{00041\ \ \ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos,\ \textcolor{keywordtype}{float}\ nScale);}
-\DoxyCodeLine{00042\ \ \ }
-\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}();}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}{buildCamera}}();}
-\DoxyCodeLine{00055\ \ \ }
-\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}{setScale}}(\textcolor{keywordtype}{float}\ nScale);}
-\DoxyCodeLine{00062\ \ \ }
-\DoxyCodeLine{00068\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCamera_a69a3797ab7fe29eccb0eef48727b0099}{getScale}}();}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{setPosition}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos);}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00084\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}{getPosition}}();}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00092\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screenPosToCamPos}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ screenPos);}
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCamera_a82bc038e6fd98292192f0f1d101af5e3}{Camera}}\ }
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ }
+\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos,\ \textcolor{keywordtype}{float}\ nScale);}
+\DoxyCodeLine{00043\ \ \ }
+\DoxyCodeLine{00050\ \ \ \mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_ac33ed2ac1e63e41966c6a1832f4cf6b5}{buildCamera}}();}
+\DoxyCodeLine{00056\ \ \ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a8ce00f4fe7c91eb416064b6f377ad6c5}{setScale}}(\textcolor{keywordtype}{float}\ nScale);}
+\DoxyCodeLine{00063\ \ \ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCamera_a69a3797ab7fe29eccb0eef48727b0099}{getScale}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{setPosition}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ nPos);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}{getPosition}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCamera_a8997871b9fb4dd7a3106dea82cc8720f}{move}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ m);}
 \DoxyCodeLine{00093\ }
-\DoxyCodeLine{00100\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac}{camPosToWorldPos}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ camPos);}
+\DoxyCodeLine{00100\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screenPosToCamPos}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ screenPos);}
 \DoxyCodeLine{00101\ }
-\DoxyCodeLine{00111\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{isInCamView}}(\mbox{\hyperlink{classShape}{Shape}}\&\ obj);}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00123\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{isInCamView}}(\mbox{\hyperlink{classCollisionBox}{CollisionBox}}\&\ obj);}
-\DoxyCodeLine{00124\ }
-\DoxyCodeLine{00125\ }
-\DoxyCodeLine{00129\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab404f2ac7d7c1b21301eace5baf42018}{camX}};}
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00134\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_a37187407737501e8575d8417c032486b}{camY}};}
-\DoxyCodeLine{00135\ }
-\DoxyCodeLine{00136\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00137\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ pos;\ \textcolor{comment}{//<!\ Positon\ de\ la\ camera}}
-\DoxyCodeLine{00138\ \ \ \textcolor{keywordtype}{float}\ scale;\ \textcolor{comment}{//<!\ Scale\ de\ la\ camera}}
-\DoxyCodeLine{00139\ \};}
-\DoxyCodeLine{00140\ }
-\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !CAMERA\_CLASS\_H}}
+\DoxyCodeLine{00108\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac}{camPosToWorldPos}}(\mbox{\hyperlink{classVector2f}{Vector2f}}\ camPos);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00119\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{isInCamView}}(\mbox{\hyperlink{classShape}{Shape}}\&\ obj);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}{isInCamView}}(\mbox{\hyperlink{classCollisionBox}{CollisionBox}}\&\ obj);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00136\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_ab404f2ac7d7c1b21301eace5baf42018}{camX}};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00141\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ \mbox{\hyperlink{classCamera_a37187407737501e8575d8417c032486b}{camY}};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00144\ \ \ \mbox{\hyperlink{classVector2f}{Vector2f}}\ pos;\ \textcolor{comment}{//<!\ Positon\ de\ la\ camera}}
+\DoxyCodeLine{00145\ \ \ \textcolor{keywordtype}{float}\ scale;\ \textcolor{comment}{//<!\ Scale\ de\ la\ camera}}
+\DoxyCodeLine{00146\ \};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !CAMERA\_CLASS\_H}}
 
 \end{DoxyCode}

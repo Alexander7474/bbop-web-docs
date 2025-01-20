@@ -36,6 +36,8 @@ void \mbox{\hyperlink{classCamera_a6f2223bda52e49bf526b5219d2c0c103}{set\+Positi
 \begin{DoxyCompactList}\small\item\em Change la position de la camera. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ab3b9ec6e34ef3b004d9061d96d71302f}{get\+Position}} ()
 \begin{DoxyCompactList}\small\item\em Renvoie la position actuelle de la camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCamera_a8997871b9fb4dd7a3106dea82cc8720f}{move}} (\mbox{\hyperlink{classVector2f}{Vector2f}} m)
+\begin{DoxyCompactList}\small\item\em Déplace la caméra avec le vecteur m. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}{screen\+Pos\+To\+Cam\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} screen\+Pos)
 \begin{DoxyCompactList}\small\item\em Convertie des coordonnées en pixel sur l\textquotesingle{}écran en coordonnées sur la caméra. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector2f}{Vector2f}} \mbox{\hyperlink{classCamera_ab63b4e9c6b9da0e18f37badb070a62ac}{cam\+Pos\+To\+World\+Pos}} (\mbox{\hyperlink{classVector2f}{Vector2f}} cam\+Pos)
@@ -59,6 +61,8 @@ Permet de modifier les point de vue et la position de l\textquotesingle{}afficha
 \begin{DoxyNote}{Note}
 Les attribut de cette class sont utilisé par \doxylink{classScene}{Scene} pour fabriquer la matrice de projection du vertex shader 
 \end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Ajouter des méthode d\textquotesingle{}effet sur la caméra comme le trenblement ou des filtre de couleur \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -175,8 +179,6 @@ Cette méthode est très utile pour eviter d\textquotesingle{}afficher des objet
 \begin{DoxyAttention}{Attention}
 La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectangleShape}{Rectangle\+Shape} et des \doxylink{classSprite}{Sprite}, Il peut y avaoir certain disfonctionnement avec les \doxylink{classConvexShape}{Convex\+Shape} et les \doxylink{classCircleShape}{Circle\+Shape}. 
 \end{DoxyAttention}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Gérer l\textquotesingle{}héritage de geometric sur shape pour avoir seulement une methode \end{DoxyRefDesc}
 \Hypertarget{classCamera_a46ef91b662041d7d5cf0a4280259a1d7}\index{Camera@{Camera}!isInCamView@{isInCamView}}
 \index{isInCamView@{isInCamView}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{isInCamView()}{isInCamView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -201,6 +203,21 @@ Cette méthode est très utile pour eviter d\textquotesingle{}afficher des objet
 \begin{DoxyAttention}{Attention}
 La méthode n\textquotesingle{}a été testé que sur des \doxylink{classRectangleShape}{Rectangle\+Shape} et des \doxylink{classSprite}{Sprite}, Il peut y avaoir certain disfonctionnement avec les \doxylink{classConvexShape}{Convex\+Shape} et les \doxylink{classCircleShape}{Circle\+Shape}. 
 \end{DoxyAttention}
+\Hypertarget{classCamera_a8997871b9fb4dd7a3106dea82cc8720f}\index{Camera@{Camera}!move@{move}}
+\index{move@{move}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{classCamera_a8997871b9fb4dd7a3106dea82cc8720f} 
+void Camera\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector2f}{Vector2f}}}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Déplace la caméra avec le vecteur m. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & Vecteur de déplacement de la caméra \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classCamera_ac122993172d14a6f1c677cd5bf5f0c15}\index{Camera@{Camera}!screenPosToCamPos@{screenPosToCamPos}}
 \index{screenPosToCamPos@{screenPosToCamPos}!Camera@{Camera}}
 \doxysubsubsection{\texorpdfstring{screenPosToCamPos()}{screenPosToCamPos()}}
