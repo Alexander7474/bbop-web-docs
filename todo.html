@@ -97,11 +97,18 @@ $(function(){ initResizable(false); });
 <dt>Class <a class="el" href="classCamera.html">Camera</a>  </dt>
 <dd><a class="anchor" id="_todo000005"></a>Ajouter des méthode d'effet sur la caméra comme le trenblement ou des filtre de couleur  </dd>
 <dt>Member <a class="el" href="shaders_8cpp.html#aa4e3821fb3d25cef0fcd8bd89a1666e8">defaultFragment</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000010"></a>Utiliser des matrices de model, de view et de projection pour le vertex shaders </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000010"></a>Utiliser des matrices de model, de view et de projection pour le vertex shaders</p>
+<p class="interdd"><a class="anchor" id="_todo000011"></a>1 -&gt; Mettre les shaders dans des fichier .glsl </p>
 <p class="interdd"></p>
-<p class="interdd">Mettre les shaders dans des fichier .glsl </p>
+<p class="interdd">2 -&gt; Faire des ubershader configurable pour optimiser les transfert de données (quantité) et la vitesse de calcule </p>
 <p class="interdd"></p>
-<p class="enddd">Faire des ubershader configurable pour optimiser les transfert de données (quantité) et la vitesse de calcule  </p>
+<p class="interdd">3 -&gt; utilisé des matrice de tranformation, view et model pour éviter les calcule côté cpu </p>
+<p class="interdd"></p>
+<p class="interdd">4 -&gt; faire un framebuffer pour calculer l'éclairage en une fois </p>
+<p class="interdd"></p>
+<p class="interdd">5 -&gt; ajout de shadow map </p>
+<p class="interdd"></p>
+<p class="enddd">6 -&gt; ajout de normal/light map  </p>
 </dd>
 <dt>Class <a class="el" href="classFont.html">Font</a>  </dt>
 <dd><a class="anchor" id="_todo000006"></a>créer un Constructeur par défaukt avec une police system  </dd>
@@ -110,7 +117,7 @@ $(function(){ initResizable(false); });
 <dt>Class <a class="el" href="classGeometric.html">Geometric</a>  </dt>
 <dd><a class="anchor" id="_todo000008"></a>ajouter a shape  </dd>
 <dt>Struct <a class="el" href="structImage.html">Image</a>  </dt>
-<dd><a class="anchor" id="_todo000012"></a>Faire de cette struct une class pour ajouter ddes méthode de moification des Images  </dd>
+<dd><a class="anchor" id="_todo000013"></a>Faire de cette struct une class pour ajouter ddes méthode de moification des Images  </dd>
 <dt>Class <a class="el" href="classLight.html">Light</a>  </dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000009"></a>Créer une class DirectionnalLight pour différentier certaine lumière </p>
 <p class="interdd"></p>
@@ -119,12 +126,12 @@ $(function(){ initResizable(false); });
 <p class="enddd">Ajouter la gestion d'une lightMap sur <a class="el" href="classTexture.html" title="Contient une texture qui peut être utilisé dans un sprite.">Texture</a> pour gérer l'éclairage des textures  </p>
 </dd>
 <dt>Class <a class="el" href="classShape.html">Shape</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000011"></a>Optimiser les constructeurs des <a class="el" href="classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,...">Shape</a> </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000012"></a>Optimiser les constructeurs des <a class="el" href="classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,...">Shape</a> </p>
 <p class="interdd"></p>
 <p class="enddd">Gérer l'héritage de <a class="el" href="classGeometric.html" title="gère un objet avec de propriété géométrique">Geometric</a> sur <a class="el" href="classShape.html" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,...">Shape</a>  </p>
 </dd>
 <dt>Class <a class="el" href="classTexture.html">Texture</a>  </dt>
-<dd><a class="anchor" id="_todo000013"></a>Vérifier la possibilité de gérer plusieur format d'image comme jpg, jpeg, ou gif ext...  </dd>
+<dd><a class="anchor" id="_todo000014"></a>Vérifier la possibilité de gérer plusieur format d'image comme jpg, jpeg, ou gif ext...  </dd>
 <dt>Class <a class="el" href="classVector2.html">Vector2&lt; T &gt;</a>  </dt>
 <dd><a class="anchor" id="_todo000004"></a>Gérer les constructeur par copy d'une bonne manière </dd>
 </dl>
