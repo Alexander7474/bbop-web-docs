@@ -1,9 +1,0 @@
-<map id="src/BBOP/Performance/benchmark.cpp" name="src/BBOP/Performance/benchmark.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="199,5,367,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,204,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,48,157,90,155,85,243,43"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="228,101,339,126"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,46,286,87,281,87,281,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="363,101,435,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="311,43,374,90,371,95,307,48"/>
-</map>
