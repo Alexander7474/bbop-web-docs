@@ -5,17 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bbop Library: Shape Class Reference</title>
+<title>Bbop-Library: Shape Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -24,10 +31,24 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Bbop Library
+   <div id="projectname">Bbop-Library<span id="projectnumber">&#160;0.0.3</span>
    </div>
+   <div id="projectbrief">Opengl library to build 2d apps and game that implement a light system named Lumop</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -44,22 +65,23 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',false);
-  $(function() { init_search(); });
-});
+$(function(){initNavTree('classShape.html',''); initResizable(true); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
-/* @license-end */
-</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,8 +103,6 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -100,54 +120,18 @@ $(function(){ initResizable(false); });
 <div class="dynheader">
 Inheritance diagram for Shape:</div>
 <div class="dyncontent">
-<div class="center"><img src="classShape__inherit__graph.png" border="0" usemap="#aShape_inherit__map" alt="Inheritance graph"/></div>
-<map name="aShape_inherit__map" id="aShape_inherit__map">
-<area shape="rect" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="172,79,235,104"/>
-<area shape="rect" href="classConvexShape.html" title="Gère une convex." alt="" coords="5,152,116,177"/>
-<area shape="poly" title=" " alt="" coords="170,112,85,154,83,149,167,108"/>
-<area shape="rect" href="classRectangleShape.html" title="Gère un rectangle/carré" alt="" coords="140,152,267,177"/>
-<area shape="poly" title=" " alt="" coords="206,118,206,152,201,152,201,118"/>
-<area shape="rect" href="classSprite.html" title="Gère un Sprite (Rectangle avec une Texture)" alt="" coords="291,152,351,177"/>
-<area shape="poly" title=" " alt="" coords="235,109,303,149,300,154,233,113"/>
-<area shape="rect" href="classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="145,5,262,31"/>
-<area shape="poly" title=" " alt="" coords="206,44,206,79,201,79,201,44"/>
-<area shape="rect" href="classCircleShape.html" title="Gère un cercle." alt="" coords="11,225,110,251"/>
-<area shape="poly" title=" " alt="" coords="63,191,63,225,58,225,58,191"/>
-<area shape="rect" href="classAnimatedSprite.html" title="Gère un Sprite qui joue une aniomation en boucle." alt="" coords="197,225,319,251"/>
-<area shape="poly" title=" " alt="" coords="303,189,270,227,266,223,299,186"/>
-<area shape="rect" href="classNoTextureSprite.html" title=" " alt="" coords="344,225,471,251"/>
-<area shape="poly" title=" " alt="" coords="347,184,395,223,391,227,343,188"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for Shape:</div>
-<div class="dyncontent">
-<div class="center"><img src="classShape__coll__graph.png" border="0" usemap="#aShape_coll__map" alt="Collaboration graph"/></div>
-<map name="aShape_coll__map" id="aShape_coll__map">
-<area shape="rect" title="Class parente de toutes les formes géométriques(RectangleShape, ConvexShape, CircleShape,..." alt="" coords="345,403,407,428"/>
-<area shape="rect" href="classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="" coords="5,315,123,340"/>
-<area shape="poly" title=" " alt="" coords="102,343,193,376,275,395,345,407,344,412,273,400,191,381,100,348"/>
-<area shape="rect" href="classVAO.html" title=" " alt="" coords="147,315,197,340"/>
-<area shape="poly" title=" " alt="" coords="187,350,199,364,213,376,246,392,281,402,344,411,344,416,280,407,244,397,211,381,195,368,183,353"/>
-<area shape="rect" href="classVBO.html" title=" " alt="" coords="248,315,299,340"/>
-<area shape="poly" title=" " alt="" coords="284,352,301,377,322,392,346,403,343,408,319,397,297,381,280,355"/>
-<area shape="rect" href="classEBO.html" title=" " alt="" coords="351,315,401,340"/>
-<area shape="poly" title=" " alt="" coords="379,354,379,402,373,402,373,354"/>
-<area shape="rect" href="classVector2f.html" title=" " alt="" coords="450,80,526,105"/>
-<area shape="poly" title=" " alt="" coords="490,119,481,257,469,330,461,359,450,380,431,398,409,408,406,404,428,393,446,377,456,357,464,329,476,256,485,119"/>
-<area shape="rect" href="classGeometric.html" title="gère un objet avec de propriété géométrique" alt="" coords="504,197,595,223"/>
-<area shape="poly" title=" " alt="" coords="503,116,546,196,541,199,498,119"/>
-<area shape="rect" href="classVector2.html" title=" " alt="" coords="423,5,553,31"/>
-<area shape="poly" title=" " alt="" coords="491,45,491,80,485,80,485,45"/>
-<area shape="rect" href="classVector3i.html" title=" " alt="" coords="639,315,713,340"/>
-<area shape="poly" title=" " alt="" coords="666,354,656,369,641,381,597,396,533,406,408,416,408,410,532,401,595,391,639,376,652,365,662,351"/>
-<area shape="rect" href="classVector3.html" title=" " alt="" coords="619,197,738,223"/>
-<area shape="poly" title=" " alt="" coords="681,236,679,315,674,315,675,236"/>
-<area shape="rect" href="classCollisionBox.html" title="gère une boîte de collision" alt="" coords="505,315,607,340"/>
-<area shape="poly" title=" " alt="" coords="533,351,485,381,446,397,408,409,407,404,444,392,483,376,530,346"/>
-<area shape="poly" title=" " alt="" coords="553,236,558,314,553,315,548,236"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classShape.png" usemap="#Shape_map" alt=""/>
+  <map id="Shape_map" name="Shape_map">
+<area href="classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene." alt="BbopDrawable" shape="rect" coords="114,0,218,24"/>
+<area href="classConvexShape.html" title="Gère une convex." alt="ConvexShape" shape="rect" coords="0,112,104,136"/>
+<area href="classRectangleShape.html" title="Gère un rectangle/carré" alt="RectangleShape" shape="rect" coords="114,112,218,136"/>
+<area href="classSprite.html" title="Gère un Sprite (Rectangle avec une Texture)" alt="Sprite" shape="rect" coords="228,112,332,136"/>
+<area href="classCircleShape.html" title="Gère un cercle." alt="CircleShape" shape="rect" coords="0,168,104,192"/>
+<area href="classAnimatedSprite.html" title="Gère un Sprite qui joue une aniomation en boucle." alt="AnimatedSprite" shape="rect" coords="171,168,275,192"/>
+<area href="classNoTextureSprite.html" alt="NoTextureSprite" shape="rect" coords="285,168,389,192"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -1251,10 +1235,13 @@ Protected Attributes</h2></td></tr>
 <li>src/BBOP/Graphics/<a class="el" href="shapeClass_8cpp.html">shapeClass.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classShape.html">Shape</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+  </ul>
+</div>
 </body>
 </html>

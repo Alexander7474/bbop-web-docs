@@ -5,17 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Bbop Library: Scene Class Reference</title>
+<title>Bbop-Library: Scene Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -24,10 +31,24 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Bbop Library
+   <div id="projectname">Bbop-Library<span id="projectnumber">&#160;0.0.3</span>
    </div>
+   <div id="projectbrief">Opengl library to build 2d apps and game that implement a light system named Lumop</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -44,22 +65,23 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search',false);
-  $(function() { init_search(); });
-});
+$(function(){initNavTree('classScene.html',''); initResizable(true); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
-/* @license-end */
-</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,8 +103,6 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -130,6 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af943707e7fdfd9c1c90bb6fa3acecb35" id="r_af943707e7fdfd9c1c90bb6fa3acecb35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af943707e7fdfd9c1c90bb6fa3acecb35">Draw</a> (const <a class="el" href="classBbopDrawable.html">BbopDrawable</a> &amp;spr) const</td></tr>
 <tr class="memdesc:af943707e7fdfd9c1c90bb6fa3acecb35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de dessiner sur la fenêtre GFLW initialisée dans bbopInt() avec l'environement de la <a class="el" href="classScene.html" title="Gère la scene et affiche des BbopDrawable.">Scene</a>.  <br /></td></tr>
 <tr class="separator:af943707e7fdfd9c1c90bb6fa3acecb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565645896e7a503887dc28d1697787cf" id="r_a565645896e7a503887dc28d1697787cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a565645896e7a503887dc28d1697787cf">DrawFrameBuffer</a> (const <a class="el" href="classNoTextureSprite.html">NoTextureSprite</a> &amp;spr) const</td></tr>
+<tr class="memdesc:a565645896e7a503887dc28d1697787cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine le frame buffer de la scene.  <br /></td></tr>
+<tr class="separator:a565645896e7a503887dc28d1697787cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddf2d16f371ee9533b3faf1dd5ddfb1" id="r_a4ddf2d16f371ee9533b3faf1dd5ddfb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ddf2d16f371ee9533b3faf1dd5ddfb1">render</a> ()</td></tr>
+<tr class="memdesc:a4ddf2d16f371ee9533b3faf1dd5ddfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de render le framebuffer de la scene en calculant sont éclairage final.  <br /></td></tr>
+<tr class="separator:a4ddf2d16f371ee9533b3faf1dd5ddfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Gère la scene et affiche des <a class="el" href="classBbopDrawable.html" title="Class Parent de tous ce qui peut être dessiné par une Scene.">BbopDrawable</a>. </p>
@@ -257,6 +283,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a565645896e7a503887dc28d1697787cf" name="a565645896e7a503887dc28d1697787cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565645896e7a503887dc28d1697787cf">&#9670;&#160;</a></span>DrawFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::DrawFrameBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classNoTextureSprite.html">NoTextureSprite</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>spr</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dessine le frame buffer de la scene. </p>
+
+</div>
+</div>
 <a id="ab5128cc4211b19612557c84f021de576" name="ab5128cc4211b19612557c84f021de576"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5128cc4211b19612557c84f021de576">&#9670;&#160;</a></span>getAmbiantLightColor()</h2>
 
@@ -294,6 +339,26 @@ Public Member Functions</h2></td></tr>
 
 <p>Renvoie l'intensité de la lumière ambiante de <a class="el" href="classScene.html" title="Gère la scene et affiche des BbopDrawable.">Scene</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>ambiantLightValue Intensité de la lumière ambiante </dd></dl>
+
+</div>
+</div>
+<a id="a4ddf2d16f371ee9533b3faf1dd5ddfb1" name="a4ddf2d16f371ee9533b3faf1dd5ddfb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ddf2d16f371ee9533b3faf1dd5ddfb1">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permet de render le framebuffer de la scene en calculant sont éclairage final. </p>
+<p>Clear le vecteur de lumière </p>
 
 </div>
 </div>
@@ -366,7 +431,7 @@ Public Member Functions</h2></td></tr>
 <p>Charge les valeur de la scene dans le shader de celle ci. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>Fenêtre GLFW utilisée par votre programme et initialisée avec <a class="el" href="bbopFunc_8cpp.html#a697650ee78695079a1f5549465584e43" title="Fonction d&#39;initialisation de Bbop Library.">bbopInit()</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">window</td><td>Fenêtre GLFW utilisée par votre programme et initialisée avec <a class="el" href="bbopFunc_8h.html#a697650ee78695079a1f5549465584e43" title="Fonction d&#39;initialisation de Bbop Library.">bbopInit()</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -405,10 +470,13 @@ Public Member Functions</h2></td></tr>
 <li>src/BBOP/Graphics/<a class="el" href="sceneClass_8cpp.html">sceneClass.cpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classScene.html">Scene</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.1 </li>
+  </ul>
+</div>
 </body>
 </html>
